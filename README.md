@@ -3,47 +3,10 @@
 
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
-### 31/08/25 - mod version 2.3.0.0, Updated for v2.3 of 7 Days to Die (initial release)
-
-> [!NOTE]
-> 04/09/25 mod version 2.3.0.1, changelog:
-
-Plague Spitters spawn frequency, movement speed, health and ranged attack cooldown all lowered
-
-reduced the wellness penalty for sham sandwiches to -1 (was -5)
-
-added stats window in the UI for despair meds
-
-added correct eating meshes and animations for cooked cans and honeycomb
-
-increased duration for Yucca Smoothie buffs (doubled in duration)
-
-changed the screen effect for envenomed debuff
-
-lowered loot probabilities for soldiers to drop weapons
-
-added antivenom as a rare medical item in loot
-
-removed Lumberjacks from 'general' entity spawns
-
-added a buff check for boiled water while a helmet filter is equipped
-
-increased hyperthermal resistance from Yucca Juice (was 5, is now 10)
-
-re-added the Better Barter perk including trader stock bonus from Daring Adventurer
-
-Dirt bike now unlocks correctly
-
-changed unlock level for the sawmill so it unlocks with the workbench
-
-removed wasteland zombies from biome night spawns
-
-changed spawn cooldown between biome spawns for biome spawns during the day
-
 > [!IMPORTANT]
 > 20/09/25 mod version 2.3.1.0 changelog (NEW SAVE RECOMMENDED):
 
-# Crafting research:
+### Crafting research:
 **Magazines have been COMPLETELY removed, and replaced with Research Papers. These papers allow you to unlock crafting items and levels in any order you please, as long as you have enough.**
 **Research papers are mostly found in zombie corpse loot, and everywhere magazines and books would usually be found, plus a few other places too.**
 **You must have research papers in your inventory to unlock crafting skills, and the cost of skills scales as your crafting skill increases.**
@@ -90,6 +53,45 @@ Frozen zombies are now less blue, and more white.
 
 
 Localization tweaks and fixes, loot table revisions and other small fixes.
+
+
+> [!NOTE]
+> 04/09/25 mod version 2.3.0.1, changelog:
+
+Plague Spitters spawn frequency, movement speed, health and ranged attack cooldown all lowered
+
+reduced the wellness penalty for sham sandwiches to -1 (was -5)
+
+added stats window in the UI for despair meds
+
+added correct eating meshes and animations for cooked cans and honeycomb
+
+increased duration for Yucca Smoothie buffs (doubled in duration)
+
+changed the screen effect for envenomed debuff
+
+lowered loot probabilities for soldiers to drop weapons
+
+added antivenom as a rare medical item in loot
+
+removed Lumberjacks from 'general' entity spawns
+
+added a buff check for boiled water while a helmet filter is equipped
+
+increased hyperthermal resistance from Yucca Juice (was 5, is now 10)
+
+re-added the Better Barter perk including trader stock bonus from Daring Adventurer
+
+Dirt bike now unlocks correctly
+
+changed unlock level for the sawmill so it unlocks with the workbench
+
+removed wasteland zombies from biome night spawns
+
+changed spawn cooldown between biome spawns for biome spawns during the day
+
+### 31/08/25 - mod version 2.3.0.0, Updated for v2.3 of 7 Days to Die (initial release)
+
 
 
 # FEATURES 
