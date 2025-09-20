@@ -4,7 +4,7 @@
 The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.
 
 > [!IMPORTANT]
-> 20/09/25 mod version 2.3.1.0 changelog (NEW SAVE RECOMMENDED):
+> 20/09/25 mod version 2.3.1.0 changelog **(NEW SAVE RECOMMENDED)**:
 
 ### Crafting research:
 **Magazines have been COMPLETELY removed, and replaced with Research Papers. These papers allow you to unlock crafting items and levels in any order you please, as long as you have enough.**
