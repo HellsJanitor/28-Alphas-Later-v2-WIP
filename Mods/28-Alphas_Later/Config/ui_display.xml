@@ -1,0 +1,67 @@
+<HellsJanitor>
+
+	<!-- *** display category for Yucca juice -->
+	<append xpath="/ui_display_info/item_display">
+		<item_display_info display_type="waterYuccaJuice" display_group="groupConsumables">
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>			
+			<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist" display_leading_plus="true"/>
+		</item_display_info>		
+	</append>
+	
+	<!-- *** wellness, despair treatment and smell value display for food and drink -->
+	<append xpath="/ui_display_info/item_display/item_display_info[starts-with(@display_type,'food') or (starts-with(@display_type,'water')) or (starts-with(@display_type,'drink'))]">
+		<display_entry name="dWellness" title_key="statWellness"/>
+		<display_entry name="dCureDespair" title_key="statCureDespair" display_type="Percent"/>
+		<display_entry name="dSmell" title_key="statSmell"/>
+	</append>
+
+	<!-- *** hyper and hypo thermal resistances -->
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkYuccaSmoothie']">
+		<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist" display_leading_plus="true"/>
+	</append>
+	
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterCoffee']">
+		<display_entry name="dHypothermalResist" title_key="statHypothermalResist" display_leading_plus="true"/>
+	</append>
+
+	<!-- *** wood burning stove & sawmill crafting -->
+	<append xpath="/ui_display_info/crafting_category_display">
+		<crafting_category_list display_type="playerWoodBurningStove">
+			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood"/>
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink"/>
+			<crafting_category name="CFMedical" icon="ui_game_symbol_medical" display_name="lblCategoryMedicine" />
+			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals"/>
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="playerTableSaw">
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources"/>
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="chickenCoop">
+			<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="Eggs" />
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="Feathers" icon_color="153,0,0"/>
+		</crafting_category_list>
+	</append>
+	
+	<!-- *** new crafting category for research papers -->
+	<append xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='workbench']">
+		<crafting_category name="Research" icon="ui_game_symbol_shape_schematics" display_name="lblCategorySchematicsOnly" />
+	</append>
+
+	<!-- *** display entry for despair meds and armour mods -->
+	<append xpath="/ui_display_info/item_display">
+		<item_display_info display_type="cureDespair" display_group="groupConsumables">
+			<display_entry name="dCureDespair" title_key="statCureDespair" display_type="Percent"/>
+		</item_display_info>
+		
+		<item_display_info display_type="modTempResist" display_group="modAttire">
+			<display_entry name="HypothermalResist" display_type="Decimal1" title_key="statHypothermalResist" display_leading_plus="true"/>
+			<display_entry name="HyperthermalResist" display_type="Decimal1" title_key="statHyperthermalResist" display_leading_plus="true"/>
+			<display_entry name="ElementalDamageResist" display_type="Decimal1" title_key="statExplosionResistance" display_leading_plus="true" tags="heat,electrical"/>
+		</item_display_info>
+	</append>
+	
+	<!-- *** remove Strength attribute from cigar display -->
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingCigar']/display_entry[@name='AttributeLevel']"/>
+</HellsJanitor>

@@ -1,0 +1,542 @@
+<OkaniYoshiii>
+
+<!-- * * * * * * * * * * * * * 1st section * * * * * * * * * * * * * -->
+
+    <append xpath="/buffs">
+        <buff name="NextBuffBlur" name_key="Buff" icon="ui_game_symbol_block_repair"> 
+        <duration value="5"/>
+        <display_value_key value="Blur"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Blur"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay1"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay1" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDark"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffDark" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Dark"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Dark"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Dark"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay2"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay2" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffSpawnIn"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffSpawnIn" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="SpawnIn"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="SpawnIn"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="SpawnIn"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay3"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay3" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffHot"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffHot" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Hot"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Hot"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay4"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay4" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffCold"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffCold" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Cold"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Cold"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Cold"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay5"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay5" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffRadiation"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffRadiation" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Radiation"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Radiation"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay6"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay6" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDrunk"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffDrunk" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Drunk"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Drunk"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay7"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay7" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDistortion"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffDistortion" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Distorsion"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Distortion"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Distortion"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay8"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay8" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffGreyscale"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffGreyscale" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Greyscale"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Greyscale"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay9"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay9" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffInfected"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffInfected" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Infected"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Infected"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Infected"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay10"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay10" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffNightVision"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffNightVision" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="NightVision"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="NightVision"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="NightVision"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay11"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay11" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffBright"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffBright" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Bright"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Bright"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Bright"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay12"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay12" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffPosterize"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffPosterize" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Posterize"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Posterize"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Posterize"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay13"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay13" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffUnderwater"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffUnderwater" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Underwater"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Underwater"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Underwater"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay14"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay14" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffVibrant"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffVibrant" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Vibrant"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Vibrant"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Vibrant"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay15"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay15" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffVibrantDeSat"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffVibrantDeSat" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="VibrantDeSat"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="VibrantDeSat"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="VibrantDeSat"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay16"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay16" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDead"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffDead" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Dead"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Dead"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Dead"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDelay17"/>
+        </effect_group>
+        </buff>
+
+            <buff name="NextBuffDelay17" name_key="Buff" icon="ui_game_symbol_block_repair">
+                <duration value="2"/>
+                <display_value_key value="Delay"/>
+                <display_value value="xxx"/>
+                <effect_group>
+                    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="NextBuffDying"/>
+                </effect_group>
+            </buff>
+
+        <buff name="NextBuffDying" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Dying"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Dying"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Dying"/>
+        </effect_group>
+        </buff>
+
+    </append>
+
+<!-- * * * * * * * * * * * * * 2nd section * * * * * * * * * * * * * -->
+
+    <append xpath="/buffs">
+        <buff name="Blur" name_key="Buff" icon="ui_game_symbol_block_repair"> 
+        <duration value="5"/>
+        <display_value_key value="Blur"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Blur"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Dark" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Dark"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Dark"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Dark"/>
+        </effect_group>
+        </buff>
+
+        <buff name="SpawnIn" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="SpawnIn"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="SpawnIn"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="SpawnIn"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Hot" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Hot"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Hot"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Cold" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Cold"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Cold"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Cold"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Radiation" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Radiation"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Radiation"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Drunk" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Drunk"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Drunk"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Drunk"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Distortion" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Distorsion"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Distortion"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Distortion"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Greyscale" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Greyscale"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Greyscale"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Infected" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Infected"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Infected"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Infected"/>
+        </effect_group>
+        </buff>
+
+        <buff name="NightVision" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="NightVision"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="NightVision"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="NightVision"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Bright" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Bright"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Bright"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Bright"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Posterize" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Posterize"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Posterize"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Posterize"/>>
+        </effect_group>
+        </buff>
+
+        <buff name="Underwater" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Underwater"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Underwater"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Underwater"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Vibrant" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Vibrant"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Vibrant"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Vibrant"/>
+        </effect_group>
+        </buff>
+
+        <buff name="VibrantDeSat" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="VibrantDeSat"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="VibrantDeSat"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="VibrantDeSat"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Dead" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Dead"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Dead"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Dead"/>
+        </effect_group>
+        </buff>
+
+        <buff name="Dying" name_key="Buff" icon="ui_game_symbol_block_repair">
+        <duration value="5"/>
+        <display_value_key value="Dying"/>
+        <display_value value="xxx"/>
+        <effect_group>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Dying"/>
+            <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Dying"/>
+        </effect_group>
+        </buff>
+    </append>
+
+</OkaniYoshiii>

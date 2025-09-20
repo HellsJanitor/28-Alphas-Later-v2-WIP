@@ -1,0 +1,664 @@
+Key,english
+mushroom01,Small Mushroom
+mushroom02,Large Mushroom
+plantedAloe3Harvest,Aloe
+plantedBlueberry3Harvest,Blueberries
+plantedChrysanthemum3Harvest,Chrysanthemums
+plantedCoffee3Harvest,Coffee
+plantedCorn2Deco,Corn
+plantedCorn3Harvest,Corn
+plantedCotton3Harvest,Cotton
+plantedGoldenrod3Harvest,Goldenrod
+plantedGraceCorn3Harvest,Super Corn
+plantedHop3Harvest,Hops
+plantedMushroom3Harvest,Mushrooms
+plantedPotato3Harvest,Potatoes
+plantedPumpkin3Harvest,Pumpkins
+plantedYucca3Harvest,Yucca
+plantedAloe3HarvestPlayer,Aloe
+plantedBlueberry3HarvestPlayer,Blueberries
+plantedChrysanthemum3HarvestPlayer,Chrysanthemums
+plantedCoffee3HarvestPlayer,Coffee
+plantedCorn3HarvestPlayer,Corn
+plantedCotton3HarvestPlayer,Cotton
+plantedGoldenrod3HarvestPlayer,Goldenrod
+plantedGraceCorn3HarvestPlayer,Super Corn
+plantedHop3HarvestPlayer,Hops
+plantedMushroom3HarvestPlayer,Mushrooms
+plantedPotato3HarvestPlayer,Potatoes
+plantedPumpkin3HarvestPlayer,Pumpkins
+plantedYucca3HarvestPlayer,Yucca
+plantedAloe3HarvestBiome,Aloe
+plantedYucca3HarvestBiome,Yucca
+plantedBlueberry3HarvestBiome,Blueberries
+plantedChrysanthemumHarvestBiome,Chrysanthemum
+plantedGoldenrodHarvestBiome,Goldenrod
+plantedCottonHarvestBiome,Cotton
+
+drinkJarBoiledWater,"Boiled Water"
+drinkJarBoiledWaterDesc,"Almost safe to drink ..."
+drinkJarDistilledWater,"Distilled Water"
+drinkJarDistilledWaterDesc,"Safe to drink, and as fresh as you can get in the apocalypse."
+toolWaterDistillery,"Water Distiller"
+toolWaterDistilleryDesc,"A utensil used in a campfire to purify water."
+
+perkWellInsulatedRank1Desc,"Mildly Weather Tolerant"
+perkWellInsulatedRank1LongDesc,"You like mild weather, but can handle a bit of temperature fluctuation. Gain 5 insulation against heat and cold, and lose 5% less food and water when cold or overheating."
+perkWellInsulatedRank2Desc,"Moderately Weather Resistant"
+perkWellInsulatedRank2LongDesc,"You are resistant to some pretty intense weather and lose 10% less food and water when cold or overheating. Grants 10 insulation against both heat and cold."
+perkWellInsulatedRank3Desc,"Robustly Weather Tolerant"
+perkWellInsulatedRank3LongDesc,"You're starting to get hardened against the elements. Lose 15% less food and water when cold or overheating. Grants 15 insulation against both heat and cold."
+perkWellInsulatedRank4Desc,"Intensely Weather Hardened"
+perkWellInsulatedRank4LongDesc,"Harsher environments aren't bothering you much these days. Lose 20% less food and water when cold or overheating. Grants 20 insulation against both heat and cold."
+perkWellInsulatedRank5Desc,"Extremely Weather Hardened"
+perkWellInsulatedRank5LongDesc,"You can now handle severe weather and typically couldn't care less what the weather conditions are. You will never have the more severe stages of temperature status effects"
+
+perkPhysicianRank3LongDesc,"Treated Critical injuries heal 50% faster.\nMedical healing items heal 100% more health over time.\nGain 500% more XP using bandages, first aid bandages, first aid kits and splints."
+
+perkDeepCutsRank1LongDesc,"You might have a dull blade, but you know how to use it. Bladed weapons deal 10% more damage. Stamina costs are reduced by 8% and 15% for power attacks. Find more bladed weapons and parts in loot."
+perkDeepCutsRank2LongDesc,Your friends say you're a really knife guy. Bladed weapons deal 20% more damage. Find more bladed weapons and parts in loot.
+perkDeepCutsRank3LongDesc,You're a cut above the rest. Bladed weapons deal 30% more damage. Stamina costs are reduced by 20% and 40% for power attacks. Killing blows grant 10 stamina. Find more bladed weapons and parts in loot.
+perkDeepCutsRank4LongDesc,You're quite lethal with bladed weapons. Bladed weapons deal 40% more damage. Stamina costs are reduced by 25% and 50% for power attacks. Killing blows grant 20 stamina. Find more bladed weapons and parts in loot.
+perkDeepCutsRank5LongDesc,You're a samurai and can make sushi out of your foes. Bladed weapons deal 50% more damage. Killing blows grant 30 stamina. Find more bladed weapons and parts in loot.
+
+perkBetterBarterDesc,"Specialize in convincing area traders to give you a better deal, and to show more of their stock"
+perkBetterBarterName,Better Barter
+perkBetterBarterRank1Desc,Wheeler Dealer
+perkBetterBarterRank1LongDesc,You are good at wheeling and dealing and never pay full price for anything. Get a 5% better deal buying and selling merchandise with traders.\nTraders have more stock.
+perkBetterBarterRank2Desc,Salesman
+perkBetterBarterRank2LongDesc,You must have been a salesman before the apocalypse with the kind of good deals you find. Get a 10% better deal buying and selling with traders.\nTraders have even more stock.
+perkBetterBarterRank3Desc,Sales Manager
+perkBetterBarterRank3LongDesc,You act like a sales manager and have authority to cut the best deals. Get a 15% better deal buying and selling with traders.\nTraders have better stock.
+perkBetterBarterRank4Desc,Wall Street Tycoon
+perkBetterBarterRank4LongDesc,You would do well if the stock market still existed. Get a 20% better deal buying and selling with traders.\nTraders have even better stock.
+perkBetterBarterRank5Desc,Corporate Marketing CEO
+perkBetterBarterRank5LongDesc,You are like a Corporate Manager and buy goods at the lowest prices and sell for a huge profit. Get a 25% better deal buying and selling with traders.\nTraders have the best stock.
+
+buffT0FoodTimeTrackName,"Basic Food/Drink"
+buffT0FoodTimeTrackDesc,"You have consumed some very basic food or drink, and your wellness has improved a tiny amount.\n\nYou'll need to wait a while until you can improve your wellness again."
+buffT0FoodTimeTrackToolTip,"wellness has improved a tiny amount"
+buffT1FoodTimeTrackName,"Decent Food/Drink"
+buffT1FoodTimeTrackDesc,"You have consumed some basic food or drink, and your wellness has improved a little.\n\nYou'll need to wait a while until you can improve your wellness again."
+buffT1FoodTimeTrackToolTip,"wellness has improved a little"
+buffT2FoodTimeTrackName,"Average Food/Drink"
+buffT2FoodTimeTrackDesc,"You have consumed some decent food or drink, and your wellness has improved slightly.\n\nYou'll need to wait a while until you can improve your wellness again."
+buffT2FoodTimeTrackToolTip,"wellness has improved slightly"
+buffT3FoodTimeTrackName,"Good Food/Drink"
+buffT3FoodTimeTrackDesc,"You have consumed some good food or drink, and your wellness has improved a lot.\n\nYou'll need to wait a while until you can improve your wellness again."
+buffT3FoodTimeTrackToolTip,"wellness has improved a lot"
+buffT4FoodTimeTrackName,"Excellent Food/Drink"
+buffT4FoodTimeTrackDesc,"You have consumed some excellent food or drink, and your wellness has improved greatly.\n\nYou'll need to wait a while until you can improve your wellness again."
+buffT4FoodTimeTrackToolTip,"wellness has improved greatly"
+
+buffDespairCureDisplayName,Treated Despair
+buffDespairCureDisplayDesc,You are feeling optimistic about your chances of surviving.
+buffDespair01UntreatedName,Despair
+buffDespair01UntreatedDesc,"You are not very optimistic about your survival.\n\nEating certain foods, finding warmth and shelter, or taking medication will help you start to feel better.\n\nResting on a bed near a campfire while sheltered will help ..."
+buffDespair01UntreatedTooltip,It's feeling a little hopeless ...
+buffDespair01GetBetterName,Feeling Better
+buffDespair01GetBetterDesc,"You have taken something - medication, food or drink, that is helping to treat your despair."
+buffDespair02UntreatedName,Isolation
+buffDespair02UntreatedDesc,"You are starting to feel worse about your chances of survival.\n\nEating certain foods, finding warmth and shelter, or taking medication will help you start to feel better.\n\nStamina regen is 12.5% slower."
+buffDespair02GetBetterName,Feeling Better
+buffDespair02GetBetterDesc,"You have taken something - medication, food or drink, that is helping to treat your despair."
+buffDespair03UntreatedName,Depths of despair
+buffDespair03UntreatedDesc,"You feel the outlook is bleak, and are close to giving up.\n\nEating certain foods, finding warmth and shelter, or taking medication will help you start to feel better.\n\nStamina regen is 25% slower.\nAll Attributes are lowered by 1."
+buffDespair03GetBetterName,Feeling Better
+buffDespair03GetBetterDesc,"You have taken something - medication, food or drink, that is helping to treat your despair."
+buffDespair04Tooltip,The hopelessness of your situation has gotten too much for you to bear.
+buffDespairCureDisplayPositive01Name,Hope
+buffDespairCureDisplayPositive01Desc,"You are feeling hopeful and buoyant.\n\nYou have:\n5% decreased stamina loss.\n5% decreased health loss from damage taken.\n10% critical hit resistance."
+buffDespairCureDisplayPositive02Name,Enthusiastic
+buffDespairCureDisplayPositive02Desc,"You feel enthusiastic and cheerful.\n\nYou have:\n10% decreased stamina loss.\n10% decreased health loss from damage taken.\n15% critical hit resistance."
+buffDespairCureDisplayPositive03Name,Confident
+buffDespairCureDisplayPositive03Desc,"You are brimming with confidence and energy.\n\nYou have:\n15% decreased stamina loss.\n15% decreased health loss from damage taken.\n20% critical hit resistance."
+buffDespairCounterTooltip,""
+buffDespairCounterName,"Despair"
+buffDespairCounterDesc,"This is a measure of how much your environment is affecting your rate of despair.\n\nPositive numbers means despair is increasing.\n\nNegative numbers means your despair is decreasing."
+buffDespairAOEName,Danger
+buffDespairAOEDesc,"These zombies are getting a bit too close for comfort ... \n\nEliminate them, or get the hell out of there!"
+buffDespairAOETooltip,"",,,,,,,Nearby zombies are affecting your mental health.
+buffDespairFeralAOEName,Danger Close
+buffDespairFeralAOEDesc,"These [ffff00]zombies[-] are getting tougher \n\nYou need to be careful ..."
+buffDespairFeralAOETooltip,"",,,,,,,,,Tougher zombies nearby are making your mental health worse.
+buffDespairRadiatedAOEName,Grave Danger
+buffDespairRadiatedAOEDesc,"What the hell!? These [00ff00]zombies[-] can regenerate?! \n\nMight need some specialized gear for these ..."
+buffDespairRadiatedAOETooltip,"",,,,,,,,,,Nearby Radiated zombies are really affecting your ability to think straight ...
+buffDespairMutatedAOEName,Get the hell away from me!
+buffDespairMutatedAOEDesc,"What the actual F%&*?!! These [f5c71a]zombies[-] are even worse than the greenies!\n\nIf you don't have blessed metal, you'd better run ..."
+buffDespairMutatedAOETooltip,"",,,,,,,,Nearby Mutated zombies are making you question your survival chances ...
+buffLithiumBlockerName,"Lithium"
+buffStJohnsWortBlockerName,"St. John's Wort"
+buffLithiumBlockerTooltip,"The treatment from Lithium and St. John's Wort must expire before the drug can be taken again."
+buffLithiumBlockerDesc,"Lithim and St. John's Wort are not candy!\n\nIt makes you thirsty, and you'll need to wait until the medication wears off before you can use it again."
+buff_NoVehicle,Vehicle Subemerged
+buff_NoVehicleDesc,Internal combustion engines don't work underwater!!\n\nYou'll have to put your vehicle back on dry land before it can be driven again.
+buffResurrectName,Double Tap!
+buffResurrectDesc,"You might wanna double check that these guys are actually dead ...\n\nDuring horde night, [FFC800]most[-] zombies have a 10% chance to respawn. Kill them with [CC5500]fire[-] damage or [CC5500]explosives[-] to ensure they stay dead."
+buffCampfireAOEEffectDesc,"You are warmed by the fire.\n\nCold Resist +15\n\nThis warming effect, combined with shelter and light, can slowly reduce your despair."
+buffGoodCompanyFromTraderName,Humanity
+buffGoodCompanyFromTraderDesc,Your spirits are raised by being around other humans.
+buffPoisonedDesc,"You're envenomed. Your attributes are lowered by one, and you are slowly taking damage.\n\nYou'll want some antivenom, and fast."
+buffPoisonedName,Envenomed!
+buffPoisonedTooltip,You've been envenomed!
+buffDespairMedBlockerName,"Stop!"
+buffDespairMedBlockerDesc,"You are currently warm, sheltered, and well lit. Are you sure you need despair medication?"
+buffDespairMedBlockerTooltip,"You are warm, sheltered and well lit. Are you sure you need despair meds?"
+
+buffHelmetPurifierActive,Filter status:
+buffHelmetPurifierActiveDesc,"Your Helmet Purifier is currently working, so you can safely drink from any water source.\n\nThe filter has limited uses, and will need to be replaced eventually."
+buffHelmetPurifierReloadSuccess,"Reloading your Helmet Water Purifer."
+modArmorWaterPurifier,Water Filtration Unit
+modArmorWaterPurifierDesc,Requires a limited-use filter to allow safe consumption of murky water.
+resourceHelmetWaterFilterDesc,A home-made component used to recharge a Water Filtration Unit.\n\nDoesn't always work on the first sip of water ...
+resourceHelmetWaterFilter,Portable Water Filter
+resourceNiCdBattery,"9v D-cell Battery"
+resourceNiCdBatteryDesc,"A limited-use battery, required to operate various portable light sources."
+buffHelmetLightActive,Battery Status
+buffHelmetLightActiveDesc,"Your Helmet Light is currently powered.\n\nThe battery is being depleted, and when empty, requires replacing."
+buffWeaponLightActive,Battery Status
+buffWeaponLightActiveDesc,"Your Weapon Flashlight is currently powered.\n\nThe battery is being depleted, and when empty, requires replacing."
+buffLaserLightActive,Battery Status
+buffLaserLightActiveDesc,"Your Laser Sight is currently powered.\n\nThe battery is being depleted, and when empty, requires replacing."
+buffFlashLightActive,Battery Status
+buffFlashLightActiveDesc,"Your flashlight is currently powered.\n\nThe battery is being depleted, and when empty, requires replacing."
+buffNVGActive,Battery Status
+buffNVGActiveDesc,"Your Night Vision Goggles are currently powered.\n\nThe battery is being depleted, and when empty, requires replacing."
+buffHandTorchActive,Fuel Status
+buffHandTorchActiveDesc,"Your torch is currently fuelled.\n\nThe fuel is being depleted, and when used up, the torch will extinguish.\n\nRefuel the torch by having 10 gasoline in your inventory."
+buffBurningShaftActive,Fuel Status
+buffBurningShaftActiveDesc,"Your burning shaft mod is currently fuelled.\n\nThe fuel is being depleted, and when used up, the flame will extinguish.\n\nRefuel the mod by having 10 gasoline in your inventory."
+buffInjuryStarvationName,Starving!
+buffInjuryStarvationDesc,"You are starving! Find something to eat, quick!!"
+buffInjuryStarvationTooltip,"You are starving! Find something to eat, quick!!"
+placedLitTorch1,Wall Torch
+placedLitTorch3Harvest,Spent Torch
+placedLitTorch3HarvestDesc,"This torch is spent and needs refuelling"
+placedUnlitLantern,Spent Lantern
+placedUnlitLanternDecs,"This lantern's battery is depleted and needs replacing."
+spentWallTorch,Spent Torch
+spentWallTorchDesc,"A spent torch. Can be reused to craft another wall torch"
+meleeToolTorchDesc,This torch can be used as a portable light source or weapon with a chance to catch enemies on fire.\n\nCan also be used to craft a placeable wall torch. Requires gas to ignite.
+cntMedicineCabinetPlayer,Player Medical Cabinet
+modArmorCigarDesc,Look intimidating and get a better deal from traders.
+
+perkBarBrawling5AdrenalineHealingDesc,Drinking moonshine no longer blurs your vision.
+perkBarBrawling5AdrenalineHealingLongDesc,Liquored Up: Drinking Grandpa's Moonshine no longer blurs your vision.
+
+statCureDespair,Treat Despair
+drugLithium,Lithium
+drugLithiumDesc,"Lithium is the most effective treatment for despair, however, it has it's downside.\n\nEach time you use this drug, you develop a tolerance to it, reducing its efficacy over time.\n\n25% [CC5500]MAXIMUM[-] cure. At max tolerance, reduced to 15%"
+drugStJohnsWort,St. John's Wort
+drugStJohnsWortDesc,"St. John's wort is a herbal treatment, and is effective at treating despair, however ...\n\nEach time you use this drug, your resistance to it's effects increases, reducing its efficacy over time.\n\n10% [CC5500]MAXIMUM[-] cure. At max tolerance, reduced to 5%"
+DespairTip,"You are overwhelmed by how hopeless the situation appears. You can combat this by staying in a well-lit area, staying warm, and staying dry.\n\nProlonged periods of being wet, in darkness, or cold temperatures will increase the rate at which your despair grows. Injuries sustained, along with hunger and thirst also have an adverse effect, as does being in close proximity to zombies.\n\nThere is medication available to reduce your symptoms, and consuming certain food or drink may help too.\n\nTreatment from consumables:\n\nCooked Canned Food: [FFC800]0.1%[-]\nBoiled egg & Charred meat: [FFC800]0.20%[-]\nTier 1 food: [FFC800]0.25%[-]\nGoldenrod & Red tea: [FFC800]0.5%[-]\nBacon & Eggs and Coffee: [FFC800]1%[-]\nTier 2 food, Blackstrap coffee,smoothies, mineral water & beer: [FFC800]2%[-]\nTier 3 food: [FFC800]3%[-]\nTier 4 food: [FFC800]5%[-]"
+DespairTip_title,Despair
+
+foodCanBeefcooked,Cooked Beef Ration
+foodCanBeefcookedDesc,"It's not from your favorite steakhouse but this can of cooked beef will fill you up, and not be as likely to give you the shits..."
+foodCanCarrots,Can of Carrots
+foodCanCarrotscooked,Cooked carrots
+foodCanCarrotscookedDesc,"Convenient, budget-friendly, versatile...\n\n and cooked!"
+foodCanCarrotsDesc,"Convenient, budget-friendly and versatile, but are they as nutritious as fresh? Who cares...\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanChickencooked,Cooked Chicken Ration
+foodCanChickencookedDesc,"Cooked chicken, straight from the can. Still tastes like crap."
+foodCanChickenDesc,"Tastes like chicken. Well, really old synthetic chicken with dirt on it.\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanChilicooked,Cooked Chili
+foodCanChilicookedDesc,"Cooked Chili. Fiery finish, but less chance of a nasty finish..."
+foodCanChiliDesc,"Stash Chili goes down smooth but watch out for the fiery finish Paco.\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanLambcooked,Cooked Lamb Rations
+foodCanLambcookedDesc,"Cooked lamb rations. Taste like lamb, texture like shoe leather."
+foodCanMisocooked,Cooked Miso soup
+foodCanMisocookedDesc,"Hot miso soup. Not bad at all."
+foodCanMisoDesc,"It's time to soup it up with some Miso soup mmm mmm good.\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanPastacooked,Cooked pasta sauce
+foodCanPastacookedDesc,"Cooked Italian sauce. If only we had some pasta to go with it..."
+foodCanPastaDesc,"Now that's Italian! Che figata!\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanPearscooked,Cooked pears
+foodCanPearscookedDesc,"Warm pears straight from the can. Might be weird to some, but it's less likely to make you ill..."
+foodCanPearsDesc,"Maintain that perfect pear shape by eating canned pears.\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanPeascooked,Cooked peas
+foodCanPeascookedDesc,"One of your 5-a-day."
+foodCanPeasDesc,"You and your can of peas will be like two peas in a pod and you'll get your daily vegetables.\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanSalmoncooked,Cooked salmon
+foodCanSalmoncookedDesc,"A healthy can of cooked salmon."
+foodCanSalmonDesc,"Enjoy this healthy can of salmon.\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanShamcooked,Cooked Sham
+foodCanShamcookedDesc,"A can of high quality Shamway ham, but seriously - have you seen what they make this with?"
+foodCanShamDesc,"A can of high quality Shamway ham the number 1 maker of meat-like products. The lunch of champions.\n\nCrafted in lots of 5.\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanSoupcooked,Cooked chicken soup
+foodCanSoupcookedDesc,"Hot chicken soup. Tasty."
+foodCanSoupDesc,"Chicken soup can keep the body and the soul together.\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanStockcooked,Cooked stock
+foodCanStockcookedDesc,"It's not much, but it's better than starving, right?"
+foodCanStockDesc,"Stock up on stock or you could eat it now.\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodCanTunacooked,Cooked tuna
+foodCanTunacookedDesc,"A can of cooked tuna. Reminds you of a simpler time."
+foodCanTunaDesc,"A can of tuna or better known as the chicken of the wasteland.\n\nCook this food in a campfire to reduce the chance of illness from eating it."
+foodChickenMiso,Chicken Miso
+foodChickenMisoDesc,"Chicken pieces, miso, eggs & mushrooms. All that's missing is the ramen..."
+foodChickenStew,Chicken Stew
+foodChickenStewDesc,"A much better use for chicken rations. Delicious and filling."
+foodHoney,Honeycomb
+foodScrambledEggs,Scrambled Eggs
+foodScrambledEggsDesc,"An apocalyptic breakfast that can be eaten any time.\n\nJust don't question what laid the eggs..."
+foodShepardsPie,Shepherd's Pie
+foodShepardsPieDesc,"Shepherd's Pie sure is tasty and super filling."
+foodShepardsPieSchematic,Shepherd's Pie Recipe
+foodTrampStew,Tramp Stew
+foodTrampStewDesc,"A meal fit for a ... well, a tramp.\n\nGood use for cat food though."
+foodVagabondStew,Vagabond Stew
+foodVagabondStewDesc,"No dogs anymore, so someone might as well eat it.\n\nMakes dog food just about edible."
+foodGrilledCarrot,Grilled Carrot
+foodGrilledCarrotDesc,"A grilled carrot. Not the fanciest of foods, but it does taste good."
+foodGrilledOnion,Grilled Onion
+foodGrilledOnionDesc,A much more palatable way to eat onions.
+foodMashedTurnip,Mashed Turnip
+foodMashedTurnipDesc,Easier on your teeth than eating it raw ...
+drinkYuccaJuiceSmoothieDesc,"This smoothie helps you boost stamina regeneration, and helps keep you cool."
+drinkJarYuccaJuice,Yucca Juice
+drinkJarYuccaJuiceDesc,"Yucca juice provides excellent hydration, and will help keep you cool."
+
+foodRoastedRabbit,Roasted Rabbit
+foodRoastedRabbitDesc,You caught one? Now cook it! Delicious and filling.
+foodRoastChicken,Roast Chicken
+foodRoastChickenDesc,A whole roast chicken. Hope you plucked it first ...
+
+armorNerdOutfitDesc,Heavy Armor\nYour lack of fashion sense gives you the ability to focus on your inventions. Adds a chance to gain two crafting skill points when reading INDIVIDUAL research papers.\n\nFull Set Bonus: Tools and Weapons degrade slower.
+
+researchPaperBlank,Research Paper
+researchPaperBlankDesc,These are used to increase your crafting skill.\n\nAny crafting skill can be increased once you have enough Research Papers in your inventory.
+researchPaperBlank100,100 Research
+researchPaperBlank100Desc,Read this to increase your crafting skill by 100.
+researchPaperBlank500,500 Research
+researchPaperBlank500Desc,Read this to increase your crafting skill by 500.
+researchPaperBlank1000,1k Research
+researchPaperBlank1000Desc,Read this to increase your crafting skill by 1000.
+researchPaperBlank5000,5k Research
+researchPaperBlank5000Desc,Read this to increase your crafting skill by 5000.
+researchPaperBlank10000,10k Research
+researchPaperBlank10000Desc,"Read this to increase your crafting skill by 10,000."
+researchPaperBlank100000,100k Research
+researchPaperBlank100000Desc,"Read this to increase your crafting skill by 100,000."
+
+craftingArmorDesc,Increase [DECEA3]Armour Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingBladesDesc,Increase [DECEA3]Blades Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingBowsDesc,Increase [DECEA3]Bows Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingClubsDesc,Increase [DECEA3]Club Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingElectricianDesc,Increase [DECEA3]Electrical Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingExplosivesDesc,Increase [DECEA3]Explosive Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingFoodDesc,Increase [DECEA3]Food Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingHandgunsDesc,Increase [DECEA3]Handgun Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingHarvestingToolsDesc,Increase [DECEA3]Harvesting Tool Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingKnucklesDesc,Increase [DECEA3]Knuckle Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingMachineGunsDesc,Increase [DECEA3]Machine Gun Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingMedicalDesc,Increase [DECEA3]Medical Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingRepairToolsDesc,Increase [DECEA3]Repair Tool Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingRiflesDesc,Increase [DECEA3]Rifle Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingRoboticsDesc,Increase [DECEA3]Robotics Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingSalvageToolsDesc,Increase [DECEA3]Salvage Tool Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingSeedsDesc,Increase [DECEA3]Seed Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingShotgunsDesc,Increase [DECEA3]Shotgun Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingSledgehammersDesc,Increase [DECEA3]Sledgehammer Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingSpearsDesc,Increase [DECEA3]Spear Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingTrapsDesc,Increase [DECEA3]Trap Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingVehiclesDesc,Increase [DECEA3]Vehicle Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+craftingWorkstationsDesc,Increase [DECEA3]Workstation Crafting[-] by reading research papers.\nWhen enough research has been read, [DECEA3]purchase[-] your skills.
+
+perkLightArmorDesc,Specialize in light armor to reduce degradation use.
+perkMediumArmorDesc,"Specialize in medium armor to reduce degradation, stamina, and movement penalties."
+perkHeavyArmorDesc,"Specialize in shielding yourself with iron and steel, becoming an unstoppable behemoth on the battlefield."
+perkMasterChefDesc,Learn how to become a Master Chef! Decrease cooking time and ingredients needed for your favorite recipes.
+perkLivingOffTheLandDesc,Specialize in harvesting more crops using your hands or a tool.
+perkAdvancedEngineeringDesc,"Engineer advanced items faster with reduced costs at workstations."
+perkTurretsDesc,You are fascinated with robotics. Learn to use and deploy robotic weapons.
+perkGreaseMonkeyDesc,Learn to build vehicles cheaper from junk in the wasteland! Vehicles can be assembled without this perk.
+
+materialMresourceWoodScraps,Building
+
+playerPiano,Piano
+playerPianoDesc,"Place this block and interact with it.\n\nGo on - try it. You know you want to ..."
+playerRadio,Ham Radio
+playerRadioDesc,"Place this block and interact with it.\n\nGo on - try it. You know you want to ..."
+
+resourceFertilizer,Fertilizer
+FertilizerDesc,"Fertilizer is made in a Chemistry Station or Cement Mixer. Use a hoe to fertilize the land.\n\nYou must have at least 10 fertilizer in your inventory to fertilize terrain with a hoe."
+
+resourceSawBlade,Saw Blade
+resourceSawBladeDesc,A crucial compenent for constructing a sawmill.
+
+dewCollectorEmpty,{0} Open {1} ([DECEA3]Empty[-])
+dewCollectorHasDirtyWater,{0} Open {1} ([228B22]Collect[-])
+dewCollectorHasWater,{0} Open {1} ([228B22]Collect[-])
+
+meleeToolFarmT2IronHoe,Garden Hoe
+meleeToolFarmT2IronHoeDesc,"Required for fertilizing terrain, and farmplots found in the world.\n\nNot required for crafted farm plots.\n\nRequires you to have at least 10 fertilizer in your inventory.\nUse your secondary action[FFB400][action:local:Secondary][-] to hoe the ground and use the fertilizer."
+meleeToolFarmT2IronHoeSchematic,Garden Hoe Schematic
+
+modGunBrassCatcher,Brass Catcher
+modGunBrassCatcherDesc,"Will return 50% of bullet casings when installed in 9mm, 7.62mm, & .44 calibre weapons, but makes them a little slower to reload."
+
+modGunSoundSuppressorSilencer,Suppressor Mod
+modGunSoundSuppressorSilencerSchematic,Suppressor Mod Schematic
+perkUrbanCombatCompleteDesc,Suppressors have no damage penalty.
+perkUrbanCombatCompleteLongDesc,The Silencer: Firearms with suppressors have no damage penalty.
+
+barbedWireSpindleVariantHelper
+barbedWireSpindleVariantHelperBlock
+toolAmmoPress,Ammunition Press
+toolAmmoPressDesc,This tool is required to assemble and dismantle firearm rounds at a workbench.
+playerSawmill,Sawmill
+playerTableSaw,Tablesaw
+playerWoodBurningStove,Wood Burning Stove
+
+resourceBranch,Branch
+resourceBranchDesc,"A small stout branch. Used for stone tools and arrows.\n\nCan also be used as fuel."
+
+resourceWoodDesc,"A piece of wood. Great for building tools and constructing wood frames for building.\n\nPlace logs like a block and chop with an axe, or use a sawmill for a higher yield."
+resourceWoodScraps,Wood scraps
+resourceWoodScrapsDesc,"Small fragments of wood.\n\nCan be used for fuel and basic building blocks, but not much else."
+resourceCropLavender,Lavender Flower
+resourceCropLavenderDesc,"Lavender has medicinal properties. Use it to make lavender oil in a campfire.\n\nLavender oil can help treat your despair"
+drugLavenderOil,Lavender Oil
+drugLavenderOilDesc,"A few drops of lavender on a cloth fragment can provide a moment of relaxation when you’re on the go.\n\nApply it like a bandage - treats 3% Despair."
+plantedLavender1,Lavender (Seed)
+plantedLavender2,Lavender (Growing)
+plantedLavender3HarvestPlayer,Lavender Flower
+plantedLavender3HarvestDesc,Lavender Flower
+antivenom,"Anti-venom"
+antivenomDesc,"Use this to instantly remove the effects of venom.\n\nCan be crafted at the campfire, in a cooking pot, or use a beaker to save on ingredients."
+venomDesc,"Key ingredient for antivenom."
+
+tableSawDesc,"A workstation for turning logs into wood planks more quickly and effeciently."
+tablesawTip,"The Tablesaw unlocks the ability to turn wood logs into wood more quickly & effeciently. Inside your land claim area all workstations can be picked up by holding ''E'' and selecting ''TAKE'' from the radial menu."
+tablesawTip_title,Tablesaw
+workstationsT1-1,Tier 1: Beehive & Chicken Coop
+workstationsT2-1,Tier 2: Workbench & Sawmill
+
+ttItemNeedsRepair,"This item is knackered and needs fixing"
+ttRepairBeforePickup,"It's knackered and needs repairing before picking it up."
+
+xuiRemoveModsFirst,Remove installed mods before combining.
+
+woodLogPillar100Desc,Wood logs are good for crude walls or palisades or as fuel for campfires.\n\nPlace them as a block and chop them with an axe for wood planks.
+
+challengeGathererWood,Gather Wood Logs
+challengeGathererWoodShort,Gather some Wood Logs.
+challengeGathererWoodDesc,[DECEA3]Wood Logs[-] can be gathered with an [DECEA3]Axe[-] by cutting down [DECEA3]Trees[-].\n\nGather some [DECEA3]Wood Logs[-] with an [DECEA3]Axe[DECEA3].
+challengePlantLavender,Plant Lavender
+challengePlantLavenderDesc,"To make a [DECEA3]lavender seed[-], [DECEA3]Gather[-] some [DECEA3]lavender flowers[-] in the [DECEA3]Forest biome[-], click [DECEA3]Recipes[-], then select [DECEA3]Craft[-].\n\nWhen the seed is crafted, equip it on your [DECEA3]toolbelt[-], and place it in a [DECEA3]Farm Plot[-], or on some [DECEA3]fertilized terrain[-]."
+challengePlantLavenderShort,Plant a Lavender seed.
+
+challengeCraftDewCollector,Craft Dew Collector
+challengeCraftDewCollectorDesc,"Water determines how fast your health and stamina bars recover. With empty hands, you can drink from any water source by pressing ""E"". Drinking water that has not been boiled has the risk of contracting dysentery. At a campfire, you can boil jars of water with a cooking pot. Your water level can be found in the character stats menu. An advanced method of collecting water is by crafting a Dew Collector. Water will affect regen speed when it is below 50% and 25%. All drink items will provide a small bonus to stamina regen while the 'drink' buff is visible."
+challengeCraftDewCollectorHint1,[FFB400]Craft a [-][00FF00]Dew Collector[-][FFB400].[-]
+challengeCraftDewCollectorShort,Craft a Dew Collector to start producing water.
+challengePlacePassiveCollector,Place Chicken Coop
+challengePlacePassiveCollectorDesc,"A [DECEA3]Chicken Coop[-] is a [DECEA3]Workstation[-] that allows you to passively obtain [DECEA3]Eggs[-] over time. Catch a [DECEA3]Chicken[-] and place it in the coop. Can be upgraded with a [DECEA3]Heatlamp[-] and a [DECEA3]Nesting[-] to provide more [DECEA3]Eggs[-] more efficiently."
+challengePlacePassiveCollectorShort,Place a Chicken Coop to collect eggs.
+
+quest_WhiteRiverCitizen1_description,"This mod will challenge you in ways that the vanilla game doesn't,\nwhile keeping the familiar vanilla look & feel.\n\n[00FF00]Important Points![-]\nZombies only take MAXIMUM damage with [FFC800]headshots[-],[FFC800] fire[-], & [FFC800]explosives[-]!\nZombies[FF4500] DO NOT [-]bleed!\n\nLoot is reduced, and traders have no quests.\n\nHave fun!!"
+quest_WhiteRiverCitizen1,"Welcome to [FFC800]28 ALPHAS LATER[-]!"
+quest_WhiteRiverCitizen1_description_title,28 Alphas Later
+
+questStartup_offer,"28 Alphas Later"
+questStartup_desc,"The idea behind this mod is to slow progression, make traders less powerful, and generally extend the time for a playthrough, while keeping the vanilla look and feel.\n\n[ffd700]GENERAL GAMEPLAY[-]\n\nPlayer starts with a new debuff - Despair.\n\nAs your despair increases, your abilities will be negatively affected. If despair reaches 100%, you'll be seconds from death.\nConversely, if you can manage your despair well, you'll receive buffs for remaining positive.\n\nThe despair indicator on the HUD will fill as your despair grows and will change colour to indicate the level of your despair.\n\nIf you're able to manage your despair and have a more positive outlook, the icon on the HUD will change, as will the fill colour to indicate your levels of positivity.\n\nDespair can also be checked from the player information screen.\n\nHeadshots! Zombies take maximum damage from headshots, however, they do take small damage if you miss the head.\n\nZombies DON'T bleed. Nothing undead takes bleed damage.\n\nThere are more zombies in the world. Biomes are gamestaged, which means zombies get tougher and their numbers increase as you level up.\n\nNights are dangerous, downtown is much more dangerous.\n\nTraders no longer offer quests, but they can be traded with.\n\nAll blades base damage rebalanced to adjust for damage over time lost from enemies not bleeding.\n "
+28AlphasLaterQuest1_title,"Despair"
+28AlphasLaterQuest1,"Despair is dynamically affected by various different factors, including:\n\n1. Darkness. Too dark, and your Despair will increase dramatically. Torches, helmet lights and flashlights will mitigate this. Use these in conjunction with a campfire & bedroll for the best effect.\n\n2. Temperature. If you’re freezing or sweltering, your Despair will also increase dramatically. Find shelter!\n\n3. Environment: Varying degrees of wetness will change how Despair affects you, as will your shelter. If you’re warm, dry, sheltered, well lit or resting on a bed or bedroll, AND near an operating campfire, forge or chem station you can effectively treat Despair.\n\n4. Hunger and thirst affect how quickly your despair increases. Starvation/dehydration will drastically increase the rate at which you become affected by despair.\n\n5. Injuries will affect how quickly your despair increases, so treat them as quickly as you can!\n\n6. There is medication in trader stock and rare medical loot to treat your despair; St. John's Wort treats 10% and Lithium treats 25%.\n\n7. There is also lavender growing wild, which can be collected to make your own lavender seeds, and is also used to make Lavender Oil in a cooking pot at a campfire. Treats 3% Despair."
+28AlphasLaterQuest2_title,"Despair (cont.)"
+28AlphasLaterQuest2,"8. All food has a positive effect. The better the food, the more effective the treatment.\n\n9. Killing zombies and animals will reduce your overall despair. Conversely, getting hit by enemies will increase it.\n\n10. Being in close proximity to zombies increases your Despair. The tougher the zombie, the worse the effect. The effect is compounded, so the more zombies there are, the worse it'll be.\n\n11. Player wellness. Your maximum health will also slow down the effects of despair. Every 10 additional health slows down the rate at which Despair affects you.\n\n12. The morale booster from the drone will slow down the rate at which despair affects you.\n\n13. The trader has an effect. Being close to a trader will slow down and/or reduce your Despair.\n\n14. The perk From the Shadows also has an effect on the way Despair affects you at NIGHT. The more points in the perk, the less Despair affects you at night.\n "
+28AlphasLaterQuest3_title,Enemies
+28AlphasLaterQuest3,"Bears and wolves are back in the forest.\n\nHazmat zombies are now immune to burning.\n\nNew Bunker Buster zombie. Only appears during bloodmoon(s), and can appear from the very first Bloodmoon. You’ll want to take it out quickly … think of it as a light demolition zombie.\n\nDemolition zombies appear at a much earlier gamestage.\n\nFrozen zombie variant. Slightly tougher, slightly slower, slightly more XP, and take slightly more damage than their Normal counterparts. Found in the snow biome.\n\nRotting zombie variant. They have lower HP, lower XP reward, and they take more damage. Found in the forest biome.\n\nCowboy zombie variant. Similar to normal zombies, these enemies are exclusive to the desert biome, identifiable by their cowboy hats.\n\nAll fatties (Big Mama, tourist etc.) explode when their health gets low, and are filled with a substance that’s irresistible to all zombies. If you are within range when they explode, they’ll cover you in this stuff - and attract other zombies. Cop and vulture vomit also has this effect.\n"
+28AlphasLaterQuest4_title,Progression
+28AlphasLaterQuest4,"All tool and weapon skills are now governed by action skills. 50% of your skills come from the action skill, the other 50% from perk points."
+28AlphasLaterQuest5_title,Blocks & Workstations
+28AlphasLaterQuest5,"Wrench tablesaws for a sawblade - a required component for the sawmill.\n\nThe workbench now has slots for a wrench, hammer, ratchet, impact driver, and nail gun. Some items require these tools to craft, and some have been moved from inventory crafting to workbench crafting.\n\nThe cement mixer now requires gasoline to work.\n\nThe ammo press is required to craft ammunition in a workbench.\n\nThe sawmill. Unlocked at the same level as the forge, use this workbench to craft wood logs into wood planks. Wrench a tablesaw for a sawblade, or purchase a sawblade from a trader.\n\nYou can combine duplicate items in the workbench to either repair or upgrade them, depending on their quality and durabilty. Items can never be combined to quality 6."
+28AlphasLaterQuest6_title,Buffs & Debuffs
+28AlphasLaterQuest6,"Snakes and Spider zombies will envenom you when they attack. Kill snakes to extract their venom, which can be used to make antivenom. Antivenom crafting can appear in loot and trader stock.\n\nThe Wasteland biome is very, VERY dangerous.\n\nDespair medication (Lavender, St. John’s Wort and Lithium) can be found in medical loot, and in trader stock. Lavender oil can be crafted from lavender flowers and used to treat despair."
+28AlphasLaterQuest7_title,Food & Farming
+28AlphasLaterQuest7,"All canned food found in loot, vending machines, and trader stock is uncooked. Cook it to make it safe to eat, or eat it and run the risk of food poisoning.\n\nUncooked cans don't replenish health, just food and water.\n\nWellness. Wellness is attached to your max health & stamina, and better foods or drinks will increase your wellness more. To keep increasing wellness, wait for a while between eating or drinking.\n\nFarming the terrain. You need a hoe to till the ground to plant seeds. Use the hoe with fertiliser in your inventory to upgrade the tilled ground. Fertilized terrain yields the same as a farmplot.\n\nFarm Plots require fertiliser and nails to craft, and are the same fertile level as fertilised ground.\n\nFertiliser is craftable in the cement mixer and chem station, and can be purchased from traders.\n\nAll plants can be picked up - press 'E' by default to pick them up.\n\nNew plant - lavender. Purple flower found growing in the Forest biome and in some POIs. Seeds are crafted from lavender flowers, no unlock required. Lavender flowers can be found in loot and trader stock, and Lavender seeds in trader stock."
+28AlphasLaterQuest8_title,Resources
+28AlphasLaterQuest8,"Trees no longer give wood, they give wood logs, scraps, and branches. Logs can be placed and then chopped with an axe for wood, or use the table saw to do it quicker and better.\n\nPrimitive weapons and ammo are now made from wood scraps, branches, plant fibres, and/or stone.\n\nAll loose ammo can also be boxed, once the correct perk book has been read.\n"
+28AlphasLaterQuest9_title,Vehicles
+28AlphasLaterQuest9,"Two new vehicles, the Ruin Runner, and The Hornet.\n\nThe Ruin Runner is a dirt bike, with similar speed to the motorcycle, but the inventory capacity of the minibike.\n\nThe Hornet is an off-road dune buggy. As fast as a 4x4, but with the inventory capacity of a motorcycle.\n\nVehicles CANNOT be picked up once placed, so be careful where you put them!"
+28AlphasLaterQuest10_title,"Weather"
+28AlphasLaterQuest10,"Weather effects are back. Temperature and wetness are effects that you'll need to manage effectively. Use insulated liners for when you're cold, and cooling mesh for when you're hot.\n\nNOTE: If you have biome progression enabled, you won't see any 'legacy' weather effects.\nDisable biome progression in your main menu settings to play with legacy weather."
+
+statSmell,Smell count
+buffSmellTooltip,Nearby zombies are attracted to the smell of the food you're carrying.
+buffSmellName,"Alerted"
+buffSmellDesc,"The food you are carrying is attracting unwanted attention.\n\nAll nearby zombies are attracted to, and enraged by, the smell of the food - so put it away or eat it!"
+buffSmellJournalTip,"Carrying varying amounts of certain foods will attract and enrage nearby zombies.\n\nThe longer you have the food in your inventory, the more zombies will be attracted to it, and enraged by it.\n\nThe better the food, the less you can carry, so try to keep food in storage."
+buffSmellJournalTip_title,Smell
+
+statWellness,"Wellness Added"
+
+tameRabbit,Rabbit
+tameRabbitDesc,Used in recipes at a campfire or wood burning stove.
+tameChicken,Chicken
+tameChickenDesc,"A chicken. Will produce up to 20 eggs when place in a chicken coop.\n\nCan also be used in recipes at a campfire or wood burning stove."
+chickenCoop,Chicken coop
+chickenCoopDesc,Produces eggs. Needs a chicken.\n\nChickens need replacing periodically.\nChickens can be used in other recipes.
+beehive,Beehive
+beehiveDesc,"Produces honey, requires a bee."
+honeyBeeDesc,A wild honey bee. Will produce up to 10 honey when placed in a bee hive.
+honeyBee,Bee
+
+toolHeatLamp,Heat Lamp
+toolHeatLampDesc,Speeds up production of eggs.
+toolNest,Nesting
+toolNestDesc,Doubles the number of eggs produced.
+toolbeeSmoker,Bee Smoker
+toolbeeSmokerDesc,Speeds up production of honey.
+toolBeeFrame,Honeycomb Frame
+toolBeeFrameDesc,Doubles the amount of honey produced.
+
+vehicleDuneBuggy,The Hornet
+vehicleDuneBuggyChassis,The Hornet Chassis
+vehicleDuneBuggyAccessories,The Hornet Accessories
+vehicleDirtBike,The Ruin Runner
+vehicleDirtBikeChassis,The Ruin Runner Chassis
+vehicleDirtBikeHandlebars,The Ruin Runner Handlebars
+vehiclesT2,"Tier 2: Minibike, Dirt Bike, Oil, & Gas"
+vehiclesT3,"Tier 3: Motorcycle, Dune Buggy & Stacks of Gas Cans"
+vehicleDirtBikePlaceable,The Ruin Runner
+vehicleDuneBuggyPlaceable,The Hornet
+
+zombieArlene,Putrid Girl
+zombieArleneCowboy,Putrid Cowgirl
+zombieArleneFeral,Feral Putrid Girl
+zombieArleneFrozen,Frozen Putrid Girl
+zombieArleneMutated,Mutated Putrid Girl
+zombieArleneRadiated,Radiated Putrid Girl
+zombieArleneRotten,Rotting Putrid Girl
+zombieArleneWeak,Weak Putrid Girl
+zombieBikerFrozen,Frozen Biker
+zombieBikerMutated,Mutated Biker
+zombieBikerRotten,Rotting Biker
+zombieBikerWeak,Weakened Biker
+zombieBoe,Infected Survivor
+zombieBoeCowboy,Infected Cowboy
+zombieBoeFeral,Feral Infected Survivor
+zombieBoeFrozen,Frozen Infected Survivor
+zombieBoeMutated,Mutated Infected Survivor
+zombieBoeRotten,Rotting Infected Survivor
+zombieBoeWeak,Weakened Infected Survivor
+zombieBoeRadiated,Radiated Infected Survivor
+zombieBowlerRotten,Rotting Bowler
+zombieBowlerWeak,Weakened Bowler
+zombieBurnt,Burn Victim
+zombieBurntMutated,Mutated Burn Victim
+zombieBurntRotten,Rotting Burn Victim
+zombieBurntRadiated,Radiated Burn Victim
+zombieBurntFeral,Feral Burn Victim
+zombieBurntWeak,Weakened Burn Victim
+zombieBusinessManCowboy,Cowboy Businessman
+zombieBusinessManFrozen,Frozen Businessman
+zombieBusinessManMutated,Mutated Businessman
+zombieBusinessManRotten,Rotting Businessman
+zombieBusinessManWeak,Weakened Businessman
+zombieDarlene,Decayed Mother
+zombieDarleneCowboy,Decayed Cowgirl
+zombieDarleneFeral,Feral Mother
+zombieDarleneFrozen,Frozen Mother
+zombieDarleneMutated,Mutated Mother
+zombieDarleneRotten,Rotting Mother
+zombieDarleneRadiated,Radiated Mother
+zombieDarleneWeak,Weakened Mother
+zombieFatCopRotten,Rotting Cop
+zombieFatCopWeak,Weakened Cop
+zombieFatCop,Infected Cop
+zombieFatCopFeral,Feral Cop
+zombieFatCopMutated,Mutated Cop
+zombieFatCopRadiated,Radiated Cop
+zombieFatHawaiian,Disturbed Tourist
+zombieFatHawaiianFrozen,Frozen Tourist
+zombieFatHawaiianMutated,Mutated Tourist
+zombieFatHawaiianRotten,Rotting Tourist
+zombieFatHawaiianWeak,Weakened Tourist
+zombieFemaleFat,Hungry Zombie
+zombieFemaleFatCowboy,Hungry Cowgirl
+zombieFemaleFatFeral,Feral Hungry Zombie
+zombieFemaleFatFrozen,Frozen Hungry Zombie
+zombieFemaleFatMutated,Mutated Hungry Zombie
+zombieFemaleFatRotten,Rotting Hungry Zombie
+zombieFemaleFatRadiated,Radiated Hungry Zombie
+zombieFemaleFatWeak,Weakened Hungry Zombie
+zombieInmateFrozen,Frozen Janitor
+zombieInmateMutated,Mutated Janitor
+zombieInmateRotten,Rotting Janitor
+zombieInmateWeak,Weakened Janitor
+zombieJanitorFrozen,Frozen Janitor
+zombieJanitorMutated,Mutated Janitor
+zombieJanitorRotten,Rotting Janitor
+zombieJanitorWeak,Weakened Janitor
+zombieJoeCowboy,Festering Cowboy
+zombieJoe,Festering Cadaver
+zombieJoeFrozen,Frozen Cadaver
+zombieJoeMutated,Mutated Cadaver
+zombieJoeRotten,Rotting Cadaver
+zombieJoeRadiated,Radiated Cadaver
+zombieJoeFeral,Feral Cadaver
+zombieJoeWeak,Weakened Cadaver
+zombieLabFrozen,Frozen Labworker
+zombieLabMutated,Mutated Labworker
+zombieLabRotten,Rotting Labworker
+zombieLabWeak,Weakened Labworker
+zombieLumberjackMutated,Mutated Lumberjack
+zombieLumberjackRotten,Rotting Lumberjack
+zombieLumberjackWeak,Weakened Lumberjack
+zombieMaleFeralHazmatLootBag,Dropped Hazmat Loot
+zombieMaleHazmatFrozen,Frozen Hazmat
+zombieMaleHazmatLootBag,Dropped Hazmat Loot
+zombieMaleHazmatMutated,Mutated Hazmat
+zombieMaleHazmatRotten,Rotting Hazmat
+zombieMaleHazmatWeak,Weakened Hazmat
+zombieMaleMutatedHazmatLootBag,Dropped Hazmat Loot
+zombieMarlene,Departed Woman
+zombieMarleneCowboy,Departed Cowgirl
+zombieMarleneFrozen,Frozen Departed Woman
+zombieMarleneMutated,Mutated Departed Woman
+zombieMarleneRotten,Rotting Departed Woman
+zombieMarleneRadiated,Radiated Departed Woman
+zombieMarleneFeral,Feral Departed Woman
+zombieMarleneWeak,Weakened Departed Woman
+zombieMoe,Bloated Walker
+zombieMoeFrozen,Frozen Walker
+zombieMoeCowboy,Cowboy Walker
+zombieMoeMutated,Mutated Walker
+zombieMoeRotten,Rotting  Walker
+zombieMoeRadiated,Radiated Walker
+zombieMoeFeral,Feral Walker
+zombieMoeWeak,Weakened Walker
+zombieMutatedDemolition,Nuclear Demolition
+zombieMutatedMutated,Mutated Hulk
+zombieNurseFrozen,Frozen Nurse
+zombieNurseMutated,Mutated Nurse
+zombieNurseRotten,Rotting Nurse
+zombieNurseWeak,Weakened Nurse
+zombiePartyGirlCowboy,Party Cowgirl
+zombiePartyGirlFrozen,Frozen Party Girl
+zombiePartyGirlMutated,Mutated Party Girl
+zombiePartyGirlRotten,Rotting Party Girl
+zombiePartyGirlWeak,Weakened Party Girl
+zombieScreamerMutated,Mutated Screamer
+zombieSkateboarderFrozen,Frozen Thug
+zombieSkateboarderMutated,Mutated Thug
+zombieSkateboarderRotten,Rotting Thug
+zombieSkateboarderRadiated,Radiated Thug
+zombieSkateboarderFeral,Feral Thug
+zombieSkateboarder,Thug
+zombieSkateboarderWeak,Weakened Thug
+zombieSoldierFrozen,Frozen Soldier
+zombieSoldierMutated,Mutated Soldier
+zombieSoldierRotten,Rotting Soldier
+zombieSoldierWeak,Weakened Soldier
+zombieSpiderFrozen,Frozen Spider
+zombieSpiderMutated,Mutated Spider
+zombieSpiderRotten,Rotting Spider
+zombieSpiderWeak,Weakened Spider
+zombieSteve,Reanimated Corpse
+zombieSteveCowboy,Reanimated Cowboy
+zombieSteveFeral,Feral Reanimated Corpse
+zombieSteveRadiated,Radiated Reanimated Corpse
+zombieSteveWeak,Weakened Reanimated Corpse
+zombieSteveCrawlerFrozen,Frozen Crawler
+zombieSteveCrawlerMutated,Mutated Crawler
+zombieSteveCrawlerRotten,Rotting Crawler
+zombieSteveCrawlerRadiated,Radiated Crawler
+zombieSteveCrawlerFeral,Feral Crawler
+zombieSteveCrawler,Crawler
+zombieSteveCrawlerWeak,Weakened Crawler
+zombieSteveFrozen,Frozen Reanimated Corpse
+zombieSteveMutated,Mutated Reanimated Corpse
+zombieSteveRotten,Rotting Reanimated Corpse
+zombieTomClarkCowboy,Cowboy Tom Clark
+zombieTomClarkFrozen,Frozen Tom Clark
+zombieTomClarkMutated,Mutated Tom Clark
+zombieTomClarkRotten,Rotting Tom Clark
+zombieTomClarkWeak,Weakened Tom Clark
+zombieUtilityWorkerFrozen,Frozen Utility Worker
+zombieUtilityWorkerMutated,Mutated Utility Worker
+zombieUtilityWorkerRotten,Rotting Utility Worker
+zombieUtilityWorkerWeak,Weakened Utility Worker
+zombieWightMutated,Mutated Wight
+zombieWightFeralCowboy,Cowboy Wight
+zombieYo,Walking Carcass
+zombieYoCowboy,Cowboy Carcass
+zombieYoFeral,Feral Carcass
+zombieYoRadiated,Radiated Carcass
+zombieYoFrozen,Frozen Carcass
+zombieYoMutated,Mutated Carcass
+zombieYoRotten,Rotting Carcass
+zombieYoWeak,Weakened Carcass
+zombieBunkerBuster,Bunker Buster
+npcTraderRed,Trader Red
+npcTraderHells,Trader Hells
+npcTraderBooks,Trader Nancy
+zombieHellsHungryMutant,Hungry Mutant
+zombieHellsHumanExperiment,Human Experiment
+zombieHellsParasite,Parasitic Mutant
+zombieHellsGiantMutant,Giant Mutant
+zombieHellsBuffedMutant,Buffed Mutant
+zombieHellsBlindMutant,Blind Hunter
+zombieHellsHeavyDemon,Nyaphim
+zombieHellsMutant4,Mutant Neomorph
+zombieHellsDoomDemon,Nyaphim Exo
+zombieHellsMutant1,Mutant Amorph
+zombieHellsMutantTentacles,Mutant Hypermorph
+zombieHellsMutantHeadHunter,Mutant Hypomorph
+zombieHellsMutantBoomer,Mutated Boomer
+zombieHellsMutantReaper,Mutant Reaper
+zombieHellsWendigo1,Lupine Mutant
+zombieHellsWendigo2,Canine Mutant
+zombieGirl1,Polly
+zombieGirl2,Holly
+zombieGirl3,Molly
+zombieGuy1,Barry
+zombieGuy2,Harry
+zombieGuy3,Larry
+animalMutantBug,Mutant Bug
+animalCockroach,Mutated Cockroach
+animalWildChicken,Chicken
+trader_red,Trader Red
+trader_hells,Trader Hells
+trader_books,Trader Nancy

@@ -1,0 +1,16 @@
+<HellsJanitor>
+	<!-- *** add new lavender block to main biome -->
+	
+	<insertafter xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome/decorations/decoration[starts-with (@blockname,'planted') and not (contains(@blockname,'Snowberry'))]">
+	<decoration type="block" blockname="forestFlower" prob=".003" rotatemax="7"/>
+	</insertafter>	
+	
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedChrysanthemum3Harvest']/@blockname">plantedChrysanthemumHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedGoldenrod3Harvest']/@blockname">plantedGoldenrodHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedCotton3Harvest']/@blockname">plantedCottonHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@blockname='plantedChrysanthemum3Harvest']/@blockname">plantedChrysanthemumHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@blockname='plantedCotton3Harvest']/@blockname">plantedCottonHarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedYucca3Harvest']/@blockname">plantedYucca3HarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedAloe3Harvest']/@blockname">plantedAloe3HarvestBiome</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='plantedBlueberry3Harvest']/@blockname">plantedBlueberry3HarvestBiome</set>
+</HellsJanitor>

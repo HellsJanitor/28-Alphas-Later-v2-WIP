@@ -1,0 +1,141 @@
+<HellsJanitor>
+	<!-- *** change Fortitude mastery to account for wellness -->
+	<remove xpath="/progression/perks/perk[@name='perkFortitudeMastery']/effect_group/passive_effect[@name='HealthMax']"/>
+	
+	<insertafter xpath="/progression/perks/perk[@name='perkFortitudeMastery']/effect_group[1]">
+		<effect_group>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="wellness" operation="add" value="50">
+				<requirement name="ProgressionLevel" progression_name="perkFortitudeMastery" operation="EQ" value="4"/>
+			</triggered_effect>
+		</effect_group>
+		
+		<effect_group>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="wellness" operation="add" value="50">
+				<requirement name="ProgressionLevel" progression_name="perkFortitudeMastery" operation="EQ" value="5"/>
+			</triggered_effect>
+		</effect_group>
+	</insertafter>
+	
+	<insertafter xpath="/progression/perks/perk[@name='perkTheHuntsman']">
+		<!-- *** WELL_INSULATED -->
+		<perk name="perkWellInsulated" max_level="5" parent="skillFortitudeSurvival" name_key="perkWellInsulatedName" desc_key="perkWellInsulatedDesc" icon="ui_game_symbol_temperature">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="3" desc_key="reqFortitudeLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="7" desc_key="reqFortitudeLevel07"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="HypothermalResist" operation="base_add" level="1,2,3,4,5" value="5,10,15,20,25"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" level="1,2,3,4,5" value="5,10,15,20,25"/>
+				<!-- T3 effect is in buffElementHot/buffElementCold -->
+
+				<effect_description level="1" desc_key="perkWellInsulatedRank1Desc" long_desc_key="perkWellInsulatedRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkWellInsulatedRank2Desc" long_desc_key="perkWellInsulatedRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkWellInsulatedRank3Desc" long_desc_key="perkWellInsulatedRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkWellInsulatedRank3Desc" long_desc_key="perkWellInsulatedRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkWellInsulatedRank3Desc" long_desc_key="perkWellInsulatedRank5LongDesc"/>
+			</effect_group>
+
+			<effect_group>
+				<!-- Increase the chance to find Fireman's Almanac books until each book is read -->
+				<passive_effect name="LootProb" operation="perc_add" level="1,3" value="2,10" tags="firemansProb">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacComplete" operation="LT" value="1"/>
+				</passive_effect>
+
+				<!-- When all Fireman's Almanac books have been read, set the probability bonus of finding them to 0 -->
+				<passive_effect name="LootProb" operation="perc_add" level="1,3" value="1,1" tags="firemansProb">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacComplete" operation="Equals" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</perk>
+	</insertafter>
+	
+	<!-- *** crafting unlocks for new vehicles -->
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']">
+		<display_entry icon="vehicleBicyclePlaceable" name_key="vehiclesT1" has_quality="false" unlock_level="5">
+			<unlock_entry item="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels" unlock_tier="1"/>
+		</display_entry>
+		
+		<display_entry icon="vehicleMinibikePlaceable,vehicleDirtBikePlaceable" name_key="vehiclesT2" has_quality="false" unlock_level="20,30">
+			<unlock_entry item="vehicleMinibikeChassis,vehicleMinibikeHandlebars,resourceOil,ammoGasCan,vehicleWheels" unlock_tier="1"/>
+			<unlock_entry item="vehicleDirtBikeChassis,vehicleDirtBikeHandlebars" unlock_tier="2"/>
+		</display_entry>
+		
+		<display_entry icon="vehicleMotorcyclePlaceable,vehicleDuneBuggyPlaceable" name_key="vehiclesT3" has_quality="false" unlock_level="45,55">
+			<unlock_entry item="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle" unlock_tier="1"/>
+			<unlock_entry item="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories" unlock_tier="2"/>
+		</display_entry>
+		
+		<display_entry icon="vehicleTruck4x4Placeable" name_key="vehiclesT4" has_quality="false" unlock_level="70">
+			<unlock_entry item="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories" unlock_tier="1"/>
+		</display_entry>
+		
+		<display_entry icon="vehicleGyrocopterPlaceable" name_key="vehiclesT5" has_quality="false" unlock_level="100">
+			<unlock_entry item="vehicleGyroCopterChassis,vehicleGyroCopterAccessories" unlock_tier="1"/>
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,resourceOil,ammoGasCan,MinibikeBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="vehicleDirtBikeChassis,vehicleDirtBikeHandlebars,RuinRipperBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle,MotorcycleBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="vehicleDuneBuggyChassis,vehicleDuneBuggyAccessories,vehicleDuneBuggyBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories,4x4Bundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories,GyroBundle"/>
+		</effect_group>
+	</set>
+	
+	<!-- *** new workstation/tool recipe unlocks -->
+	<!-- <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@unlock_level='2,5']/@icon">,toolWaterDistillery</append> -->
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@unlock_level='10,15,20,25']/@icon">workbench,playerSawmill,resourceLockPick,toolBellows,toolAnvil</set>
+	<insertafter xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[@item='workbench']">
+		<unlock_entry item="playerSawmill" unlock_tier="1"/>
+	</insertafter>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@level='10,100']/@tags">,playerSawmill</append>
+	
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@icon='cntDewCollector,forge']/@icon">chickenCoop,beehive</set>
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[@item='cntDewCollector']/@item">chickenCoop,beehive</set>
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@level='2,100']/@tags">chickenCoop,beehive</set>
+	
+	<!-- *** solar bank unlocks -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@icon='batterybank']/unlock_entry/@item">,solarbank</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@level='55,100']/@tags">,solarbank</append>
+	
+	<!-- *** Better Barter & Daring Adventurer removed from skill tree - now a "passive" unlock -->
+	<remove xpath="//perk[@name='perkBetterBarter']"/>
+	<remove xpath="//perk[@name='perkDaringAdventurer']"/>
+	
+	<!-- *** new 'combined' Better Barter & Daring Adventurer -->
+	<insertafter xpath="/progression/perks/perk[@name='perkFlurryOfIntellect']">
+		<perk name="perkBetterBarter" parent="skillIntellectInfluence" name_key="perkBetterBarterName" desc_key="perkBetterBarterDesc" icon="ui_game_symbol_barter">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="1" desc_key="reqIntellectLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="3" desc_key="reqIntellectLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel07"/></level_requirements>
+			<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="TraderStage" operation="base_add" level="1,5" value="10,50"/>
+				<passive_effect name="BarteringBuying" operation="base_add" level="1,2,3,4,5" value=".05,.1,.15,.2,.25"/>
+				<passive_effect name="BarteringSelling" operation="base_add" level="1,2,3,4,5" value=".05,.1,.15,.2,.25"/>
+
+				<effect_description level="1" desc_key="perkBetterBarterRank1Desc" long_desc_key="perkBetterBarterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkBetterBarterRank2Desc" long_desc_key="perkBetterBarterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkBetterBarterRank3Desc" long_desc_key="perkBetterBarterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkBetterBarterRank4Desc" long_desc_key="perkBetterBarterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkBetterBarterRank5Desc" long_desc_key="perkBetterBarterRank5LongDesc"/>
+			</effect_group>
+		</perk>
+	</insertafter>
+	
+	<!-- *** remove all Mastery perks -->
+	<remove xpath="/progression/perks/perk[contains (@name,'Mastery')]"/>
+	
+	<!-- *** changes bar brawling 5 so moonshine doesn't blur your vision -->
+	<set xpath="/progression/perks/book[@name='perkBarBrawling5AdrenalineHealing']">
+		<effect_group>
+			<!-- Drinking moonshine no longer blurs your vision. Effect is in buffDrunkGrandpasMoonshine. -->
+		</effect_group>
+	</set>
+</HellsJanitor>

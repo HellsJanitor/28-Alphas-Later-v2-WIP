@@ -1,0 +1,12 @@
+<HellsJanitor>
+	<set xpath="/windows/window[@name='menuBackground']/texture[@name='bgTexture']/@texture">@modfolder:UIAtlases/ItemIconAtlas/background.jpg</set>
+	<set xpath="/windows/window[@name='mainMenuLogo']/texture[@name='gameLogo']/@texture">@modfolder:UIAtlases/ItemIconAtlas/logo.png</set>
+	
+	<!-- <set xpath="/windows/window[@name='newContinueGame']/rect[@name='rightPanel']/rect/rect/rect/grid[@rows='13']">14</set> -->
+	<!-- <insertafter xpath="/windows/window[@name='newContinueGame']/rect[@name='rightPanel']/rect/rect/rect/grid/gameoption[@name='QuestProgressionDailyLimit']"> -->
+		<!-- <gameoption name="UNUSED_OptionsBloom" title="DisableTraderQuests" value_wrap="false" value_type="bool" values="0,1" value="0" display_names="Off,On" value_localization_prefix="" tooltip_key="Toggle to disable all trader quests in the game."/> -->
+	<!-- </insertafter> -->
+</HellsJanitor>
+
+
+
