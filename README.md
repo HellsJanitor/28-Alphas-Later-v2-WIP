@@ -51,12 +51,10 @@ Wetness now applies regardless of biome progression. If it rains, you get wet.
 
 Frozen zombies are now less blue, and more white.
 
-
 Localization tweaks and fixes, loot table revisions and other small fixes.
 
 
-> [!NOTE]
-> 04/09/25 mod version 2.3.0.1, changelog:
+### 04/09/25 mod version 2.3.0.1, changelog:
 
 Plague Spitters spawn frequency, movement speed, health and ranged attack cooldown all lowered
 
