@@ -172,7 +172,7 @@
 	</append>
 	
 	<!-- *** extend crops growing time -->
-	<set xpath="/blocks/block[@name='cropsGrowingMaster']//property[@name='PlantGrowing.GrowthRate']/@value">95</set>
+	<set xpath="/blocks/block[@name='cropsGrowingMaster']//property[@name='PlantGrowing.GrowthRate']/@value">126</set>
 	
 	<append xpath="/blocks">
 		<!-- *** Biome Variants -->
