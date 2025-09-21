@@ -12,7 +12,7 @@
 		<passive_effect name="HypothermalResist" operation="base_add" value="7">
 			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value="1"/>
 		</passive_effect>
-	</insertafter>	
+	</insertafter>
 	
 	<!-- *** armour thermal resistance -->
 	<insertafter xpath="/items/item[starts-with (@name,'armorPrimitive') and not (contains(@name,'Master'))]/effect_group/passive_effect[@name='DegradationPerUse']">
@@ -426,6 +426,113 @@
 	</append>
 	
 	<append xpath="/items">
+		<!-- *** Legendaries -->
+		<item name="meleeWpnBladeLegendaryPaintBrush">
+			<property name="Tags" value="knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
+			<property name="CustomIcon" value="meleeToolPaintTool"/>
+			<property name="DescriptionKey" value="meleeWpnBladeLegendaryPaintBrushDesc"/>
+			<property name="DisplayType" value="meleeKnife"/>
+			<property name="HoldType" value="36"/>
+			<property name="Meshfile" value="#@modfolder:Resources/LegendaryPaintbrush.unity3d?paintbrush.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<!-- <property name="TintColor" value="0,0,0"/> -->
+			<property name="ScrapTimeOverride" value="10.0"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="TraderStageTemplate" value="baseTier1"/><!-- meleeWpnBladeT1HuntingKnife -->
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="UnlockedBy" value="craftingBlades"/><!-- perkDeepCuts,meleeWpnBladeT1HuntingKnifeSchematic, -->
+			<property name="ShowQuality" value="true"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property name="RepairExpMultiplier" value="5.5"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="SoundPickup" value="knife_hunting_grab"/>
+			<property name="SoundPlace" value="knife_hunting_place"/>
+
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Piercing"/>
+				<property name="Sphere" value=".1"/>
+				<property name="Sound_start" value="knife_metal_swinglight"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+				<property name="ToolCategory.Butcher" value="0" param1="5"/>
+				<property name="UseGrazingHits" value="false"/>
+				<property name="GrazeStart" value=".25"/>
+				<property name="GrazeEnd" value=".35"/>
+				<property name="SwingDegrees" value="90"/>
+				<property name="SwingAngle" value="90"/>
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalstaborganic"/>
+				</property>
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+				<property name="HarvestLength" value="1.15"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Piercing"/>
+				<property name="Sphere" value=".1"/>
+				<property name="Sound_start" value="knife_metal_swingheavy"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+				<property name="ToolCategory.Butcher" value="0" param1="5"/>
+				<property name="UsePowerAttackAnimation" value="true"/>
+				<property name="UseGrazingHits" value="false"/>
+				<property name="GrazeStart" value=".2"/>
+				<property name="GrazeEnd" value=".3"/>
+				<property name="SwingDegrees" value="80"/>
+				<property name="SwingAngle" value="140"/>
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalstaborganic"/>
+				</property>
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+				<property name="HarvestLength" value="1.6"/>
+			</property>
+			<effect_group name="meleeWpnBladeT1HuntingKnife">
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="10.5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6" tags="perkDeepCuts"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkDeepCuts"/>
+				<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,2,3,3,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="12" tags="perkDeepCuts,knife"/><!-- meleeWpnBladeT1HuntingKnife -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkDeepCuts"/><!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/><!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="base_set" value="6.5" tags="perkDeepCuts"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkDeepCuts"/><!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/><!-- tier bonus -->
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".6" tags="organic"/>
+				<!-- <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/> affects organic block harvesting based on block.material.damage_category, not animal corpse harvesting -->
+				<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+				<!--<passive_effect name="BlockDamage" operation="perc_add" value="6" tags="blockButcher"/>-->
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="secondary"/>
+			</effect_group>
+			<effect_group name="sneak damage bonus">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<passive_effect name="DamageBonus" operation="base_add" value="4"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="4" tags="perkDeepCuts"/>
+				<display_value name="dEntityDamageSneak" value="4"/>
+			</effect_group>
+		</item>
+		
 		<!-- *** empty jar -->
 		<item name="drinkJarEmpty">
 			<property name="HoldType" value="3"/>
@@ -1566,122 +1673,122 @@
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="Stacknumber" value="10000"/>
 			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Research"/>			
+			<property name="Group" value="Research"/>
 		</item>
 		
 		<!-- <item name="researchPaperBlank"> -->
-			<!-- <property name="DescriptionKey" value="researchPaperBlankDesc"/> -->
-			<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-			<!-- <property name="Tags" value="csm"/> -->
-			<!-- <property name="CustomIcon" value="questMaster"/> -->
-			<!-- <property name="Stacknumber" value="10000"/> -->
-			<!-- <property name="SellableToTrader" value="false"/> -->
-			<!-- <property name="Group" value="Research"/> -->
-			<!-- <effect_group tiered="false"> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="1"/> -->
-			<!-- </effect_group> -->
+		<!-- <property name="DescriptionKey" value="researchPaperBlankDesc"/> -->
+		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
+		<!-- <property name="Tags" value="csm"/> -->
+		<!-- <property name="CustomIcon" value="questMaster"/> -->
+		<!-- <property name="Stacknumber" value="10000"/> -->
+		<!-- <property name="SellableToTrader" value="false"/> -->
+		<!-- <property name="Group" value="Research"/> -->
+		<!-- <effect_group tiered="false"> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="1"/> -->
+		<!-- </effect_group> -->
 			
-			<!-- <effect_group tiered="false"> -->
-				<!-- <requirement name="HasBuff" buff="buffNerdOutfit"/> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/> -->
-			<!-- </effect_group> -->
+		<!-- <effect_group tiered="false"> -->
+		<!-- <requirement name="HasBuff" buff="buffNerdOutfit"/> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/> -->
+		<!-- </effect_group> -->
 
-			<!-- <effect_group tiered="false"> -->
-				<!-- <requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/> -->
-				<!-- <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="add" value="1"/> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/> -->
-			<!-- </effect_group> -->
+		<!-- <effect_group tiered="false"> -->
+		<!-- <requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/> -->
+		<!-- <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="add" value="1"/> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/> -->
+		<!-- </effect_group> -->
 		<!-- </item> -->
 		
 		<!-- <item name="researchPaperBlank100"> -->
-			<!-- <property name="DescriptionKey" value="researchPaperBlank100Desc"/> -->
-			<!-- <property name="CreativeMode" value="Dev"/> -->
-			<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-			<!-- <property name="CustomIcon" value="questMaster"/> -->
-			<!-- <property name="CustomIconTint" value="CF7F29"/> -->
-			<!-- <property name="Stacknumber" value="1000"/> -->
-			<!-- <property name="SellableToTrader" value="false"/> -->
-			<!-- <property name="EconomicValue" value="0"/> -->
-			<!-- <property name="Group" value="Research"/> -->
-			<!-- <effect_group tiered="false"> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="100"/> -->
-			<!-- </effect_group> -->
+		<!-- <property name="DescriptionKey" value="researchPaperBlank100Desc"/> -->
+		<!-- <property name="CreativeMode" value="Dev"/> -->
+		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
+		<!-- <property name="CustomIcon" value="questMaster"/> -->
+		<!-- <property name="CustomIconTint" value="CF7F29"/> -->
+		<!-- <property name="Stacknumber" value="1000"/> -->
+		<!-- <property name="SellableToTrader" value="false"/> -->
+		<!-- <property name="EconomicValue" value="0"/> -->
+		<!-- <property name="Group" value="Research"/> -->
+		<!-- <effect_group tiered="false"> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="100"/> -->
+		<!-- </effect_group> -->
 		<!-- </item> -->
 		
 		<!-- <item name="researchPaperBlank500"> -->
-			<!-- <property name="DescriptionKey" value="researchPaperBlank500Desc"/> -->
-			<!-- <property name="CreativeMode" value="Dev"/> -->
-			<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-			<!-- <property name="CustomIcon" value="questMaster"/> -->
-			<!-- <property name="CustomIconTint" value="A2A41B"/> -->
-			<!-- <property name="Stacknumber" value="200"/> -->
-			<!-- <property name="SellableToTrader" value="false"/> -->
-			<!-- <property name="EconomicValue" value="0"/> -->
-			<!-- <property name="Group" value="Research"/> -->
-			<!-- <effect_group tiered="false"> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="500"/> -->
-			<!-- </effect_group> -->
+		<!-- <property name="DescriptionKey" value="researchPaperBlank500Desc"/> -->
+		<!-- <property name="CreativeMode" value="Dev"/> -->
+		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
+		<!-- <property name="CustomIcon" value="questMaster"/> -->
+		<!-- <property name="CustomIconTint" value="A2A41B"/> -->
+		<!-- <property name="Stacknumber" value="200"/> -->
+		<!-- <property name="SellableToTrader" value="false"/> -->
+		<!-- <property name="EconomicValue" value="0"/> -->
+		<!-- <property name="Group" value="Research"/> -->
+		<!-- <effect_group tiered="false"> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="500"/> -->
+		<!-- </effect_group> -->
 		<!-- </item> -->
 		
 		<!-- <item name="researchPaperBlank1000"> -->
-			<!-- <property name="DescriptionKey" value="researchPaperBlank1000Desc"/> -->
-			<!-- <property name="CreativeMode" value="Dev"/> -->
-			<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-			<!-- <property name="CustomIcon" value="questMaster"/> -->
-			<!-- <property name="CustomIconTint" value="42C234"/> -->
-			<!-- <property name="Stacknumber" value="100"/> -->
-			<!-- <property name="SellableToTrader" value="false"/> -->
-			<!-- <property name="EconomicValue" value="0"/> -->
-			<!-- <property name="Group" value="Research"/> -->
-			<!-- <effect_group tiered="false"> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="1000"/> -->
-			<!-- </effect_group> -->
+		<!-- <property name="DescriptionKey" value="researchPaperBlank1000Desc"/> -->
+		<!-- <property name="CreativeMode" value="Dev"/> -->
+		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
+		<!-- <property name="CustomIcon" value="questMaster"/> -->
+		<!-- <property name="CustomIconTint" value="42C234"/> -->
+		<!-- <property name="Stacknumber" value="100"/> -->
+		<!-- <property name="SellableToTrader" value="false"/> -->
+		<!-- <property name="EconomicValue" value="0"/> -->
+		<!-- <property name="Group" value="Research"/> -->
+		<!-- <effect_group tiered="false"> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="1000"/> -->
+		<!-- </effect_group> -->
 		<!-- </item> -->
 		
 		<!-- <item name="researchPaperBlank5000"> -->
-			<!-- <property name="DescriptionKey" value="researchPaperBlank5000Desc"/> -->
-			<!-- <property name="CreativeMode" value="Dev"/> -->
-			<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-			<!-- <property name="CustomIcon" value="questMaster"/> -->
-			<!-- <property name="CustomIconTint" value="315DCE"/> -->
-			<!-- <property name="Stacknumber" value="20"/> -->
-			<!-- <property name="SellableToTrader" value="false"/> -->
-			<!-- <property name="EconomicValue" value="0"/> -->
-			<!-- <property name="Group" value="Research"/> -->
-			<!-- <effect_group tiered="false"> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="5000"/> -->
-			<!-- </effect_group> -->
+		<!-- <property name="DescriptionKey" value="researchPaperBlank5000Desc"/> -->
+		<!-- <property name="CreativeMode" value="Dev"/> -->
+		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
+		<!-- <property name="CustomIcon" value="questMaster"/> -->
+		<!-- <property name="CustomIconTint" value="315DCE"/> -->
+		<!-- <property name="Stacknumber" value="20"/> -->
+		<!-- <property name="SellableToTrader" value="false"/> -->
+		<!-- <property name="EconomicValue" value="0"/> -->
+		<!-- <property name="Group" value="Research"/> -->
+		<!-- <effect_group tiered="false"> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="5000"/> -->
+		<!-- </effect_group> -->
 		<!-- </item> -->
 		
 		<!-- <item name="researchPaperBlank10000"> -->
-			<!-- <property name="DescriptionKey" value="researchPaperBlank10000Desc"/> -->
-			<!-- <property name="CreativeMode" value="Dev"/> -->
-			<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-			<!-- <property name="CustomIcon" value="questMaster"/> -->
-			<!-- <property name="CustomIconTint" value="A42ACC"/> -->
-			<!-- <property name="Stacknumber" value="10"/> -->
-			<!-- <property name="SellableToTrader" value="false"/> -->
-			<!-- <property name="EconomicValue" value="0"/> -->
-			<!-- <property name="Group" value="Research"/> -->
-			<!-- <effect_group tiered="false"> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="10000"/> -->
-			<!-- </effect_group> -->
+		<!-- <property name="DescriptionKey" value="researchPaperBlank10000Desc"/> -->
+		<!-- <property name="CreativeMode" value="Dev"/> -->
+		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
+		<!-- <property name="CustomIcon" value="questMaster"/> -->
+		<!-- <property name="CustomIconTint" value="A42ACC"/> -->
+		<!-- <property name="Stacknumber" value="10"/> -->
+		<!-- <property name="SellableToTrader" value="false"/> -->
+		<!-- <property name="EconomicValue" value="0"/> -->
+		<!-- <property name="Group" value="Research"/> -->
+		<!-- <effect_group tiered="false"> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="10000"/> -->
+		<!-- </effect_group> -->
 		<!-- </item> -->
 		
 		<!-- <item name="researchPaperBlank100000"> -->
-			<!-- <property name="DescriptionKey" value="researchPaperBlank100000Desc"/> -->
-			<!-- <property name="CreativeMode" value="Dev"/> -->
-			<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-			<!-- <property name="CustomIcon" value="questMaster"/> -->
-			<!-- <property name="CustomIconTint" value="008080"/> -->
-			<!-- <property name="SellableToTrader" value="false"/> -->
-			<!-- <property name="EconomicValue" value="0"/> -->
-			<!-- <property name="Group" value="Research"/> -->
-			<!-- <effect_group tiered="false"> -->
-				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="100000"/> -->
-			<!-- </effect_group> -->
+		<!-- <property name="DescriptionKey" value="researchPaperBlank100000Desc"/> -->
+		<!-- <property name="CreativeMode" value="Dev"/> -->
+		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
+		<!-- <property name="CustomIcon" value="questMaster"/> -->
+		<!-- <property name="CustomIconTint" value="008080"/> -->
+		<!-- <property name="SellableToTrader" value="false"/> -->
+		<!-- <property name="EconomicValue" value="0"/> -->
+		<!-- <property name="Group" value="Research"/> -->
+		<!-- <effect_group tiered="false"> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="100000"/> -->
+		<!-- </effect_group> -->
 		<!-- </item> -->
 		
 		<!-- *** chicken coop tools -->
@@ -2615,7 +2722,7 @@
 			</triggered_effect>
 			<display_value name="dWellness" value="3"/>
 		</effect_group>
-	</append>	
+	</append>
 	
 	<append xpath="/items/item[@name='foodGrilledMeat']">
 		<effect_group tiered="false">

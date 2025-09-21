@@ -109,6 +109,59 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_DeadEye" operation="EQ" value="50"/>
 				</triggered_effect>
 			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkDeadEyeRank1Desc" long_desc_key="perkDeadEyeRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkDeadEyeRank2Desc" long_desc_key="perkDeadEyeRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkDeadEyeRank3Desc" long_desc_key="perkDeadEyeRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkDeadEyeRank4Desc" long_desc_key="perkDeadEyeRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkDeadEyeRank5Desc" long_desc_key="perkDeadEyeRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkDeadEyeRank6Desc" long_desc_key="perkDeadEyeRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkDeadEyeRank7Desc" long_desc_key="perkDeadEyeRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkDeadEyeRank8Desc" long_desc_key="perkDeadEyeRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkDeadEyeRank9Desc" long_desc_key="perkDeadEyeRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkDeadEyeRank10Desc" long_desc_key="perkDeadEyeRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkDeadEyeRank11Desc" long_desc_key="perkDeadEyeRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkDeadEyeRank12Desc" long_desc_key="perkDeadEyeRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkDeadEyeRank13Desc" long_desc_key="perkDeadEyeRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkDeadEyeRank14Desc" long_desc_key="perkDeadEyeRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkDeadEyeRank15Desc" long_desc_key="perkDeadEyeRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkDeadEyeRank16Desc" long_desc_key="perkDeadEyeRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkDeadEyeRank17Desc" long_desc_key="perkDeadEyeRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkDeadEyeRank18Desc" long_desc_key="perkDeadEyeRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkDeadEyeRank19Desc" long_desc_key="perkDeadEyeRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkDeadEyeRank20Desc" long_desc_key="perkDeadEyeRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkDeadEyeRank21Desc" long_desc_key="perkDeadEyeRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkDeadEyeRank22Desc" long_desc_key="perkDeadEyeRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkDeadEyeRank23Desc" long_desc_key="perkDeadEyeRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkDeadEyeRank24Desc" long_desc_key="perkDeadEyeRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkDeadEyeRank25Desc" long_desc_key="perkDeadEyeRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkDeadEyeRank26Desc" long_desc_key="perkDeadEyeRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkDeadEyeRank27Desc" long_desc_key="perkDeadEyeRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkDeadEyeRank28Desc" long_desc_key="perkDeadEyeRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkDeadEyeRank29Desc" long_desc_key="perkDeadEyeRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkDeadEyeRank30Desc" long_desc_key="perkDeadEyeRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkDeadEyeRank31Desc" long_desc_key="perkDeadEyeRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkDeadEyeRank32Desc" long_desc_key="perkDeadEyeRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkDeadEyeRank33Desc" long_desc_key="perkDeadEyeRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkDeadEyeRank34Desc" long_desc_key="perkDeadEyeRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkDeadEyeRank35Desc" long_desc_key="perkDeadEyeRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkDeadEyeRank36Desc" long_desc_key="perkDeadEyeRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkDeadEyeRank37Desc" long_desc_key="perkDeadEyeRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkDeadEyeRank38Desc" long_desc_key="perkDeadEyeRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkDeadEyeRank39Desc" long_desc_key="perkDeadEyeRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkDeadEyeRank40Desc" long_desc_key="perkDeadEyeRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkDeadEyeRank41Desc" long_desc_key="perkDeadEyeRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkDeadEyeRank42Desc" long_desc_key="perkDeadEyeRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkDeadEyeRank43Desc" long_desc_key="perkDeadEyeRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkDeadEyeRank44Desc" long_desc_key="perkDeadEyeRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkDeadEyeRank45Desc" long_desc_key="perkDeadEyeRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkDeadEyeRank46Desc" long_desc_key="perkDeadEyeRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkDeadEyeRank47Desc" long_desc_key="perkDeadEyeRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkDeadEyeRank48Desc" long_desc_key="perkDeadEyeRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkDeadEyeRank49Desc" long_desc_key="perkDeadEyeRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkDeadEyeRank50Desc" long_desc_key="perkDeadEyeRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end begin DeadEye Learn By Use (lbu)-->
 		
@@ -149,7 +202,59 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value="0.01,0.5" level="1,50" tags="perkDemolitionsExpert"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.01,0.35" level="1,50" tags="perkDemolitionsExpert"/>
 			</effect_group>
-	
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkDemolitionsExpertRank1Desc" long_desc_key="perkDemolitionsExpertRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkDemolitionsExpertRank2Desc" long_desc_key="perkDemolitionsExpertRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkDemolitionsExpertRank3Desc" long_desc_key="perkDemolitionsExpertRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkDemolitionsExpertRank4Desc" long_desc_key="perkDemolitionsExpertRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkDemolitionsExpertRank5Desc" long_desc_key="perkDemolitionsExpertRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkDemolitionsExpertRank6Desc" long_desc_key="perkDemolitionsExpertRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkDemolitionsExpertRank7Desc" long_desc_key="perkDemolitionsExpertRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkDemolitionsExpertRank8Desc" long_desc_key="perkDemolitionsExpertRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkDemolitionsExpertRank9Desc" long_desc_key="perkDemolitionsExpertRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkDemolitionsExpertRank10Desc" long_desc_key="perkDemolitionsExpertRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkDemolitionsExpertRank11Desc" long_desc_key="perkDemolitionsExpertRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkDemolitionsExpertRank12Desc" long_desc_key="perkDemolitionsExpertRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkDemolitionsExpertRank13Desc" long_desc_key="perkDemolitionsExpertRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkDemolitionsExpertRank14Desc" long_desc_key="perkDemolitionsExpertRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkDemolitionsExpertRank15Desc" long_desc_key="perkDemolitionsExpertRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkDemolitionsExpertRank16Desc" long_desc_key="perkDemolitionsExpertRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkDemolitionsExpertRank17Desc" long_desc_key="perkDemolitionsExpertRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkDemolitionsExpertRank18Desc" long_desc_key="perkDemolitionsExpertRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkDemolitionsExpertRank19Desc" long_desc_key="perkDemolitionsExpertRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkDemolitionsExpertRank20Desc" long_desc_key="perkDemolitionsExpertRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkDemolitionsExpertRank21Desc" long_desc_key="perkDemolitionsExpertRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkDemolitionsExpertRank22Desc" long_desc_key="perkDemolitionsExpertRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkDemolitionsExpertRank23Desc" long_desc_key="perkDemolitionsExpertRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkDemolitionsExpertRank24Desc" long_desc_key="perkDemolitionsExpertRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkDemolitionsExpertRank25Desc" long_desc_key="perkDemolitionsExpertRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkDemolitionsExpertRank26Desc" long_desc_key="perkDemolitionsExpertRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkDemolitionsExpertRank27Desc" long_desc_key="perkDemolitionsExpertRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkDemolitionsExpertRank28Desc" long_desc_key="perkDemolitionsExpertRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkDemolitionsExpertRank29Desc" long_desc_key="perkDemolitionsExpertRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkDemolitionsExpertRank30Desc" long_desc_key="perkDemolitionsExpertRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkDemolitionsExpertRank31Desc" long_desc_key="perkDemolitionsExpertRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkDemolitionsExpertRank32Desc" long_desc_key="perkDemolitionsExpertRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkDemolitionsExpertRank33Desc" long_desc_key="perkDemolitionsExpertRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkDemolitionsExpertRank34Desc" long_desc_key="perkDemolitionsExpertRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkDemolitionsExpertRank35Desc" long_desc_key="perkDemolitionsExpertRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkDemolitionsExpertRank36Desc" long_desc_key="perkDemolitionsExpertRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkDemolitionsExpertRank37Desc" long_desc_key="perkDemolitionsExpertRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkDemolitionsExpertRank38Desc" long_desc_key="perkDemolitionsExpertRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkDemolitionsExpertRank39Desc" long_desc_key="perkDemolitionsExpertRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkDemolitionsExpertRank40Desc" long_desc_key="perkDemolitionsExpertRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkDemolitionsExpertRank41Desc" long_desc_key="perkDemolitionsExpertRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkDemolitionsExpertRank42Desc" long_desc_key="perkDemolitionsExpertRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkDemolitionsExpertRank43Desc" long_desc_key="perkDemolitionsExpertRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkDemolitionsExpertRank44Desc" long_desc_key="perkDemolitionsExpertRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkDemolitionsExpertRank45Desc" long_desc_key="perkDemolitionsExpertRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkDemolitionsExpertRank46Desc" long_desc_key="perkDemolitionsExpertRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkDemolitionsExpertRank47Desc" long_desc_key="perkDemolitionsExpertRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkDemolitionsExpertRank48Desc" long_desc_key="perkDemolitionsExpertRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkDemolitionsExpertRank49Desc" long_desc_key="perkDemolitionsExpertRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkDemolitionsExpertRank50Desc" long_desc_key="perkDemolitionsExpertRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end Demolitions Learn By Use (lbu)-->
 		
@@ -280,6 +385,59 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_SpearMaster" operation="EQ" value="50"/>
 				</triggered_effect>
 			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkJavelinMasterRank1Desc" long_desc_key="perkJavelinMasterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkJavelinMasterRank2Desc" long_desc_key="perkJavelinMasterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkJavelinMasterRank3Desc" long_desc_key="perkJavelinMasterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkJavelinMasterRank4Desc" long_desc_key="perkJavelinMasterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkJavelinMasterRank5Desc" long_desc_key="perkJavelinMasterRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkJavelinMasterRank6Desc" long_desc_key="perkJavelinMasterRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkJavelinMasterRank7Desc" long_desc_key="perkJavelinMasterRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkJavelinMasterRank8Desc" long_desc_key="perkJavelinMasterRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkJavelinMasterRank9Desc" long_desc_key="perkJavelinMasterRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkJavelinMasterRank10Desc" long_desc_key="perkJavelinMasterRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkJavelinMasterRank11Desc" long_desc_key="perkJavelinMasterRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkJavelinMasterRank12Desc" long_desc_key="perkJavelinMasterRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkJavelinMasterRank13Desc" long_desc_key="perkJavelinMasterRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkJavelinMasterRank14Desc" long_desc_key="perkJavelinMasterRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkJavelinMasterRank15Desc" long_desc_key="perkJavelinMasterRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkJavelinMasterRank16Desc" long_desc_key="perkJavelinMasterRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkJavelinMasterRank17Desc" long_desc_key="perkJavelinMasterRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkJavelinMasterRank18Desc" long_desc_key="perkJavelinMasterRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkJavelinMasterRank19Desc" long_desc_key="perkJavelinMasterRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkJavelinMasterRank20Desc" long_desc_key="perkJavelinMasterRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkJavelinMasterRank21Desc" long_desc_key="perkJavelinMasterRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkJavelinMasterRank22Desc" long_desc_key="perkJavelinMasterRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkJavelinMasterRank23Desc" long_desc_key="perkJavelinMasterRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkJavelinMasterRank24Desc" long_desc_key="perkJavelinMasterRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkJavelinMasterRank25Desc" long_desc_key="perkJavelinMasterRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkJavelinMasterRank26Desc" long_desc_key="perkJavelinMasterRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkJavelinMasterRank27Desc" long_desc_key="perkJavelinMasterRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkJavelinMasterRank28Desc" long_desc_key="perkJavelinMasterRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkJavelinMasterRank29Desc" long_desc_key="perkJavelinMasterRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkJavelinMasterRank30Desc" long_desc_key="perkJavelinMasterRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkJavelinMasterRank31Desc" long_desc_key="perkJavelinMasterRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkJavelinMasterRank32Desc" long_desc_key="perkJavelinMasterRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkJavelinMasterRank33Desc" long_desc_key="perkJavelinMasterRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkJavelinMasterRank34Desc" long_desc_key="perkJavelinMasterRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkJavelinMasterRank35Desc" long_desc_key="perkJavelinMasterRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkJavelinMasterRank36Desc" long_desc_key="perkJavelinMasterRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkJavelinMasterRank37Desc" long_desc_key="perkJavelinMasterRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkJavelinMasterRank38Desc" long_desc_key="perkJavelinMasterRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkJavelinMasterRank39Desc" long_desc_key="perkJavelinMasterRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkJavelinMasterRank40Desc" long_desc_key="perkJavelinMasterRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkJavelinMasterRank41Desc" long_desc_key="perkJavelinMasterRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkJavelinMasterRank42Desc" long_desc_key="perkJavelinMasterRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkJavelinMasterRank43Desc" long_desc_key="perkJavelinMasterRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkJavelinMasterRank44Desc" long_desc_key="perkJavelinMasterRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkJavelinMasterRank45Desc" long_desc_key="perkJavelinMasterRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkJavelinMasterRank46Desc" long_desc_key="perkJavelinMasterRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkJavelinMasterRank47Desc" long_desc_key="perkJavelinMasterRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkJavelinMasterRank48Desc" long_desc_key="perkJavelinMasterRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkJavelinMasterRank49Desc" long_desc_key="perkJavelinMasterRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkJavelinMasterRank50Desc" long_desc_key="perkJavelinMasterRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end Spear Master Learn By Use (lbu)-->
 		
@@ -311,8 +469,59 @@
 					<requirement name="ProgressionLevel" progression_name="perkLuckyLooterComplete" operation="Equals" value="1"/>
 				</passive_effect>
 			</effect_group>
-	
 			<!--see buffs:buffLuckyLooterXPMonitor for the xp and level changes for lucky looter-->
+			<effect_group>
+				<effect_description level="1" desc_key="perkLuckyLooterRank1Desc" long_desc_key="perkLuckyLooterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkLuckyLooterRank2Desc" long_desc_key="perkLuckyLooterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkLuckyLooterRank3Desc" long_desc_key="perkLuckyLooterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkLuckyLooterRank4Desc" long_desc_key="perkLuckyLooterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkLuckyLooterRank5Desc" long_desc_key="perkLuckyLooterRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkLuckyLooterRank6Desc" long_desc_key="perkLuckyLooterRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkLuckyLooterRank7Desc" long_desc_key="perkLuckyLooterRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkLuckyLooterRank8Desc" long_desc_key="perkLuckyLooterRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkLuckyLooterRank9Desc" long_desc_key="perkLuckyLooterRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkLuckyLooterRank10Desc" long_desc_key="perkLuckyLooterRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkLuckyLooterRank11Desc" long_desc_key="perkLuckyLooterRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkLuckyLooterRank12Desc" long_desc_key="perkLuckyLooterRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkLuckyLooterRank13Desc" long_desc_key="perkLuckyLooterRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkLuckyLooterRank14Desc" long_desc_key="perkLuckyLooterRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkLuckyLooterRank15Desc" long_desc_key="perkLuckyLooterRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkLuckyLooterRank16Desc" long_desc_key="perkLuckyLooterRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkLuckyLooterRank17Desc" long_desc_key="perkLuckyLooterRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkLuckyLooterRank18Desc" long_desc_key="perkLuckyLooterRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkLuckyLooterRank19Desc" long_desc_key="perkLuckyLooterRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkLuckyLooterRank20Desc" long_desc_key="perkLuckyLooterRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkLuckyLooterRank21Desc" long_desc_key="perkLuckyLooterRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkLuckyLooterRank22Desc" long_desc_key="perkLuckyLooterRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkLuckyLooterRank23Desc" long_desc_key="perkLuckyLooterRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkLuckyLooterRank24Desc" long_desc_key="perkLuckyLooterRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkLuckyLooterRank25Desc" long_desc_key="perkLuckyLooterRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkLuckyLooterRank26Desc" long_desc_key="perkLuckyLooterRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkLuckyLooterRank27Desc" long_desc_key="perkLuckyLooterRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkLuckyLooterRank28Desc" long_desc_key="perkLuckyLooterRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkLuckyLooterRank29Desc" long_desc_key="perkLuckyLooterRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkLuckyLooterRank30Desc" long_desc_key="perkLuckyLooterRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkLuckyLooterRank31Desc" long_desc_key="perkLuckyLooterRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkLuckyLooterRank32Desc" long_desc_key="perkLuckyLooterRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkLuckyLooterRank33Desc" long_desc_key="perkLuckyLooterRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkLuckyLooterRank34Desc" long_desc_key="perkLuckyLooterRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkLuckyLooterRank35Desc" long_desc_key="perkLuckyLooterRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkLuckyLooterRank36Desc" long_desc_key="perkLuckyLooterRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkLuckyLooterRank37Desc" long_desc_key="perkLuckyLooterRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkLuckyLooterRank38Desc" long_desc_key="perkLuckyLooterRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkLuckyLooterRank39Desc" long_desc_key="perkLuckyLooterRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkLuckyLooterRank40Desc" long_desc_key="perkLuckyLooterRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkLuckyLooterRank41Desc" long_desc_key="perkLuckyLooterRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkLuckyLooterRank42Desc" long_desc_key="perkLuckyLooterRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkLuckyLooterRank43Desc" long_desc_key="perkLuckyLooterRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkLuckyLooterRank44Desc" long_desc_key="perkLuckyLooterRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkLuckyLooterRank45Desc" long_desc_key="perkLuckyLooterRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkLuckyLooterRank46Desc" long_desc_key="perkLuckyLooterRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkLuckyLooterRank47Desc" long_desc_key="perkLuckyLooterRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkLuckyLooterRank48Desc" long_desc_key="perkLuckyLooterRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkLuckyLooterRank49Desc" long_desc_key="perkLuckyLooterRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkLuckyLooterRank50Desc" long_desc_key="perkLuckyLooterRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end Luck Looter Learn By Use (lbu)-->
 		
@@ -410,6 +619,59 @@
 				<triggered_effect trigger="onSelfDestroyedBlock" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
 					<requirement name="ProgressionLevel" progression_name="lbu_Salvage" operation="EQ" value="50"/>
 				</triggered_effect>
+			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkSalvageOperationsRank1Desc" long_desc_key="perkSalvageOperationsRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkSalvageOperationsRank2Desc" long_desc_key="perkSalvageOperationsRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkSalvageOperationsRank3Desc" long_desc_key="perkSalvageOperationsRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkSalvageOperationsRank4Desc" long_desc_key="perkSalvageOperationsRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkSalvageOperationsRank5Desc" long_desc_key="perkSalvageOperationsRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkSalvageOperationsRank6Desc" long_desc_key="perkSalvageOperationsRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkSalvageOperationsRank7Desc" long_desc_key="perkSalvageOperationsRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkSalvageOperationsRank8Desc" long_desc_key="perkSalvageOperationsRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkSalvageOperationsRank9Desc" long_desc_key="perkSalvageOperationsRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkSalvageOperationsRank10Desc" long_desc_key="perkSalvageOperationsRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkSalvageOperationsRank11Desc" long_desc_key="perkSalvageOperationsRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkSalvageOperationsRank12Desc" long_desc_key="perkSalvageOperationsRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkSalvageOperationsRank13Desc" long_desc_key="perkSalvageOperationsRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkSalvageOperationsRank14Desc" long_desc_key="perkSalvageOperationsRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkSalvageOperationsRank15Desc" long_desc_key="perkSalvageOperationsRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkSalvageOperationsRank16Desc" long_desc_key="perkSalvageOperationsRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkSalvageOperationsRank17Desc" long_desc_key="perkSalvageOperationsRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkSalvageOperationsRank18Desc" long_desc_key="perkSalvageOperationsRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkSalvageOperationsRank19Desc" long_desc_key="perkSalvageOperationsRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkSalvageOperationsRank20Desc" long_desc_key="perkSalvageOperationsRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkSalvageOperationsRank21Desc" long_desc_key="perkSalvageOperationsRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkSalvageOperationsRank22Desc" long_desc_key="perkSalvageOperationsRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkSalvageOperationsRank23Desc" long_desc_key="perkSalvageOperationsRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkSalvageOperationsRank24Desc" long_desc_key="perkSalvageOperationsRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkSalvageOperationsRank25Desc" long_desc_key="perkSalvageOperationsRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkSalvageOperationsRank26Desc" long_desc_key="perkSalvageOperationsRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkSalvageOperationsRank27Desc" long_desc_key="perkSalvageOperationsRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkSalvageOperationsRank28Desc" long_desc_key="perkSalvageOperationsRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkSalvageOperationsRank29Desc" long_desc_key="perkSalvageOperationsRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkSalvageOperationsRank30Desc" long_desc_key="perkSalvageOperationsRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkSalvageOperationsRank31Desc" long_desc_key="perkSalvageOperationsRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkSalvageOperationsRank32Desc" long_desc_key="perkSalvageOperationsRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkSalvageOperationsRank33Desc" long_desc_key="perkSalvageOperationsRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkSalvageOperationsRank34Desc" long_desc_key="perkSalvageOperationsRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkSalvageOperationsRank35Desc" long_desc_key="perkSalvageOperationsRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkSalvageOperationsRank36Desc" long_desc_key="perkSalvageOperationsRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkSalvageOperationsRank37Desc" long_desc_key="perkSalvageOperationsRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkSalvageOperationsRank38Desc" long_desc_key="perkSalvageOperationsRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkSalvageOperationsRank39Desc" long_desc_key="perkSalvageOperationsRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkSalvageOperationsRank40Desc" long_desc_key="perkSalvageOperationsRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkSalvageOperationsRank41Desc" long_desc_key="perkSalvageOperationsRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkSalvageOperationsRank42Desc" long_desc_key="perkSalvageOperationsRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkSalvageOperationsRank43Desc" long_desc_key="perkSalvageOperationsRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkSalvageOperationsRank44Desc" long_desc_key="perkSalvageOperationsRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkSalvageOperationsRank45Desc" long_desc_key="perkSalvageOperationsRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkSalvageOperationsRank46Desc" long_desc_key="perkSalvageOperationsRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkSalvageOperationsRank47Desc" long_desc_key="perkSalvageOperationsRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkSalvageOperationsRank48Desc" long_desc_key="perkSalvageOperationsRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkSalvageOperationsRank49Desc" long_desc_key="perkSalvageOperationsRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkSalvageOperationsRank50Desc" long_desc_key="perkSalvageOperationsRank50LongDesc"/>
 			</effect_group>
 		</perk>
 		<!-- end Salvage Operations Learn By Use (lbu)-->
@@ -510,6 +772,59 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
 					<requirement name="ProgressionLevel" progression_name="lbu_Boomstick" operation="EQ" value="50"/>
 				</triggered_effect>
+			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkBoomstickRank1Desc" long_desc_key="perkBoomstickRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkBoomstickRank2Desc" long_desc_key="perkBoomstickRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkBoomstickRank3Desc" long_desc_key="perkBoomstickRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkBoomstickRank4Desc" long_desc_key="perkBoomstickRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkBoomstickRank5Desc" long_desc_key="perkBoomstickRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkBoomstickRank6Desc" long_desc_key="perkBoomstickRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkBoomstickRank7Desc" long_desc_key="perkBoomstickRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkBoomstickRank8Desc" long_desc_key="perkBoomstickRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkBoomstickRank9Desc" long_desc_key="perkBoomstickRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkBoomstickRank10Desc" long_desc_key="perkBoomstickRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkBoomstickRank11Desc" long_desc_key="perkBoomstickRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkBoomstickRank12Desc" long_desc_key="perkBoomstickRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkBoomstickRank13Desc" long_desc_key="perkBoomstickRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkBoomstickRank14Desc" long_desc_key="perkBoomstickRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkBoomstickRank15Desc" long_desc_key="perkBoomstickRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkBoomstickRank16Desc" long_desc_key="perkBoomstickRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkBoomstickRank17Desc" long_desc_key="perkBoomstickRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkBoomstickRank18Desc" long_desc_key="perkBoomstickRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkBoomstickRank19Desc" long_desc_key="perkBoomstickRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkBoomstickRank20Desc" long_desc_key="perkBoomstickRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkBoomstickRank21Desc" long_desc_key="perkBoomstickRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkBoomstickRank22Desc" long_desc_key="perkBoomstickRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkBoomstickRank23Desc" long_desc_key="perkBoomstickRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkBoomstickRank24Desc" long_desc_key="perkBoomstickRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkBoomstickRank25Desc" long_desc_key="perkBoomstickRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkBoomstickRank26Desc" long_desc_key="perkBoomstickRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkBoomstickRank27Desc" long_desc_key="perkBoomstickRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkBoomstickRank28Desc" long_desc_key="perkBoomstickRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkBoomstickRank29Desc" long_desc_key="perkBoomstickRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkBoomstickRank30Desc" long_desc_key="perkBoomstickRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkBoomstickRank31Desc" long_desc_key="perkBoomstickRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkBoomstickRank32Desc" long_desc_key="perkBoomstickRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkBoomstickRank33Desc" long_desc_key="perkBoomstickRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkBoomstickRank34Desc" long_desc_key="perkBoomstickRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkBoomstickRank35Desc" long_desc_key="perkBoomstickRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkBoomstickRank36Desc" long_desc_key="perkBoomstickRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkBoomstickRank37Desc" long_desc_key="perkBoomstickRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkBoomstickRank38Desc" long_desc_key="perkBoomstickRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkBoomstickRank39Desc" long_desc_key="perkBoomstickRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkBoomstickRank40Desc" long_desc_key="perkBoomstickRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkBoomstickRank41Desc" long_desc_key="perkBoomstickRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkBoomstickRank42Desc" long_desc_key="perkBoomstickRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkBoomstickRank43Desc" long_desc_key="perkBoomstickRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkBoomstickRank44Desc" long_desc_key="perkBoomstickRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkBoomstickRank45Desc" long_desc_key="perkBoomstickRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkBoomstickRank46Desc" long_desc_key="perkBoomstickRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkBoomstickRank47Desc" long_desc_key="perkBoomstickRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkBoomstickRank48Desc" long_desc_key="perkBoomstickRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkBoomstickRank49Desc" long_desc_key="perkBoomstickRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkBoomstickRank50Desc" long_desc_key="perkBoomstickRank50LongDesc"/>
 			</effect_group>
 		</perk>
 		<!-- end Boomstick Learn By Use (lbu)-->
@@ -663,6 +978,59 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_PummelPete" operation="EQ" value="50"/>
 				</triggered_effect>
 			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkPummelPeteRank1Desc" long_desc_key="perkPummelPeteRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkPummelPeteRank2Desc" long_desc_key="perkPummelPeteRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkPummelPeteRank3Desc" long_desc_key="perkPummelPeteRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkPummelPeteRank4Desc" long_desc_key="perkPummelPeteRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkPummelPeteRank5Desc" long_desc_key="perkPummelPeteRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkPummelPeteRank6Desc" long_desc_key="perkPummelPeteRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkPummelPeteRank7Desc" long_desc_key="perkPummelPeteRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkPummelPeteRank8Desc" long_desc_key="perkPummelPeteRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkPummelPeteRank9Desc" long_desc_key="perkPummelPeteRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkPummelPeteRank10Desc" long_desc_key="perkPummelPeteRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkPummelPeteRank11Desc" long_desc_key="perkPummelPeteRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkPummelPeteRank12Desc" long_desc_key="perkPummelPeteRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkPummelPeteRank13Desc" long_desc_key="perkPummelPeteRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkPummelPeteRank14Desc" long_desc_key="perkPummelPeteRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkPummelPeteRank15Desc" long_desc_key="perkPummelPeteRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkPummelPeteRank16Desc" long_desc_key="perkPummelPeteRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkPummelPeteRank17Desc" long_desc_key="perkPummelPeteRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkPummelPeteRank18Desc" long_desc_key="perkPummelPeteRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkPummelPeteRank19Desc" long_desc_key="perkPummelPeteRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkPummelPeteRank20Desc" long_desc_key="perkPummelPeteRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkPummelPeteRank21Desc" long_desc_key="perkPummelPeteRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkPummelPeteRank22Desc" long_desc_key="perkPummelPeteRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkPummelPeteRank23Desc" long_desc_key="perkPummelPeteRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkPummelPeteRank24Desc" long_desc_key="perkPummelPeteRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkPummelPeteRank25Desc" long_desc_key="perkPummelPeteRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkPummelPeteRank26Desc" long_desc_key="perkPummelPeteRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkPummelPeteRank27Desc" long_desc_key="perkPummelPeteRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkPummelPeteRank28Desc" long_desc_key="perkPummelPeteRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkPummelPeteRank29Desc" long_desc_key="perkPummelPeteRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkPummelPeteRank30Desc" long_desc_key="perkPummelPeteRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkPummelPeteRank31Desc" long_desc_key="perkPummelPeteRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkPummelPeteRank32Desc" long_desc_key="perkPummelPeteRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkPummelPeteRank33Desc" long_desc_key="perkPummelPeteRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkPummelPeteRank34Desc" long_desc_key="perkPummelPeteRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkPummelPeteRank35Desc" long_desc_key="perkPummelPeteRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkPummelPeteRank36Desc" long_desc_key="perkPummelPeteRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkPummelPeteRank37Desc" long_desc_key="perkPummelPeteRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkPummelPeteRank38Desc" long_desc_key="perkPummelPeteRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkPummelPeteRank39Desc" long_desc_key="perkPummelPeteRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkPummelPeteRank40Desc" long_desc_key="perkPummelPeteRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkPummelPeteRank41Desc" long_desc_key="perkPummelPeteRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkPummelPeteRank42Desc" long_desc_key="perkPummelPeteRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkPummelPeteRank43Desc" long_desc_key="perkPummelPeteRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkPummelPeteRank44Desc" long_desc_key="perkPummelPeteRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkPummelPeteRank45Desc" long_desc_key="perkPummelPeteRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkPummelPeteRank46Desc" long_desc_key="perkPummelPeteRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkPummelPeteRank47Desc" long_desc_key="perkPummelPeteRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkPummelPeteRank48Desc" long_desc_key="perkPummelPeteRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkPummelPeteRank49Desc" long_desc_key="perkPummelPeteRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkPummelPeteRank50Desc" long_desc_key="perkPummelPeteRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end Pummel Pete Learn By Use (lbu)-->
 		
@@ -814,6 +1182,59 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_SkullCrusher" operation="EQ" value="50"/>
 				</triggered_effect>
 			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkSkullCrusherRank1Desc" long_desc_key="perkSkullCrusherRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkSkullCrusherRank2Desc" long_desc_key="perkSkullCrusherRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkSkullCrusherRank3Desc" long_desc_key="perkSkullCrusherRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkSkullCrusherRank4Desc" long_desc_key="perkSkullCrusherRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkSkullCrusherRank5Desc" long_desc_key="perkSkullCrusherRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkSkullCrusherRank6Desc" long_desc_key="perkSkullCrusherRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkSkullCrusherRank7Desc" long_desc_key="perkSkullCrusherRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkSkullCrusherRank8Desc" long_desc_key="perkSkullCrusherRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkSkullCrusherRank9Desc" long_desc_key="perkSkullCrusherRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkSkullCrusherRank10Desc" long_desc_key="perkSkullCrusherRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkSkullCrusherRank11Desc" long_desc_key="perkSkullCrusherRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkSkullCrusherRank12Desc" long_desc_key="perkSkullCrusherRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkSkullCrusherRank13Desc" long_desc_key="perkSkullCrusherRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkSkullCrusherRank14Desc" long_desc_key="perkSkullCrusherRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkSkullCrusherRank15Desc" long_desc_key="perkSkullCrusherRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkSkullCrusherRank16Desc" long_desc_key="perkSkullCrusherRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkSkullCrusherRank17Desc" long_desc_key="perkSkullCrusherRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkSkullCrusherRank18Desc" long_desc_key="perkSkullCrusherRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkSkullCrusherRank19Desc" long_desc_key="perkSkullCrusherRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkSkullCrusherRank20Desc" long_desc_key="perkSkullCrusherRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkSkullCrusherRank21Desc" long_desc_key="perkSkullCrusherRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkSkullCrusherRank22Desc" long_desc_key="perkSkullCrusherRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkSkullCrusherRank23Desc" long_desc_key="perkSkullCrusherRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkSkullCrusherRank24Desc" long_desc_key="perkSkullCrusherRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkSkullCrusherRank25Desc" long_desc_key="perkSkullCrusherRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkSkullCrusherRank26Desc" long_desc_key="perkSkullCrusherRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkSkullCrusherRank27Desc" long_desc_key="perkSkullCrusherRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkSkullCrusherRank28Desc" long_desc_key="perkSkullCrusherRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkSkullCrusherRank29Desc" long_desc_key="perkSkullCrusherRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkSkullCrusherRank30Desc" long_desc_key="perkSkullCrusherRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkSkullCrusherRank31Desc" long_desc_key="perkSkullCrusherRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkSkullCrusherRank32Desc" long_desc_key="perkSkullCrusherRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkSkullCrusherRank33Desc" long_desc_key="perkSkullCrusherRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkSkullCrusherRank34Desc" long_desc_key="perkSkullCrusherRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkSkullCrusherRank35Desc" long_desc_key="perkSkullCrusherRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkSkullCrusherRank36Desc" long_desc_key="perkSkullCrusherRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkSkullCrusherRank37Desc" long_desc_key="perkSkullCrusherRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkSkullCrusherRank38Desc" long_desc_key="perkSkullCrusherRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkSkullCrusherRank39Desc" long_desc_key="perkSkullCrusherRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkSkullCrusherRank40Desc" long_desc_key="perkSkullCrusherRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkSkullCrusherRank41Desc" long_desc_key="perkSkullCrusherRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkSkullCrusherRank42Desc" long_desc_key="perkSkullCrusherRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkSkullCrusherRank43Desc" long_desc_key="perkSkullCrusherRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkSkullCrusherRank44Desc" long_desc_key="perkSkullCrusherRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkSkullCrusherRank45Desc" long_desc_key="perkSkullCrusherRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkSkullCrusherRank46Desc" long_desc_key="perkSkullCrusherRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkSkullCrusherRank47Desc" long_desc_key="perkSkullCrusherRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkSkullCrusherRank48Desc" long_desc_key="perkSkullCrusherRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkSkullCrusherRank49Desc" long_desc_key="perkSkullCrusherRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkSkullCrusherRank50Desc" long_desc_key="perkSkullCrusherRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end Skull Crusher Learn By Use (lbu)-->
 				
@@ -922,7 +1343,59 @@
 				<triggered_effect trigger="onSelfHarvestBlock" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
 					<requirement name="ProgressionLevel" progression_name="lbu_Miner69er" operation="EQ" value="50"/>
 				</triggered_effect>
-					
+			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkMiner69rRank1Desc" long_desc_key="perkMiner69rRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkMiner69rRank2Desc" long_desc_key="perkMiner69rRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkMiner69rRank3Desc" long_desc_key="perkMiner69rRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkMiner69rRank4Desc" long_desc_key="perkMiner69rRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkMiner69rRank5Desc" long_desc_key="perkMiner69rRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkMiner69rRank6Desc" long_desc_key="perkMiner69rRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkMiner69rRank7Desc" long_desc_key="perkMiner69rRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkMiner69rRank8Desc" long_desc_key="perkMiner69rRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkMiner69rRank9Desc" long_desc_key="perkMiner69rRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkMiner69rRank10Desc" long_desc_key="perkMiner69rRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkMiner69rRank11Desc" long_desc_key="perkMiner69rRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkMiner69rRank12Desc" long_desc_key="perkMiner69rRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkMiner69rRank13Desc" long_desc_key="perkMiner69rRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkMiner69rRank14Desc" long_desc_key="perkMiner69rRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkMiner69rRank15Desc" long_desc_key="perkMiner69rRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkMiner69rRank16Desc" long_desc_key="perkMiner69rRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkMiner69rRank17Desc" long_desc_key="perkMiner69rRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkMiner69rRank18Desc" long_desc_key="perkMiner69rRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkMiner69rRank19Desc" long_desc_key="perkMiner69rRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkMiner69rRank20Desc" long_desc_key="perkMiner69rRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkMiner69rRank21Desc" long_desc_key="perkMiner69rRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkMiner69rRank22Desc" long_desc_key="perkMiner69rRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkMiner69rRank23Desc" long_desc_key="perkMiner69rRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkMiner69rRank24Desc" long_desc_key="perkMiner69rRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkMiner69rRank25Desc" long_desc_key="perkMiner69rRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkMiner69rRank26Desc" long_desc_key="perkMiner69rRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkMiner69rRank27Desc" long_desc_key="perkMiner69rRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkMiner69rRank28Desc" long_desc_key="perkMiner69rRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkMiner69rRank29Desc" long_desc_key="perkMiner69rRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkMiner69rRank30Desc" long_desc_key="perkMiner69rRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkMiner69rRank31Desc" long_desc_key="perkMiner69rRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkMiner69rRank32Desc" long_desc_key="perkMiner69rRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkMiner69rRank33Desc" long_desc_key="perkMiner69rRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkMiner69rRank34Desc" long_desc_key="perkMiner69rRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkMiner69rRank35Desc" long_desc_key="perkMiner69rRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkMiner69rRank36Desc" long_desc_key="perkMiner69rRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkMiner69rRank37Desc" long_desc_key="perkMiner69rRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkMiner69rRank38Desc" long_desc_key="perkMiner69rRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkMiner69rRank39Desc" long_desc_key="perkMiner69rRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkMiner69rRank40Desc" long_desc_key="perkMiner69rRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkMiner69rRank41Desc" long_desc_key="perkMiner69rRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkMiner69rRank42Desc" long_desc_key="perkMiner69rRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkMiner69rRank43Desc" long_desc_key="perkMiner69rRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkMiner69rRank44Desc" long_desc_key="perkMiner69rRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkMiner69rRank45Desc" long_desc_key="perkMiner69rRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkMiner69rRank46Desc" long_desc_key="perkMiner69rRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkMiner69rRank47Desc" long_desc_key="perkMiner69rRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkMiner69rRank48Desc" long_desc_key="perkMiner69rRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkMiner69rRank49Desc" long_desc_key="perkMiner69rRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkMiner69rRank50Desc" long_desc_key="perkMiner69rRank50LongDesc"/>
 			</effect_group>
 		</perk>
 		<!-- end Miner69er & Motherlode Learn By Use (lbu)-->
@@ -1066,6 +1539,59 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_Brawler" operation="EQ" value="50"/>
 				</triggered_effect>
 			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkBrawlerRank1Desc" long_desc_key="perkBrawlerRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkBrawlerRank2Desc" long_desc_key="perkBrawlerRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkBrawlerRank3Desc" long_desc_key="perkBrawlerRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkBrawlerRank4Desc" long_desc_key="perkBrawlerRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkBrawlerRank5Desc" long_desc_key="perkBrawlerRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkBrawlerRank6Desc" long_desc_key="perkBrawlerRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkBrawlerRank7Desc" long_desc_key="perkBrawlerRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkBrawlerRank8Desc" long_desc_key="perkBrawlerRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkBrawlerRank9Desc" long_desc_key="perkBrawlerRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkBrawlerRank10Desc" long_desc_key="perkBrawlerRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkBrawlerRank11Desc" long_desc_key="perkBrawlerRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkBrawlerRank12Desc" long_desc_key="perkBrawlerRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkBrawlerRank13Desc" long_desc_key="perkBrawlerRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkBrawlerRank14Desc" long_desc_key="perkBrawlerRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkBrawlerRank15Desc" long_desc_key="perkBrawlerRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkBrawlerRank16Desc" long_desc_key="perkBrawlerRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkBrawlerRank17Desc" long_desc_key="perkBrawlerRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkBrawlerRank18Desc" long_desc_key="perkBrawlerRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkBrawlerRank19Desc" long_desc_key="perkBrawlerRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkBrawlerRank20Desc" long_desc_key="perkBrawlerRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkBrawlerRank21Desc" long_desc_key="perkBrawlerRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkBrawlerRank22Desc" long_desc_key="perkBrawlerRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkBrawlerRank23Desc" long_desc_key="perkBrawlerRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkBrawlerRank24Desc" long_desc_key="perkBrawlerRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkBrawlerRank25Desc" long_desc_key="perkBrawlerRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkBrawlerRank26Desc" long_desc_key="perkBrawlerRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkBrawlerRank27Desc" long_desc_key="perkBrawlerRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkBrawlerRank28Desc" long_desc_key="perkBrawlerRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkBrawlerRank29Desc" long_desc_key="perkBrawlerRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkBrawlerRank30Desc" long_desc_key="perkBrawlerRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkBrawlerRank31Desc" long_desc_key="perkBrawlerRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkBrawlerRank32Desc" long_desc_key="perkBrawlerRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkBrawlerRank33Desc" long_desc_key="perkBrawlerRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkBrawlerRank34Desc" long_desc_key="perkBrawlerRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkBrawlerRank35Desc" long_desc_key="perkBrawlerRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkBrawlerRank36Desc" long_desc_key="perkBrawlerRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkBrawlerRank37Desc" long_desc_key="perkBrawlerRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkBrawlerRank38Desc" long_desc_key="perkBrawlerRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkBrawlerRank39Desc" long_desc_key="perkBrawlerRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkBrawlerRank40Desc" long_desc_key="perkBrawlerRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkBrawlerRank41Desc" long_desc_key="perkBrawlerRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkBrawlerRank42Desc" long_desc_key="perkBrawlerRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkBrawlerRank43Desc" long_desc_key="perkBrawlerRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkBrawlerRank44Desc" long_desc_key="perkBrawlerRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkBrawlerRank45Desc" long_desc_key="perkBrawlerRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkBrawlerRank46Desc" long_desc_key="perkBrawlerRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkBrawlerRank47Desc" long_desc_key="perkBrawlerRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkBrawlerRank48Desc" long_desc_key="perkBrawlerRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkBrawlerRank49Desc" long_desc_key="perkBrawlerRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkBrawlerRank50Desc" long_desc_key="perkBrawlerRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end Brawler Learn By Use (lbu)-->
 
@@ -1166,6 +1692,59 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_MachineGunner" operation="EQ" value="50"/>
 				</triggered_effect>
 			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkMachineGunnerRank1Desc" long_desc_key="perkMachineGunnerRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkMachineGunnerRank2Desc" long_desc_key="perkMachineGunnerRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkMachineGunnerRank3Desc" long_desc_key="perkMachineGunnerRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkMachineGunnerRank4Desc" long_desc_key="perkMachineGunnerRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkMachineGunnerRank5Desc" long_desc_key="perkMachineGunnerRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkMachineGunnerRank6Desc" long_desc_key="perkMachineGunnerRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkMachineGunnerRank7Desc" long_desc_key="perkMachineGunnerRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkMachineGunnerRank8Desc" long_desc_key="perkMachineGunnerRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkMachineGunnerRank9Desc" long_desc_key="perkMachineGunnerRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkMachineGunnerRank10Desc" long_desc_key="perkMachineGunnerRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkMachineGunnerRank11Desc" long_desc_key="perkMachineGunnerRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkMachineGunnerRank12Desc" long_desc_key="perkMachineGunnerRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkMachineGunnerRank13Desc" long_desc_key="perkMachineGunnerRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkMachineGunnerRank14Desc" long_desc_key="perkMachineGunnerRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkMachineGunnerRank15Desc" long_desc_key="perkMachineGunnerRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkMachineGunnerRank16Desc" long_desc_key="perkMachineGunnerRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkMachineGunnerRank17Desc" long_desc_key="perkMachineGunnerRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkMachineGunnerRank18Desc" long_desc_key="perkMachineGunnerRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkMachineGunnerRank19Desc" long_desc_key="perkMachineGunnerRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkMachineGunnerRank20Desc" long_desc_key="perkMachineGunnerRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkMachineGunnerRank21Desc" long_desc_key="perkMachineGunnerRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkMachineGunnerRank22Desc" long_desc_key="perkMachineGunnerRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkMachineGunnerRank23Desc" long_desc_key="perkMachineGunnerRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkMachineGunnerRank24Desc" long_desc_key="perkMachineGunnerRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkMachineGunnerRank25Desc" long_desc_key="perkMachineGunnerRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkMachineGunnerRank26Desc" long_desc_key="perkMachineGunnerRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkMachineGunnerRank27Desc" long_desc_key="perkMachineGunnerRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkMachineGunnerRank28Desc" long_desc_key="perkMachineGunnerRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkMachineGunnerRank29Desc" long_desc_key="perkMachineGunnerRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkMachineGunnerRank30Desc" long_desc_key="perkMachineGunnerRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkMachineGunnerRank31Desc" long_desc_key="perkMachineGunnerRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkMachineGunnerRank32Desc" long_desc_key="perkMachineGunnerRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkMachineGunnerRank33Desc" long_desc_key="perkMachineGunnerRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkMachineGunnerRank34Desc" long_desc_key="perkMachineGunnerRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkMachineGunnerRank35Desc" long_desc_key="perkMachineGunnerRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkMachineGunnerRank36Desc" long_desc_key="perkMachineGunnerRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkMachineGunnerRank37Desc" long_desc_key="perkMachineGunnerRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkMachineGunnerRank38Desc" long_desc_key="perkMachineGunnerRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkMachineGunnerRank39Desc" long_desc_key="perkMachineGunnerRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkMachineGunnerRank40Desc" long_desc_key="perkMachineGunnerRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkMachineGunnerRank41Desc" long_desc_key="perkMachineGunnerRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkMachineGunnerRank42Desc" long_desc_key="perkMachineGunnerRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkMachineGunnerRank43Desc" long_desc_key="perkMachineGunnerRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkMachineGunnerRank44Desc" long_desc_key="perkMachineGunnerRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkMachineGunnerRank45Desc" long_desc_key="perkMachineGunnerRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkMachineGunnerRank46Desc" long_desc_key="perkMachineGunnerRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkMachineGunnerRank47Desc" long_desc_key="perkMachineGunnerRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkMachineGunnerRank48Desc" long_desc_key="perkMachineGunnerRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkMachineGunnerRank49Desc" long_desc_key="perkMachineGunnerRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkMachineGunnerRank50Desc" long_desc_key="perkMachineGunnerRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end Machine Gunner Learn By Use (lbu)-->
 		
@@ -1244,6 +1823,59 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
 					<requirement name="ProgressionLevel" progression_name="lbu_Archery" operation="EQ" value="50"/>
 				</triggered_effect>
+			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkArcheryRank1Desc" long_desc_key="perkArcheryRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkArcheryRank2Desc" long_desc_key="perkArcheryRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkArcheryRank3Desc" long_desc_key="perkArcheryRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkArcheryRank4Desc" long_desc_key="perkArcheryRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkArcheryRank5Desc" long_desc_key="perkArcheryRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkArcheryRank6Desc" long_desc_key="perkArcheryRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkArcheryRank7Desc" long_desc_key="perkArcheryRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkArcheryRank8Desc" long_desc_key="perkArcheryRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkArcheryRank9Desc" long_desc_key="perkArcheryRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkArcheryRank10Desc" long_desc_key="perkArcheryRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkArcheryRank11Desc" long_desc_key="perkArcheryRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkArcheryRank12Desc" long_desc_key="perkArcheryRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkArcheryRank13Desc" long_desc_key="perkArcheryRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkArcheryRank14Desc" long_desc_key="perkArcheryRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkArcheryRank15Desc" long_desc_key="perkArcheryRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkArcheryRank16Desc" long_desc_key="perkArcheryRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkArcheryRank17Desc" long_desc_key="perkArcheryRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkArcheryRank18Desc" long_desc_key="perkArcheryRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkArcheryRank19Desc" long_desc_key="perkArcheryRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkArcheryRank20Desc" long_desc_key="perkArcheryRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkArcheryRank21Desc" long_desc_key="perkArcheryRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkArcheryRank22Desc" long_desc_key="perkArcheryRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkArcheryRank23Desc" long_desc_key="perkArcheryRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkArcheryRank24Desc" long_desc_key="perkArcheryRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkArcheryRank25Desc" long_desc_key="perkArcheryRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkArcheryRank26Desc" long_desc_key="perkArcheryRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkArcheryRank27Desc" long_desc_key="perkArcheryRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkArcheryRank28Desc" long_desc_key="perkArcheryRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkArcheryRank29Desc" long_desc_key="perkArcheryRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkArcheryRank30Desc" long_desc_key="perkArcheryRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkArcheryRank31Desc" long_desc_key="perkArcheryRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkArcheryRank32Desc" long_desc_key="perkArcheryRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkArcheryRank33Desc" long_desc_key="perkArcheryRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkArcheryRank34Desc" long_desc_key="perkArcheryRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkArcheryRank35Desc" long_desc_key="perkArcheryRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkArcheryRank36Desc" long_desc_key="perkArcheryRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkArcheryRank37Desc" long_desc_key="perkArcheryRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkArcheryRank38Desc" long_desc_key="perkArcheryRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkArcheryRank39Desc" long_desc_key="perkArcheryRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkArcheryRank40Desc" long_desc_key="perkArcheryRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkArcheryRank41Desc" long_desc_key="perkArcheryRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkArcheryRank42Desc" long_desc_key="perkArcheryRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkArcheryRank43Desc" long_desc_key="perkArcheryRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkArcheryRank44Desc" long_desc_key="perkArcheryRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkArcheryRank45Desc" long_desc_key="perkArcheryRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkArcheryRank46Desc" long_desc_key="perkArcheryRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkArcheryRank47Desc" long_desc_key="perkArcheryRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkArcheryRank48Desc" long_desc_key="perkArcheryRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkArcheryRank49Desc" long_desc_key="perkArcheryRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkArcheryRank50Desc" long_desc_key="perkArcheryRank50LongDesc"/>
 			</effect_group>
 		</perk>
 		<!-- end begin Archery Learn By Use (lbu)-->
@@ -1347,6 +1979,59 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" buff="buffLBU_GiveProgressSkillPoint">
 					<requirement name="ProgressionLevel" progression_name="lbu_Gunslinger" operation="EQ" value="50"/>
 				</triggered_effect>
+			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkGunslingerRank1Desc" long_desc_key="perkGunslingerRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkGunslingerRank2Desc" long_desc_key="perkGunslingerRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkGunslingerRank3Desc" long_desc_key="perkGunslingerRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkGunslingerRank4Desc" long_desc_key="perkGunslingerRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkGunslingerRank5Desc" long_desc_key="perkGunslingerRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkGunslingerRank6Desc" long_desc_key="perkGunslingerRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkGunslingerRank7Desc" long_desc_key="perkGunslingerRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkGunslingerRank8Desc" long_desc_key="perkGunslingerRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkGunslingerRank9Desc" long_desc_key="perkGunslingerRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkGunslingerRank10Desc" long_desc_key="perkGunslingerRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkGunslingerRank11Desc" long_desc_key="perkGunslingerRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkGunslingerRank12Desc" long_desc_key="perkGunslingerRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkGunslingerRank13Desc" long_desc_key="perkGunslingerRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkGunslingerRank14Desc" long_desc_key="perkGunslingerRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkGunslingerRank15Desc" long_desc_key="perkGunslingerRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkGunslingerRank16Desc" long_desc_key="perkGunslingerRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkGunslingerRank17Desc" long_desc_key="perkGunslingerRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkGunslingerRank18Desc" long_desc_key="perkGunslingerRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkGunslingerRank19Desc" long_desc_key="perkGunslingerRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkGunslingerRank20Desc" long_desc_key="perkGunslingerRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkGunslingerRank21Desc" long_desc_key="perkGunslingerRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkGunslingerRank22Desc" long_desc_key="perkGunslingerRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkGunslingerRank23Desc" long_desc_key="perkGunslingerRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkGunslingerRank24Desc" long_desc_key="perkGunslingerRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkGunslingerRank25Desc" long_desc_key="perkGunslingerRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkGunslingerRank26Desc" long_desc_key="perkGunslingerRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkGunslingerRank27Desc" long_desc_key="perkGunslingerRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkGunslingerRank28Desc" long_desc_key="perkGunslingerRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkGunslingerRank29Desc" long_desc_key="perkGunslingerRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkGunslingerRank30Desc" long_desc_key="perkGunslingerRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkGunslingerRank31Desc" long_desc_key="perkGunslingerRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkGunslingerRank32Desc" long_desc_key="perkGunslingerRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkGunslingerRank33Desc" long_desc_key="perkGunslingerRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkGunslingerRank34Desc" long_desc_key="perkGunslingerRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkGunslingerRank35Desc" long_desc_key="perkGunslingerRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkGunslingerRank36Desc" long_desc_key="perkGunslingerRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkGunslingerRank37Desc" long_desc_key="perkGunslingerRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkGunslingerRank38Desc" long_desc_key="perkGunslingerRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkGunslingerRank39Desc" long_desc_key="perkGunslingerRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkGunslingerRank40Desc" long_desc_key="perkGunslingerRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkGunslingerRank41Desc" long_desc_key="perkGunslingerRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkGunslingerRank42Desc" long_desc_key="perkGunslingerRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkGunslingerRank43Desc" long_desc_key="perkGunslingerRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkGunslingerRank44Desc" long_desc_key="perkGunslingerRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkGunslingerRank45Desc" long_desc_key="perkGunslingerRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkGunslingerRank46Desc" long_desc_key="perkGunslingerRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkGunslingerRank47Desc" long_desc_key="perkGunslingerRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkGunslingerRank48Desc" long_desc_key="perkGunslingerRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkGunslingerRank49Desc" long_desc_key="perkGunslingerRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkGunslingerRank50Desc" long_desc_key="perkGunslingerRank50LongDesc"/>
 			</effect_group>
 		</perk>
 		<!-- end gunslinger Learn By Use (lbu)-->
@@ -1582,6 +2267,59 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_DeepCuts" operation="EQ" value="50"/>
 				</triggered_effect>
 			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkDeepCutsRank1Desc" long_desc_key="perkDeepCutsRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkDeepCutsRank2Desc" long_desc_key="perkDeepCutsRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkDeepCutsRank3Desc" long_desc_key="perkDeepCutsRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkDeepCutsRank4Desc" long_desc_key="perkDeepCutsRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkDeepCutsRank5Desc" long_desc_key="perkDeepCutsRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkDeepCutsRank6Desc" long_desc_key="perkDeepCutsRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkDeepCutsRank7Desc" long_desc_key="perkDeepCutsRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkDeepCutsRank8Desc" long_desc_key="perkDeepCutsRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkDeepCutsRank9Desc" long_desc_key="perkDeepCutsRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkDeepCutsRank10Desc" long_desc_key="perkDeepCutsRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkDeepCutsRank11Desc" long_desc_key="perkDeepCutsRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkDeepCutsRank12Desc" long_desc_key="perkDeepCutsRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkDeepCutsRank13Desc" long_desc_key="perkDeepCutsRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkDeepCutsRank14Desc" long_desc_key="perkDeepCutsRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkDeepCutsRank15Desc" long_desc_key="perkDeepCutsRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkDeepCutsRank16Desc" long_desc_key="perkDeepCutsRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkDeepCutsRank17Desc" long_desc_key="perkDeepCutsRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkDeepCutsRank18Desc" long_desc_key="perkDeepCutsRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkDeepCutsRank19Desc" long_desc_key="perkDeepCutsRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkDeepCutsRank20Desc" long_desc_key="perkDeepCutsRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkDeepCutsRank21Desc" long_desc_key="perkDeepCutsRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkDeepCutsRank22Desc" long_desc_key="perkDeepCutsRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkDeepCutsRank23Desc" long_desc_key="perkDeepCutsRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkDeepCutsRank24Desc" long_desc_key="perkDeepCutsRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkDeepCutsRank25Desc" long_desc_key="perkDeepCutsRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkDeepCutsRank26Desc" long_desc_key="perkDeepCutsRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkDeepCutsRank27Desc" long_desc_key="perkDeepCutsRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkDeepCutsRank28Desc" long_desc_key="perkDeepCutsRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkDeepCutsRank29Desc" long_desc_key="perkDeepCutsRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkDeepCutsRank30Desc" long_desc_key="perkDeepCutsRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkDeepCutsRank31Desc" long_desc_key="perkDeepCutsRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkDeepCutsRank32Desc" long_desc_key="perkDeepCutsRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkDeepCutsRank33Desc" long_desc_key="perkDeepCutsRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkDeepCutsRank34Desc" long_desc_key="perkDeepCutsRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkDeepCutsRank35Desc" long_desc_key="perkDeepCutsRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkDeepCutsRank36Desc" long_desc_key="perkDeepCutsRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkDeepCutsRank37Desc" long_desc_key="perkDeepCutsRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkDeepCutsRank38Desc" long_desc_key="perkDeepCutsRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkDeepCutsRank39Desc" long_desc_key="perkDeepCutsRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkDeepCutsRank40Desc" long_desc_key="perkDeepCutsRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkDeepCutsRank41Desc" long_desc_key="perkDeepCutsRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkDeepCutsRank42Desc" long_desc_key="perkDeepCutsRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkDeepCutsRank43Desc" long_desc_key="perkDeepCutsRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkDeepCutsRank44Desc" long_desc_key="perkDeepCutsRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkDeepCutsRank45Desc" long_desc_key="perkDeepCutsRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkDeepCutsRank46Desc" long_desc_key="perkDeepCutsRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkDeepCutsRank47Desc" long_desc_key="perkDeepCutsRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkDeepCutsRank48Desc" long_desc_key="perkDeepCutsRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkDeepCutsRank49Desc" long_desc_key="perkDeepCutsRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkDeepCutsRank50Desc" long_desc_key="perkDeepCutsRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end Deap Cuts Learn By Use (lbu)-->
 		
@@ -1619,6 +2357,59 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,50" value="1,1" tags="urbanProb">
 					<requirement name="ProgressionLevel" progression_name="perkUrbanCombatComplete" operation="Equals" value="1"/>
 				</passive_effect>
+			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkHiddenStrikeRank1Desc" long_desc_key="perkHiddenStrikeRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkHiddenStrikeRank2Desc" long_desc_key="perkHiddenStrikeRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkHiddenStrikeRank3Desc" long_desc_key="perkHiddenStrikeRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkHiddenStrikeRank4Desc" long_desc_key="perkHiddenStrikeRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkHiddenStrikeRank5Desc" long_desc_key="perkHiddenStrikeRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkHiddenStrikeRank6Desc" long_desc_key="perkHiddenStrikeRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkHiddenStrikeRank7Desc" long_desc_key="perkHiddenStrikeRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkHiddenStrikeRank8Desc" long_desc_key="perkHiddenStrikeRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkHiddenStrikeRank9Desc" long_desc_key="perkHiddenStrikeRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkHiddenStrikeRank10Desc" long_desc_key="perkHiddenStrikeRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkHiddenStrikeRank11Desc" long_desc_key="perkHiddenStrikeRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkHiddenStrikeRank12Desc" long_desc_key="perkHiddenStrikeRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkHiddenStrikeRank13Desc" long_desc_key="perkHiddenStrikeRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkHiddenStrikeRank14Desc" long_desc_key="perkHiddenStrikeRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkHiddenStrikeRank15Desc" long_desc_key="perkHiddenStrikeRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkHiddenStrikeRank16Desc" long_desc_key="perkHiddenStrikeRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkHiddenStrikeRank17Desc" long_desc_key="perkHiddenStrikeRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkHiddenStrikeRank18Desc" long_desc_key="perkHiddenStrikeRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkHiddenStrikeRank19Desc" long_desc_key="perkHiddenStrikeRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkHiddenStrikeRank20Desc" long_desc_key="perkHiddenStrikeRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkHiddenStrikeRank21Desc" long_desc_key="perkHiddenStrikeRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkHiddenStrikeRank22Desc" long_desc_key="perkHiddenStrikeRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkHiddenStrikeRank23Desc" long_desc_key="perkHiddenStrikeRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkHiddenStrikeRank24Desc" long_desc_key="perkHiddenStrikeRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkHiddenStrikeRank25Desc" long_desc_key="perkHiddenStrikeRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkHiddenStrikeRank26Desc" long_desc_key="perkHiddenStrikeRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkHiddenStrikeRank27Desc" long_desc_key="perkHiddenStrikeRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkHiddenStrikeRank28Desc" long_desc_key="perkHiddenStrikeRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkHiddenStrikeRank29Desc" long_desc_key="perkHiddenStrikeRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkHiddenStrikeRank30Desc" long_desc_key="perkHiddenStrikeRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkHiddenStrikeRank31Desc" long_desc_key="perkHiddenStrikeRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkHiddenStrikeRank32Desc" long_desc_key="perkHiddenStrikeRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkHiddenStrikeRank33Desc" long_desc_key="perkHiddenStrikeRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkHiddenStrikeRank34Desc" long_desc_key="perkHiddenStrikeRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkHiddenStrikeRank35Desc" long_desc_key="perkHiddenStrikeRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkHiddenStrikeRank36Desc" long_desc_key="perkHiddenStrikeRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkHiddenStrikeRank37Desc" long_desc_key="perkHiddenStrikeRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkHiddenStrikeRank38Desc" long_desc_key="perkHiddenStrikeRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkHiddenStrikeRank39Desc" long_desc_key="perkHiddenStrikeRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkHiddenStrikeRank40Desc" long_desc_key="perkHiddenStrikeRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkHiddenStrikeRank41Desc" long_desc_key="perkHiddenStrikeRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkHiddenStrikeRank42Desc" long_desc_key="perkHiddenStrikeRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkHiddenStrikeRank43Desc" long_desc_key="perkHiddenStrikeRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkHiddenStrikeRank44Desc" long_desc_key="perkHiddenStrikeRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkHiddenStrikeRank45Desc" long_desc_key="perkHiddenStrikeRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkHiddenStrikeRank46Desc" long_desc_key="perkHiddenStrikeRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkHiddenStrikeRank47Desc" long_desc_key="perkHiddenStrikeRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkHiddenStrikeRank48Desc" long_desc_key="perkHiddenStrikeRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkHiddenStrikeRank49Desc" long_desc_key="perkHiddenStrikeRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkHiddenStrikeRank50Desc" long_desc_key="perkHiddenStrikeRank50LongDesc"/>
 			</effect_group>
 		</perk>
 		<!-- end HiddenStrike Learn By Use (lbu)-->
@@ -1727,6 +2518,59 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="EQ" value="50"/>
 				</triggered_effect>
 			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkElectrocutionerRank1Desc" long_desc_key="perkElectrocutionerRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkElectrocutionerRank2Desc" long_desc_key="perkElectrocutionerRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkElectrocutionerRank3Desc" long_desc_key="perkElectrocutionerRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkElectrocutionerRank4Desc" long_desc_key="perkElectrocutionerRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkElectrocutionerRank5Desc" long_desc_key="perkElectrocutionerRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkElectrocutionerRank6Desc" long_desc_key="perkElectrocutionerRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkElectrocutionerRank7Desc" long_desc_key="perkElectrocutionerRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkElectrocutionerRank8Desc" long_desc_key="perkElectrocutionerRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkElectrocutionerRank9Desc" long_desc_key="perkElectrocutionerRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkElectrocutionerRank10Desc" long_desc_key="perkElectrocutionerRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkElectrocutionerRank11Desc" long_desc_key="perkElectrocutionerRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkElectrocutionerRank12Desc" long_desc_key="perkElectrocutionerRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkElectrocutionerRank13Desc" long_desc_key="perkElectrocutionerRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkElectrocutionerRank14Desc" long_desc_key="perkElectrocutionerRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkElectrocutionerRank15Desc" long_desc_key="perkElectrocutionerRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkElectrocutionerRank16Desc" long_desc_key="perkElectrocutionerRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkElectrocutionerRank17Desc" long_desc_key="perkElectrocutionerRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkElectrocutionerRank18Desc" long_desc_key="perkElectrocutionerRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkElectrocutionerRank19Desc" long_desc_key="perkElectrocutionerRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkElectrocutionerRank20Desc" long_desc_key="perkElectrocutionerRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkElectrocutionerRank21Desc" long_desc_key="perkElectrocutionerRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkElectrocutionerRank22Desc" long_desc_key="perkElectrocutionerRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkElectrocutionerRank23Desc" long_desc_key="perkElectrocutionerRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkElectrocutionerRank24Desc" long_desc_key="perkElectrocutionerRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkElectrocutionerRank25Desc" long_desc_key="perkElectrocutionerRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkElectrocutionerRank26Desc" long_desc_key="perkElectrocutionerRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkElectrocutionerRank27Desc" long_desc_key="perkElectrocutionerRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkElectrocutionerRank28Desc" long_desc_key="perkElectrocutionerRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkElectrocutionerRank29Desc" long_desc_key="perkElectrocutionerRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkElectrocutionerRank30Desc" long_desc_key="perkElectrocutionerRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkElectrocutionerRank31Desc" long_desc_key="perkElectrocutionerRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkElectrocutionerRank32Desc" long_desc_key="perkElectrocutionerRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkElectrocutionerRank33Desc" long_desc_key="perkElectrocutionerRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkElectrocutionerRank34Desc" long_desc_key="perkElectrocutionerRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkElectrocutionerRank35Desc" long_desc_key="perkElectrocutionerRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkElectrocutionerRank36Desc" long_desc_key="perkElectrocutionerRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkElectrocutionerRank37Desc" long_desc_key="perkElectrocutionerRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkElectrocutionerRank38Desc" long_desc_key="perkElectrocutionerRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkElectrocutionerRank39Desc" long_desc_key="perkElectrocutionerRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkElectrocutionerRank40Desc" long_desc_key="perkElectrocutionerRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkElectrocutionerRank41Desc" long_desc_key="perkElectrocutionerRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkElectrocutionerRank42Desc" long_desc_key="perkElectrocutionerRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkElectrocutionerRank43Desc" long_desc_key="perkElectrocutionerRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkElectrocutionerRank44Desc" long_desc_key="perkElectrocutionerRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkElectrocutionerRank45Desc" long_desc_key="perkElectrocutionerRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkElectrocutionerRank46Desc" long_desc_key="perkElectrocutionerRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkElectrocutionerRank47Desc" long_desc_key="perkElectrocutionerRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkElectrocutionerRank48Desc" long_desc_key="perkElectrocutionerRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkElectrocutionerRank49Desc" long_desc_key="perkElectrocutionerRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkElectrocutionerRank50Desc" long_desc_key="perkElectrocutionerRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!-- end Electrocutioner Learn By Use (lbu)-->
 		
@@ -1822,6 +2666,59 @@
 					<requirement name="ProgressionLevel" progression_name="lbu_Robotics" operation="EQ" value="50"/>
 				</triggered_effect>
 			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkTurretsRank1Desc" long_desc_key="perkTurretsRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkTurretsRank2Desc" long_desc_key="perkTurretsRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkTurretsRank3Desc" long_desc_key="perkTurretsRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkTurretsRank4Desc" long_desc_key="perkTurretsRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkTurretsRank5Desc" long_desc_key="perkTurretsRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkTurretsRank6Desc" long_desc_key="perkTurretsRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkTurretsRank7Desc" long_desc_key="perkTurretsRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkTurretsRank8Desc" long_desc_key="perkTurretsRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkTurretsRank9Desc" long_desc_key="perkTurretsRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkTurretsRank10Desc" long_desc_key="perkTurretsRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkTurretsRank11Desc" long_desc_key="perkTurretsRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkTurretsRank12Desc" long_desc_key="perkTurretsRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkTurretsRank13Desc" long_desc_key="perkTurretsRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkTurretsRank14Desc" long_desc_key="perkTurretsRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkTurretsRank15Desc" long_desc_key="perkTurretsRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkTurretsRank16Desc" long_desc_key="perkTurretsRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkTurretsRank17Desc" long_desc_key="perkTurretsRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkTurretsRank18Desc" long_desc_key="perkTurretsRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkTurretsRank19Desc" long_desc_key="perkTurretsRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkTurretsRank20Desc" long_desc_key="perkTurretsRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkTurretsRank21Desc" long_desc_key="perkTurretsRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkTurretsRank22Desc" long_desc_key="perkTurretsRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkTurretsRank23Desc" long_desc_key="perkTurretsRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkTurretsRank24Desc" long_desc_key="perkTurretsRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkTurretsRank25Desc" long_desc_key="perkTurretsRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkTurretsRank26Desc" long_desc_key="perkTurretsRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkTurretsRank27Desc" long_desc_key="perkTurretsRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkTurretsRank28Desc" long_desc_key="perkTurretsRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkTurretsRank29Desc" long_desc_key="perkTurretsRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkTurretsRank30Desc" long_desc_key="perkTurretsRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkTurretsRank31Desc" long_desc_key="perkTurretsRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkTurretsRank32Desc" long_desc_key="perkTurretsRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkTurretsRank33Desc" long_desc_key="perkTurretsRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkTurretsRank34Desc" long_desc_key="perkTurretsRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkTurretsRank35Desc" long_desc_key="perkTurretsRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkTurretsRank36Desc" long_desc_key="perkTurretsRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkTurretsRank37Desc" long_desc_key="perkTurretsRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkTurretsRank38Desc" long_desc_key="perkTurretsRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkTurretsRank39Desc" long_desc_key="perkTurretsRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkTurretsRank40Desc" long_desc_key="perkTurretsRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkTurretsRank41Desc" long_desc_key="perkTurretsRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkTurretsRank42Desc" long_desc_key="perkTurretsRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkTurretsRank43Desc" long_desc_key="perkTurretsRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkTurretsRank44Desc" long_desc_key="perkTurretsRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkTurretsRank45Desc" long_desc_key="perkTurretsRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkTurretsRank46Desc" long_desc_key="perkTurretsRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkTurretsRank47Desc" long_desc_key="perkTurretsRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkTurretsRank48Desc" long_desc_key="perkTurretsRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkTurretsRank49Desc" long_desc_key="perkTurretsRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkTurretsRank50Desc" long_desc_key="perkTurretsRank50LongDesc"/>
+			</effect_group>
 		</perk>
 		<!--Modify existing perkTurrets - halving stat increases per level-->
 		<!-- <set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='ReloadSpeedMultiplier' and @operation='perc_add']/@value">0.05,0.2</set> -->
@@ -1858,6 +2755,59 @@
 				
 				<passive_effect name="TraderStage" operation="base_add" level="1,50" value="1,50"/>
 				
+			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkBetterBarterRank1Desc" long_desc_key="perkBetterBarterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkBetterBarterRank2Desc" long_desc_key="perkBetterBarterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkBetterBarterRank3Desc" long_desc_key="perkBetterBarterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkBetterBarterRank4Desc" long_desc_key="perkBetterBarterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkBetterBarterRank5Desc" long_desc_key="perkBetterBarterRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkBetterBarterRank6Desc" long_desc_key="perkBetterBarterRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkBetterBarterRank7Desc" long_desc_key="perkBetterBarterRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkBetterBarterRank8Desc" long_desc_key="perkBetterBarterRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkBetterBarterRank9Desc" long_desc_key="perkBetterBarterRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkBetterBarterRank10Desc" long_desc_key="perkBetterBarterRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkBetterBarterRank11Desc" long_desc_key="perkBetterBarterRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkBetterBarterRank12Desc" long_desc_key="perkBetterBarterRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkBetterBarterRank13Desc" long_desc_key="perkBetterBarterRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkBetterBarterRank14Desc" long_desc_key="perkBetterBarterRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkBetterBarterRank15Desc" long_desc_key="perkBetterBarterRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkBetterBarterRank16Desc" long_desc_key="perkBetterBarterRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkBetterBarterRank17Desc" long_desc_key="perkBetterBarterRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkBetterBarterRank18Desc" long_desc_key="perkBetterBarterRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkBetterBarterRank19Desc" long_desc_key="perkBetterBarterRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkBetterBarterRank20Desc" long_desc_key="perkBetterBarterRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkBetterBarterRank21Desc" long_desc_key="perkBetterBarterRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkBetterBarterRank22Desc" long_desc_key="perkBetterBarterRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkBetterBarterRank23Desc" long_desc_key="perkBetterBarterRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkBetterBarterRank24Desc" long_desc_key="perkBetterBarterRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkBetterBarterRank25Desc" long_desc_key="perkBetterBarterRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkBetterBarterRank26Desc" long_desc_key="perkBetterBarterRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkBetterBarterRank27Desc" long_desc_key="perkBetterBarterRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkBetterBarterRank28Desc" long_desc_key="perkBetterBarterRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkBetterBarterRank29Desc" long_desc_key="perkBetterBarterRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkBetterBarterRank30Desc" long_desc_key="perkBetterBarterRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkBetterBarterRank31Desc" long_desc_key="perkBetterBarterRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkBetterBarterRank32Desc" long_desc_key="perkBetterBarterRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkBetterBarterRank33Desc" long_desc_key="perkBetterBarterRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkBetterBarterRank34Desc" long_desc_key="perkBetterBarterRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkBetterBarterRank35Desc" long_desc_key="perkBetterBarterRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkBetterBarterRank36Desc" long_desc_key="perkBetterBarterRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkBetterBarterRank37Desc" long_desc_key="perkBetterBarterRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkBetterBarterRank38Desc" long_desc_key="perkBetterBarterRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkBetterBarterRank39Desc" long_desc_key="perkBetterBarterRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkBetterBarterRank40Desc" long_desc_key="perkBetterBarterRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkBetterBarterRank41Desc" long_desc_key="perkBetterBarterRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkBetterBarterRank42Desc" long_desc_key="perkBetterBarterRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkBetterBarterRank43Desc" long_desc_key="perkBetterBarterRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkBetterBarterRank44Desc" long_desc_key="perkBetterBarterRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkBetterBarterRank45Desc" long_desc_key="perkBetterBarterRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkBetterBarterRank46Desc" long_desc_key="perkBetterBarterRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkBetterBarterRank47Desc" long_desc_key="perkBetterBarterRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkBetterBarterRank48Desc" long_desc_key="perkBetterBarterRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkBetterBarterRank49Desc" long_desc_key="perkBetterBarterRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkBetterBarterRank50Desc" long_desc_key="perkBetterBarterRank50LongDesc"/>
 			</effect_group>
 		</perk>
 		<!-- end Bartering Learn By Use (lbu)-->
@@ -1935,6 +2885,59 @@
 				<requirement name="EntityTagCompare" target="other" tags="zombie,animal"/>
 				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
 				<passive_effect name="EntityDamage" operation="base_add" level="50" value="1500" tags="stunBaton"/>
+			</effect_group>
+			
+			<effect_group>
+				<effect_description level="1" desc_key="perkPhysicianRank1Desc" long_desc_key="perkPhysicianRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkPhysicianRank2Desc" long_desc_key="perkPhysicianRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkPhysicianRank3Desc" long_desc_key="perkPhysicianRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkPhysicianRank4Desc" long_desc_key="perkPhysicianRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkPhysicianRank5Desc" long_desc_key="perkPhysicianRank5LongDesc"/>
+				<effect_description level="6" desc_key="perkPhysicianRank6Desc" long_desc_key="perkPhysicianRank6LongDesc"/>
+				<effect_description level="7" desc_key="perkPhysicianRank7Desc" long_desc_key="perkPhysicianRank7LongDesc"/>
+				<effect_description level="8" desc_key="perkPhysicianRank8Desc" long_desc_key="perkPhysicianRank8LongDesc"/>
+				<effect_description level="9" desc_key="perkPhysicianRank9Desc" long_desc_key="perkPhysicianRank9LongDesc"/>
+				<effect_description level="10" desc_key="perkPhysicianRank10Desc" long_desc_key="perkPhysicianRank10LongDesc"/>
+				<effect_description level="11" desc_key="perkPhysicianRank11Desc" long_desc_key="perkPhysicianRank11LongDesc"/>
+				<effect_description level="12" desc_key="perkPhysicianRank12Desc" long_desc_key="perkPhysicianRank12LongDesc"/>
+				<effect_description level="13" desc_key="perkPhysicianRank13Desc" long_desc_key="perkPhysicianRank13LongDesc"/>
+				<effect_description level="14" desc_key="perkPhysicianRank14Desc" long_desc_key="perkPhysicianRank14LongDesc"/>
+				<effect_description level="15" desc_key="perkPhysicianRank15Desc" long_desc_key="perkPhysicianRank15LongDesc"/>
+				<effect_description level="16" desc_key="perkPhysicianRank16Desc" long_desc_key="perkPhysicianRank16LongDesc"/>
+				<effect_description level="17" desc_key="perkPhysicianRank17Desc" long_desc_key="perkPhysicianRank17LongDesc"/>
+				<effect_description level="18" desc_key="perkPhysicianRank18Desc" long_desc_key="perkPhysicianRank18LongDesc"/>
+				<effect_description level="19" desc_key="perkPhysicianRank19Desc" long_desc_key="perkPhysicianRank19LongDesc"/>
+				<effect_description level="20" desc_key="perkPhysicianRank20Desc" long_desc_key="perkPhysicianRank20LongDesc"/>
+				<effect_description level="21" desc_key="perkPhysicianRank21Desc" long_desc_key="perkPhysicianRank21LongDesc"/>
+				<effect_description level="22" desc_key="perkPhysicianRank22Desc" long_desc_key="perkPhysicianRank22LongDesc"/>
+				<effect_description level="23" desc_key="perkPhysicianRank23Desc" long_desc_key="perkPhysicianRank23LongDesc"/>
+				<effect_description level="24" desc_key="perkPhysicianRank24Desc" long_desc_key="perkPhysicianRank24LongDesc"/>
+				<effect_description level="25" desc_key="perkPhysicianRank25Desc" long_desc_key="perkPhysicianRank25LongDesc"/>
+				<effect_description level="26" desc_key="perkPhysicianRank26Desc" long_desc_key="perkPhysicianRank26LongDesc"/>
+				<effect_description level="27" desc_key="perkPhysicianRank27Desc" long_desc_key="perkPhysicianRank27LongDesc"/>
+				<effect_description level="28" desc_key="perkPhysicianRank28Desc" long_desc_key="perkPhysicianRank28LongDesc"/>
+				<effect_description level="29" desc_key="perkPhysicianRank29Desc" long_desc_key="perkPhysicianRank29LongDesc"/>
+				<effect_description level="30" desc_key="perkPhysicianRank30Desc" long_desc_key="perkPhysicianRank30LongDesc"/>
+				<effect_description level="31" desc_key="perkPhysicianRank31Desc" long_desc_key="perkPhysicianRank31LongDesc"/>
+				<effect_description level="32" desc_key="perkPhysicianRank32Desc" long_desc_key="perkPhysicianRank32LongDesc"/>
+				<effect_description level="33" desc_key="perkPhysicianRank33Desc" long_desc_key="perkPhysicianRank33LongDesc"/>
+				<effect_description level="34" desc_key="perkPhysicianRank34Desc" long_desc_key="perkPhysicianRank34LongDesc"/>
+				<effect_description level="35" desc_key="perkPhysicianRank35Desc" long_desc_key="perkPhysicianRank35LongDesc"/>
+				<effect_description level="36" desc_key="perkPhysicianRank36Desc" long_desc_key="perkPhysicianRank36LongDesc"/>
+				<effect_description level="37" desc_key="perkPhysicianRank37Desc" long_desc_key="perkPhysicianRank37LongDesc"/>
+				<effect_description level="38" desc_key="perkPhysicianRank38Desc" long_desc_key="perkPhysicianRank38LongDesc"/>
+				<effect_description level="39" desc_key="perkPhysicianRank39Desc" long_desc_key="perkPhysicianRank39LongDesc"/>
+				<effect_description level="40" desc_key="perkPhysicianRank40Desc" long_desc_key="perkPhysicianRank40LongDesc"/>
+				<effect_description level="41" desc_key="perkPhysicianRank41Desc" long_desc_key="perkPhysicianRank41LongDesc"/>
+				<effect_description level="42" desc_key="perkPhysicianRank42Desc" long_desc_key="perkPhysicianRank42LongDesc"/>
+				<effect_description level="43" desc_key="perkPhysicianRank43Desc" long_desc_key="perkPhysicianRank43LongDesc"/>
+				<effect_description level="44" desc_key="perkPhysicianRank44Desc" long_desc_key="perkPhysicianRank44LongDesc"/>
+				<effect_description level="45" desc_key="perkPhysicianRank45Desc" long_desc_key="perkPhysicianRank45LongDesc"/>
+				<effect_description level="46" desc_key="perkPhysicianRank46Desc" long_desc_key="perkPhysicianRank46LongDesc"/>
+				<effect_description level="47" desc_key="perkPhysicianRank47Desc" long_desc_key="perkPhysicianRank47LongDesc"/>
+				<effect_description level="48" desc_key="perkPhysicianRank48Desc" long_desc_key="perkPhysicianRank48LongDesc"/>
+				<effect_description level="49" desc_key="perkPhysicianRank49Desc" long_desc_key="perkPhysicianRank49LongDesc"/>
+				<effect_description level="50" desc_key="perkPhysicianRank50Desc" long_desc_key="perkPhysicianRank50LongDesc"/>
 			</effect_group>
 		</perk>
 		<!-- end Physician Learn By Use (lbu)-->

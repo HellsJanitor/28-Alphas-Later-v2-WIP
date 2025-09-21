@@ -1,5 +1,21 @@
 <config>
+	
+	<insertafter xpath="//lootqualitytemplates/lootqualitytemplate[@name='qualQ1Template']">
+		<!-- *** legendary quality template *** -->
+		<lootqualitytemplate name="qualLegendaryTemplate">
+			<qualitytemplate level="1,999999" default_quality="6">
+				<loot quality="6" prob="1"/>
+			</qualitytemplate>
+		</lootqualitytemplate>
 		
+		<!-- *** basic (hoe) quality template *** -->
+		<lootqualitytemplate name="qualBasicTemplate">
+			<qualitytemplate level="1,999999" default_quality="1">
+				<loot quality="1" prob="1"/>
+			</qualitytemplate>
+		</lootqualitytemplate>
+	</insertafter>
+	
 	<!-- *** adjustments for research paper in loot -->
 	<set xpath="/lootcontainers/lootgroup/item[@group='skillMagazines']/@loot_prob_template">high</set>
 	
@@ -90,6 +106,27 @@
 		<lootgroup name="groupSolarBank" loot_quality_template="qualBaseTemplate">
 			<item name="solarCell"/>
 		</lootgroup>
+		
+		<!-- *** Lootgroups for Legendaries -->
+		<lootgroup name="groupLegendaryMelee" count="1" loot_quality_template="qualLegendaryTemplate">
+			<item name="meleeWpnBladeLegendaryPaintBrush" count="1"/>
+			<!-- <item name="meleeHellsScythe" count="1"/> -->
+			<!-- <item name="meleeWpnSpearT0Pitchfork" count="1"/> -->
+			<!-- <item name="meleeToolAxeT1GardenRake" count="1"/> -->
+		</lootgroup>
+	
+		<!-- <lootgroup name="groupLegendaryRanged" count="1" loot_quality_template="qualLegendaryTemplate"> -->
+			<!-- <item name="gunMGT4FNSCAR" count="1"/> -->
+			<!-- <item name="gunHandgunT4MachinePistol" count="1"/> -->
+			<!-- <item name="gunShotgunT4FabarmMartial" count="1"/> -->
+			<!-- <item name="gunHandgunT4MagnumRagingHorn" count="1"/> -->
+			<!-- <item name="gunRifleT4LegendarySniper" count="1"/> -->
+		<!-- </lootgroup> -->
+	
+		<lootgroup name="groupLegendary">
+			<item group="groupLegendaryMelee"/>
+			<!-- <item group="groupLegendaryRanged"/> -->
+		</lootgroup>
 	</insertafter>
 	
 	<append xpath="//lootgroup[@name='groupToolsTiered']">
@@ -98,6 +135,22 @@
 
 	<append xpath="//lootgroup[@name='groupToolsTieredBonus']">
 		<item group="groupBasic" loot_prob_template="ProbT1" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupHardenedChestT5']">
+		<item group="groupLegendary" count="1" loot_prob_template="ProbT3"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupHardenedChestT4']">
+		<item group="groupLegendary" count="1" loot_prob_template="veryLow" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupInfestedT4']">
+		<item group="groupLegendary" count="1" loot_prob_template="low" force_prob="true"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='groupZpackBoss']">
+		<item group="groupLegendary" count="1" loot_prob_template="veryLow" force_prob="true"/>
 	</append>
 	
 	<!-- *** adds ammopress (workbench tool) to loot -->
