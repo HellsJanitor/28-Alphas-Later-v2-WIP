@@ -30,7 +30,7 @@
 	
 	<!-- *** replace chickens with wild variants -->
 	<set xpath="/entitygroups/entitygroup[@name='WildGameForest']">
-	animalRabbit, 5
+	animalWildRabbit, 5
 	animalWildChicken, 5
 	none, 90
 	</set>

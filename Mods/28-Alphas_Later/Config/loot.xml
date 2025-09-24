@@ -110,9 +110,9 @@
 		<!-- *** Lootgroups for Legendaries -->
 		<lootgroup name="groupLegendaryMelee" count="1" loot_quality_template="qualLegendaryTemplate">
 			<item name="meleeWpnBladeLegendaryPaintBrush" count="1"/>
-			<!-- <item name="meleeHellsScythe" count="1"/> -->
-			<!-- <item name="meleeWpnSpearT0Pitchfork" count="1"/> -->
-			<!-- <item name="meleeToolAxeT1GardenRake" count="1"/> -->
+			<item name="meleeWpnLegendaryScythe" count="1"/>
+			<item name="meleeWpnLegendaryPitchfork" count="1"/>
+			<item name="meleeWpnLegendaryGardenRake" count="1"/>
 		</lootgroup>
 	
 		<!-- <lootgroup name="groupLegendaryRanged" count="1" loot_quality_template="qualLegendaryTemplate"> -->

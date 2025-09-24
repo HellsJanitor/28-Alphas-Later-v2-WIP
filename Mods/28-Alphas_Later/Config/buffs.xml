@@ -3316,6 +3316,27 @@
 			</effect_group>
 		</buff>
 		
+		<!-- ** Dev Wellness Buff -->
+		<buff name="buffWellnessDev" hidden="true" remove_on_death="true">
+			<stack_type value="replace"/>
+			<duration value=".1"/>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="wellness" operation="LT" value="260"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="wellness" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffWellnessDev"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffNegativeWellnessDev" hidden="true" remove_on_death="true">
+			<stack_type value="replace"/>
+			<duration value=".1"/>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="wellness" operation="LT" value="260"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="wellness" operation="add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffNegativeWellnessDev"/>
+			</effect_group>
+		</buff>
+		
 		<!-- *** Tier 0 Wellness Buff -->
 		<buff name="buffWellnessT0" hidden="true" remove_on_death="true">
 			<stack_type value="replace"/>

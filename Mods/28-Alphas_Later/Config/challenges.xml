@@ -27,6 +27,23 @@
 		</challenge>
 	</insertafter>
 	
+	<remove xpath="/challenges/challenge[@name='questTierComplete']"/>
+	<remove xpath="/challenges/challenge[@name='questTraderToTraderComplete']"/>
+	
+	<insertafter xpath="/challenges/challenge[@name='questComplete']">
+		<challenge name="gatherDukes" title_key="challengegatherDukes" icon="ui_game_symbol_coin" group="Traders" hint="gatherDukesHint1"
+			short_description_key="challengegatherDukesShort" description_key="challengegatherDukesDesc"
+			reward_text_key="challenge_reward_2000xp" reward_event="challenge_reward_2000">
+			<objective type="Gather" item="casinoCoin" count="1000"/>			
+		</challenge>
+		
+		<challenge name="gatherDukesStack" title_key="challengegatherDukesStack" icon="ui_game_symbol_loot_sack" group="Traders" hint="challengegatherDukesStackHint1"
+			short_description_key="challengegatherDukesStackShort" description_key="challengegatherDukesStackDesc"
+			reward_text_key="challenge_reward_5000xp" reward_event="challenge_reward_5000">
+			<objective type="Gather" item="casinoCoin" count="20000"/>			
+		</challenge>
+	</insertafter>
+	
 	<append xpath="/challenges/challenge[@name='killLumberjack']/objective[@type='Kill']/@entity_names">,zombieLumberjackRotten,zombieLumberjackMutated</append>
 	<append xpath="/challenges/challenge[@name='killSpider']/objective[@type='Kill']/@entity_names">,zombieSpiderRotten,zombieSpiderMutated,zombieSpiderFrozen</append>
 	<append xpath="/challenges/challenge[@name='killBigMama']/objective[@type='Kill']/@entity_names">,zombieFemaleFatRotten,zombieFemaleFatMutated,zombieFemaleFatFrozen,zombieFemaleFatCowboy</append>
@@ -35,6 +52,8 @@
 	<append xpath="/challenges/challenge[@name='killCop']/objective[@type='Kill']/@entity_names">,zombieFatCopRotten,zombieFatCopMutated</append>
 	<append xpath="/challenges/challenge[@name='killWights']/objective[@type='Kill']/@entity_names">,zombieWightMutated,zombieWightFeralCowboy</append>
 	<append xpath="/challenges/challenge[@name='killDemolitions']/objective[@type='Kill']/@entity_names">,zombieMutatedDemolition</append>
+	<append xpath="/challenges/challenge[@name='killRabbits']/objective[@type='Kill']/@entity_names">,animalWildRabbit</append>
+	<append xpath="/challenges/challenge[@name='killChickens']/objective[@type='Kill']/@entity_names">,animalWildChicken</append>
 	
 	<set xpath="/challenges/challenge[@name='gathererWood']/objective[@type='Harvest']/@count">200</set>
 	<set xpath="/challenges/challenge[@name='gathererWood']/objective[@type='Harvest']/@item">woodLogPillar100</set>

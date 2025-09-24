@@ -2575,6 +2575,55 @@
 
 			<property name="NavObject" value="animaltracking_chicken"/>
 		</entity_class>
+		
+		<!-- *** wild rabbit -->
+		<entity_class name="animalWildRabbit" extends="animalTemplateTimid">
+			<property name="Class" value="EntityAnimalRabbit"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Tags" value="entity,animal,rabbit,perkAT01,perkAT02,perkAT03,perkAT04,perkAT05"/>
+			<property name="MapIcon" value="ui_game_symbol_tracking_rabbit"/>
+			<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
+			<property name="AvatarController" value="AvatarAnimalController"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="Prefab" value="@:Entities/Animals/Rabbit/animalRabbitPrefab.prefab"/>
+			<property name="PrefabCombined" value="true"/>
+			<property name="Parent" value="Animals"/>
+			<property name="Faction" value="animals"/>
+			<property name="PhysicsBody" value="rabbit"/>
+			<property name="Mass" value="33"/>
+			<property name="Weight" value="11"/>
+			<property name="SoundHurt" value="rabbitpain"/>
+			<property name="SoundDeath" value="rabbitdeath"/>
+			<property name="SoundStepType" value="animallightstep"/>
+			<property name="SwimOffset" value="2"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="CanBigHead" value="false"/>
+
+			<property name="AITask-1" value="RunawayWhenHurt"/>
+			<property name="AITask-2" value="RunawayFromEntity" data="class=EntityPlayer,EntityZombie,EntityEnemyAnimal;safeDistance=20"/>
+			<property name="AITask-3" value="Look"/>
+			<property name="AITask-4" value="Wander"/>
+
+			<!-- Gameplay -->
+			<property name="MoveSpeedPanic" value="1.55"/>
+
+			<property name="ExperienceGain" value="130"/><!-- XP Rabbit -->
+			<property name="DeadBodyHitPoints" value="175"/>
+
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalRabbit -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="5"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
+
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="10"/>
+			</effect_group>
+
+			<property name="NavObject" value="animaltracking_rabbit"/>
+		</entity_class>
 	</append>
 </HellsJanitor>
 

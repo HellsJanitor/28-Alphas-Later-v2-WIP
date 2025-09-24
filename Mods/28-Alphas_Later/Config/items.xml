@@ -425,15 +425,20 @@
 		<property name="Create_item" value="drinkJarEmpty"/>
 	</append>
 	
+	<!-- *** replace skill magazines with research papers -->	
+	<append xpath="/items/item/property/property[@name='Create_item' and (contains(@value,'SkillMagazine'))]/@value">,researchPaperBlank</append>
+	<csv xpath="/items/item/property/property[@name='Create_item' and (contains(@value,'SkillMagazine'))]/@value" delim="," op="remove" >*SkillMagazine</csv>
+	
 	<append xpath="/items">
 		<!-- *** Legendaries -->
+		<!-- *** Red's Paintbrush -->
 		<item name="meleeWpnBladeLegendaryPaintBrush">
-			<property name="Tags" value="knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
+			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
 			<property name="CustomIcon" value="meleeToolPaintTool"/>
 			<property name="DescriptionKey" value="meleeWpnBladeLegendaryPaintBrushDesc"/>
 			<property name="DisplayType" value="meleeKnife"/>
 			<property name="HoldType" value="36"/>
-			<property name="Meshfile" value="#@modfolder:Resources/LegendaryPaintbrush.unity3d?paintbrush.prefab"/>
+			<property name="Meshfile" value="#@modfolder:Resources/LegendaryMelee.unity3d?paintbrush.prefab"/>
 			<property name="Material" value="Mmetal"/>
 			<!-- <property name="TintColor" value="0,0,0"/> -->
 			<property name="ScrapTimeOverride" value="10.0"/>
@@ -500,10 +505,10 @@
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkDeepCuts"/>
 				<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,2,3,3,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3,3,3,4,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="12" tags="perkDeepCuts,knife"/><!-- meleeWpnBladeT1HuntingKnife -->
+				<passive_effect name="EntityDamage" operation="base_set" value="27" tags="perkDeepCuts,knife"/><!-- meleeWpnBladeT1HuntingKnife -->
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkDeepCuts"/><!-- random EntityDmg -->
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/><!-- tier bonus -->
 				<passive_effect name="BlockDamage" operation="base_set" value="6.5" tags="perkDeepCuts"/>
@@ -516,6 +521,7 @@
 				<!-- <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/> affects organic block harvesting based on block.material.damage_category, not animal corpse harvesting -->
 				<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 				<!--<passive_effect name="BlockDamage" operation="perc_add" value="6" tags="blockButcher"/>-->
+				<passive_effect name="DismemberChance" operation="base_add" value="1"/>
 			</effect_group>
 			<effect_group name="Power Attack">
 				<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
@@ -530,6 +536,260 @@
 				<passive_effect name="DamageBonus" operation="base_add" value="4"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="4" tags="perkDeepCuts"/>
 				<display_value name="dEntityDamageSneak" value="4"/>
+			</effect_group>
+		</item>
+		
+		<!-- *** pitchfork *** -->
+		<item name="meleeWpnLegendaryPitchfork">
+			<property name="Extends" value="meleeWpnSpearT1IronSpear" param1="TintColor"/>
+			<property name="Tags" value="legendary,melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill"/><!-- ,thrownWeapon -->
+			<property name="CustomIcon" value="meleeWpnLegendaryPitchfork"/>
+			<property name="DescriptionKey" value="meleeWpnLegendaryPitchforkDesc"/>
+			<property name="DisplayType" value="meleeSpear"/>
+			<property name="HoldType" value="59"/>
+			<!-- <property name="Meshfile" value="#@modfolder:Resources/basicGardenWeapons.unity3d?Pitchfork"/> -->
+			<property name="Meshfile" value="#@modfolder:Resources/LegendaryMelee.unity3d?Pitchfork.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="ScrapTimeOverride" value="10.0"/>
+			<property name="Weight" value="1"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="1100"/>
+			<property name="TraderStageTemplate" value="baseTier2"/><!-- meleeWpnSpearT3SteelSpear -->
+			<property name="UnlockedBy" value="craftingSpears"/><!-- perkSpearHunter3SteelSpears, -->
+			<property name="Group" value="Ammo/Weapons,Melee Weapons,Ranged Weapons"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="SoundPickup" value="spear_metal_grab"/>
+			<property name="SoundPlace" value="spear_metal_place"/>
+	
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Range" value="3.6"/>
+				<property name="Sphere" value=".05"/><!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="spear_fire"/>
+				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+				<property name="UsePowerAttackAnimation" value="true"/>
+			</property>
+	
+			<effect_group name="meleeWpnSpearT3SteelSpear">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkJavelinMaster"/>
+				<display_value name="dTargetArmor" value="-.5"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkJavelinMaster,perkFlurryOfPerception"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="22.4" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6" tags="perkJavelinMaster"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkJavelinMaster"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkJavelinMaster"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3,3,3,4,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="33" tags="perkJavelinMaster"/><!-- meleeWpnSpearT3SteelSpear -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkJavelinMaster"/><!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/><!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="base_set" value="15" tags="perkJavelinMaster"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkJavelinMaster"/><!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/><!-- tier bonus -->
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+			</effect_group>
+			
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="40.3" tags="secondary"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".3" tags="secondary"/>
+
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkJavelinMaster">
+					<requirement name="ItemHasTags" tags="perkJavelinMaster"/>
+					<requirement name="IsSecondaryAttack"/>
+					<requirement name="ProgressionLevel" progression_name="perkSpearHunter6PenetratingShaft" operation="Equals" value="1"/>
+				</passive_effect>
+
+				<passive_effect name="BlockPenetrationFactor" operation="base_set" value="10000" tags="perkJavelinMaster"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="EntityTagCompare" target="other" tags="radiated,mutated,mutant"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.5"/>
+			</effect_group>
+		</item>
+	
+		<!-- *** garden rake *** -->
+		<item name="meleeWpnLegendaryGardenRake">
+			<property name="Extends" value="meleeToolAxeT1IronFireaxe" param1="TintColor"/>
+			<property name="Tags" value="legendary,axe,melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,corpseRemoval"/>
+			<property name="CustomIcon" value="meleeWpnLegendaryGardenRake"/>
+			<property name="DescriptionKey" value="meleeWpnLegendaryGardenRakeDesc"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="17"/>
+			<property name="Meshfile" value="#@modfolder:Resources/LegendaryMelee.unity3d?Rake.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="1100"/>
+			<property name="TraderStageTemplate" value="baseTier2"/>
+			<property name="Weight" value="1"/>
+			<property name="ScrapTimeOverride" value="10.0"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="SoundPickup" value="axe_steel_grab"/>
+			<property name="SoundPlace" value="axe_steel_place"/>
+			<property class="Action0">
+				<property name="Sound_start" value="axe_steel_swinglight"/>
+			</property>
+			<property class="Action1">
+				<property name="Sound_start" value="axe_steel_swingheavy"/>
+			</property>
+			<effect_group name="meleeToolAxeT1GardenRake">
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkMiner69r,axe"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="26.4" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkMiner69r"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkMiner69r"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3,3,3,4,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="33" tags="perkMiner69r"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkMiner69r"/><!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/><!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="base_set" value="15" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkMiner69r"/><!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15,.75" tier="2,6" tags="perkMiner69r"/><!-- tier bonus -->
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+				<passive_effect name="HarvestCount" operation="base_set" value=".7" tags="butcherHarvest"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="base_add" value="10" tags="secondary"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="52.7" tags="secondary"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="EntityTagCompare" target="other" tags="radiated,mutated,mutant"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.5"/>
+			</effect_group>
+		</item>
+		
+		<!-- *** scythe *** -->
+		<item name="meleeWpnLegendaryScythe">
+			<property name="CreativeMode" value="Player"/>
+			<property name="DisplayType" value="meleeKnife"/>
+			<property name="CrosshairUpAfterShot" value="false"/>
+			<property name="DescriptionKey" value="meleeWpnLegendaryScytheDesc"/>
+			<property name="CustomIcon" value="meleeWpnLegendaryScythe"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="HoldType" value="33"/>
+			<property name="Material" value="Mwood"/>
+			<property name="Meshfile" value="#@modfolder:Resources/LegendaryMelee.unity3d?Scythe.prefab"/>
+			<property name="PositionOffset" value="0,0,-.01"/>
+			<property name="RepairExpMultiplier" value="5.5"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundPickup" value="machete_grab"/>
+			<property name="SoundPlace" value="machete_place"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="legendary,machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
+			<!-- <property name="TintColor" value="255,0,0"/> -->
+			<property name="TraderStageTemplate" value="baseTier0"/>
+
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Piercing"/>
+				<property name="Sphere" value=".15"/>
+				<property name="Sound_start" value="machete_swinglight"/>
+				<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".515"/>
+				<property name="GrazeEnd" value=".52"/>
+				<property name="SwingDegrees" value="65"/>
+				<property name="SwingAngle" value="160"/>
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalslashorganic"/>
+				</property>
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Piercing"/>
+				<property name="Sphere" value=".15"/>
+				<property name="Sound_start" value="machete_swingheavy"/>
+				<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
+				<property name="UsePowerAttackAnimation" value="true"/>
+				<property name="UseGrazingHits" value="true"/>
+				<property name="IsHorizontalSwing" value="true"/>
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".515"/>
+				<property name="GrazeEnd" value=".52"/>
+				<property name="SwingDegrees" value="110"/>
+				<property name="SwingAngle" value="90"/>
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalslashorganic"/>
+				</property>
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+			</property>
+			<effect_group name="meleeWpnBladeT3Machete">
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="75" tags="perkDeepCuts,perkFlurryOfAgility"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="16" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6" tags="perkDeepCuts"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.3" tags="perkDeepCuts"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkDeepCuts"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3,3,3,4,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="30" tags="perkDeepCuts"/> <!-- meleeWpnBladeT3Machete -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkDeepCuts"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="base_set" value="21" tags="perkDeepCuts"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkDeepCuts"/> <!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+				<!--<passive_effect name="BlockDamage" operation="perc_add" value="1.5" tags="blockButcher"/>-->
+				<passive_effect name="DismemberChance" operation="base_add" value="1"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="32.7" tags="secondary"/>
+			</effect_group>
+			<effect_group name="sneak damage bonus">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+					<passive_effect name="DamageBonus" operation="base_add" value="4"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="4" tags="perkDeepCuts"/>
+					<display_value name="dEntityDamageSneak" value="4"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="EntityTagCompare" target="other" tags="radiated,mutated,mutant"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.5"/>
 			</effect_group>
 		</item>
 		
@@ -1674,122 +1934,7 @@
 			<property name="Stacknumber" value="10000"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Research"/>
-		</item>
-		
-		<!-- <item name="researchPaperBlank"> -->
-		<!-- <property name="DescriptionKey" value="researchPaperBlankDesc"/> -->
-		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-		<!-- <property name="Tags" value="csm"/> -->
-		<!-- <property name="CustomIcon" value="questMaster"/> -->
-		<!-- <property name="Stacknumber" value="10000"/> -->
-		<!-- <property name="SellableToTrader" value="false"/> -->
-		<!-- <property name="Group" value="Research"/> -->
-		<!-- <effect_group tiered="false"> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="1"/> -->
-		<!-- </effect_group> -->
-			
-		<!-- <effect_group tiered="false"> -->
-		<!-- <requirement name="HasBuff" buff="buffNerdOutfit"/> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="nerdPointChance" operation="set" value="1"/> -->
-		<!-- </effect_group> -->
-
-		<!-- <effect_group tiered="false"> -->
-		<!-- <requirement name="CVarCompare" cvar="nerdPointChance" operation="EQ" value="1"/> -->
-		<!-- <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="add" value="1"/> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="nerd_outfit_perk"/> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveCVar" cvar="nerdPointChance"/> -->
-		<!-- </effect_group> -->
-		<!-- </item> -->
-		
-		<!-- <item name="researchPaperBlank100"> -->
-		<!-- <property name="DescriptionKey" value="researchPaperBlank100Desc"/> -->
-		<!-- <property name="CreativeMode" value="Dev"/> -->
-		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-		<!-- <property name="CustomIcon" value="questMaster"/> -->
-		<!-- <property name="CustomIconTint" value="CF7F29"/> -->
-		<!-- <property name="Stacknumber" value="1000"/> -->
-		<!-- <property name="SellableToTrader" value="false"/> -->
-		<!-- <property name="EconomicValue" value="0"/> -->
-		<!-- <property name="Group" value="Research"/> -->
-		<!-- <effect_group tiered="false"> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="100"/> -->
-		<!-- </effect_group> -->
-		<!-- </item> -->
-		
-		<!-- <item name="researchPaperBlank500"> -->
-		<!-- <property name="DescriptionKey" value="researchPaperBlank500Desc"/> -->
-		<!-- <property name="CreativeMode" value="Dev"/> -->
-		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-		<!-- <property name="CustomIcon" value="questMaster"/> -->
-		<!-- <property name="CustomIconTint" value="A2A41B"/> -->
-		<!-- <property name="Stacknumber" value="200"/> -->
-		<!-- <property name="SellableToTrader" value="false"/> -->
-		<!-- <property name="EconomicValue" value="0"/> -->
-		<!-- <property name="Group" value="Research"/> -->
-		<!-- <effect_group tiered="false"> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="500"/> -->
-		<!-- </effect_group> -->
-		<!-- </item> -->
-		
-		<!-- <item name="researchPaperBlank1000"> -->
-		<!-- <property name="DescriptionKey" value="researchPaperBlank1000Desc"/> -->
-		<!-- <property name="CreativeMode" value="Dev"/> -->
-		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-		<!-- <property name="CustomIcon" value="questMaster"/> -->
-		<!-- <property name="CustomIconTint" value="42C234"/> -->
-		<!-- <property name="Stacknumber" value="100"/> -->
-		<!-- <property name="SellableToTrader" value="false"/> -->
-		<!-- <property name="EconomicValue" value="0"/> -->
-		<!-- <property name="Group" value="Research"/> -->
-		<!-- <effect_group tiered="false"> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="1000"/> -->
-		<!-- </effect_group> -->
-		<!-- </item> -->
-		
-		<!-- <item name="researchPaperBlank5000"> -->
-		<!-- <property name="DescriptionKey" value="researchPaperBlank5000Desc"/> -->
-		<!-- <property name="CreativeMode" value="Dev"/> -->
-		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-		<!-- <property name="CustomIcon" value="questMaster"/> -->
-		<!-- <property name="CustomIconTint" value="315DCE"/> -->
-		<!-- <property name="Stacknumber" value="20"/> -->
-		<!-- <property name="SellableToTrader" value="false"/> -->
-		<!-- <property name="EconomicValue" value="0"/> -->
-		<!-- <property name="Group" value="Research"/> -->
-		<!-- <effect_group tiered="false"> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="5000"/> -->
-		<!-- </effect_group> -->
-		<!-- </item> -->
-		
-		<!-- <item name="researchPaperBlank10000"> -->
-		<!-- <property name="DescriptionKey" value="researchPaperBlank10000Desc"/> -->
-		<!-- <property name="CreativeMode" value="Dev"/> -->
-		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-		<!-- <property name="CustomIcon" value="questMaster"/> -->
-		<!-- <property name="CustomIconTint" value="A42ACC"/> -->
-		<!-- <property name="Stacknumber" value="10"/> -->
-		<!-- <property name="SellableToTrader" value="false"/> -->
-		<!-- <property name="EconomicValue" value="0"/> -->
-		<!-- <property name="Group" value="Research"/> -->
-		<!-- <effect_group tiered="false"> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="10000"/> -->
-		<!-- </effect_group> -->
-		<!-- </item> -->
-		
-		<!-- <item name="researchPaperBlank100000"> -->
-		<!-- <property name="DescriptionKey" value="researchPaperBlank100000Desc"/> -->
-		<!-- <property name="CreativeMode" value="Dev"/> -->
-		<!-- <property name="Extends" value="masterSkillMagazine"/> -->
-		<!-- <property name="CustomIcon" value="questMaster"/> -->
-		<!-- <property name="CustomIconTint" value="008080"/> -->
-		<!-- <property name="SellableToTrader" value="false"/> -->
-		<!-- <property name="EconomicValue" value="0"/> -->
-		<!-- <property name="Group" value="Research"/> -->
-		<!-- <effect_group tiered="false"> -->
-		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="researchPoints" operation="Add" value="100000"/> -->
-		<!-- </effect_group> -->
-		<!-- </item> -->
+		</item>		
 		
 		<!-- *** chicken coop tools -->
 		<item name="toolHeatLamp"><!-- SPEED_SLOT -->
@@ -1800,14 +1945,14 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Morganic"/>
+			<property name="Material" value="Mmetal"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Tools/Traps"/>
 			<property name="SoundPickup" value="lightbulb_grab"/>
 			<property name="SoundPlace" value="lightbulb_place"/>
 			<property name="EconomicValue" value="240"/>
 			<property name="TraderStageTemplate" value="midTier0"/><!-- toolDewGatherer -->
-			<property name="SellableToTrader" value="false"/>
+			<!-- <property name="SellableToTrader" value="false"/> -->
 			<property name="ItemTypeIcon" value="forge"/>
 		</item>
 
@@ -1822,11 +1967,11 @@
 			<property name="Material" value="Morganic"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Tools/Traps"/>
-			<property name="EconomicValue" value="500"/>
+			<property name="EconomicValue" value="240"/>
 			<property name="SoundPickup" value="haybale_grab"/>
 			<property name="SoundPlace" value="haybale_place"/>
 			<property name="TraderStageTemplate" value="midTier1"/><!-- toolDewTarp -->
-			<property name="SellableToTrader" value="false"/>
+			<!-- <property name="SellableToTrader" value="false"/> -->
 			<property name="ItemTypeIcon" value="forge"/>
 		</item>
 
@@ -1839,14 +1984,14 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Morganic"/>
+			<property name="Material" value="Mmetal"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Tools/Traps"/>
 			<property name="SoundPickup" value="lightbulb_grab"/>
 			<property name="SoundPlace" value="lightbulb_place"/>
 			<property name="EconomicValue" value="240"/>
 			<property name="TraderStageTemplate" value="midTier0"/><!-- toolDewGatherer -->
-			<property name="SellableToTrader" value="false"/>
+			<!-- <property name="SellableToTrader" value="false"/> -->
 			<property name="ItemTypeIcon" value="forge"/>
 		</item>
 
@@ -1858,14 +2003,14 @@
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Morganic"/>
+			<property name="Material" value="Mwood"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Tools/Traps"/>
-			<property name="EconomicValue" value="500"/>
+			<property name="EconomicValue" value="240"/>
 			<property name="SoundPickup" value="haybale_grab"/>
 			<property name="SoundPlace" value="haybale_place"/>
 			<property name="TraderStageTemplate" value="midTier1"/><!-- toolDewTarp -->
-			<property name="SellableToTrader" value="false"/>
+			<!-- <property name="SellableToTrader" value="false"/> -->
 			<property name="ItemTypeIcon" value="forge"/>
 		</item>
 		
@@ -2158,7 +2303,398 @@
 			<property name="SoundPlace" value="repairkits_place"/>
 			<!-- <property name="CustomIconTint" value="da2c43"/> -->
 		</item>
+		
+		<!-- *** dev wellness item(s) -->
+		<item name="devIncreaseWellness">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="drugHealthBar"/>
+			<property name="DescriptionKey" value="devIncreaseWellnessDesc"/>
+			<property name="Tags" value="medical,fitness"/>
+			<property name="DisplayType" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Stacknumber" value="10"/> <!-- STK loot -->
+			<property name="Group" value="Science,Medical"/>
+			<property name="SoundPickup" value="drug_atomjunkies_grab"/>
+			<property name="SoundPlace" value="drug_atomjunkies_place"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>			
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffWellnessDev"/>					
+				<display_value name="dWellness" value="1"/>
+			</effect_group>
+		</item>
+		
+		<item name="devDecreaseWellness">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="drugHealthBar"/>
+			<property name="CustomIconTint" value="A42ACC"/>
+			<property name="DescriptionKey" value="devIncreaseWellnessDesc"/>
+			<property name="Tags" value="medical,fitness"/>
+			<property name="DisplayType" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Stacknumber" value="10"/> <!-- STK loot -->
+			<property name="Group" value="Science,Medical"/>
+			<property name="SoundPickup" value="drug_atomjunkies_grab"/>
+			<property name="SoundPlace" value="drug_atomjunkies_place"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>			
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffNegativeWellnessDev"/>					
+				<display_value name="dWellness" value="-1"/>
+			</effect_group>
+		</item>
 	</append>
+	
+	<!-- *** correct progression levels for stun baton charges etc -->
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']">
+		<property name="Tags" value="melee,grunting,light,perkFlurryOfIntellect,weapon,meleeWeapon,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,stunBaton,meleeIntellect,batonJunkie"/>
+		<property name="DisplayType" value="melee"/>
+		<property name="HoldType" value="58"/>
+		<property name="Meshfile" value="@:Other/Items/Weapons/Melee/TaserBaton/TaserBatonPrefab.prefab"/>
+		<property name="Material" value="MmeleeWpnBatonParts"/>
+		<property name="TintColor" value="69, 150, 191"/>
+		<property name="Weight" value="1"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="RepairTools" value="resourceRepairKit"/>
+		<property name="DegradationBreaksAfter" value="false"/>
+		<property name="EconomicValue" value="1100"/>
+		<property name="TraderStageTemplate" value="baseTier2"/><!-- meleeWpnBatonT2StunBaton -->
+		<property name="SoundJammed" value="ItemNeedsRepair"/>
+		<property name="SoundDestroy" value="wooddestroy1"/>
+		<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+		<property name="RepairExpMultiplier" value="5.5"/>
+		<property name="UnlockedBy" value="craftingRobotics"/><!-- meleeWpnBatonT2StunBaton, -->
+		<property name="ShowQuality" value="true"/>
+		<property name="SoundUnholster" value="weapon_unholster"/>
+		<property name="SoundHolster" value="weapon_holster"/>
+		<property name="SoundPickup" value="baton_stun_grab"/>
+		<property name="SoundPlace" value="baton_stun_place"/>
+
+		<property class="Action0">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Damage_type" value="Slashing"/>
+			<property name="Sphere" value=".15"/><!-- limit to 0.15, else the sphere cast can overlap the target already -->
+			<property name="Sound_start" value="stunbaton_swinglight"/>
+			<property name="UseGrazingHits" value="true"/>
+			<property name="GrazeStart" value=".25"/>
+			<property name="GrazeEnd" value=".32"/>
+			<property name="SwingDegrees" value="90"/>
+			<property name="SwingAngle" value="90"/>
+			<property class="HitSounds">
+				<property name="Override0" value="organic" param1="metalhollowhitorganic"/>
+			</property>
+			<property class="GrazeSounds">
+				<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+			</property>
+		</property>
+		<property class="Action1">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Damage_type" value="Slashing"/>
+			<property name="Sphere" value=".15"/><!-- limit to 0.15, else the sphere cast can overlap the target already -->
+			<property name="Sound_start" value="stunbaton_swingheavy"/>
+			<property name="UsePowerAttackAnimation" value="true"/>
+			<property name="UseGrazingHits" value="true"/>
+			<property name="GrazeStart" value=".2"/>
+			<property name="GrazeEnd" value=".32"/>
+			<property name="SwingDegrees" value="65"/>
+			<property name="SwingAngle" value="180"/>
+			<property class="HitSounds">
+				<property name="Override0" value="organic" param1="metalhollowhitorganic"/>
+			</property>
+			<property class="GrazeSounds">
+				<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+			</property>
+		</property>
+		<effect_group name="meleeWpnBatonT2StunBaton">
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkElectrocutioner,perkFlurryOfIntellect"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="15.5" tags="primary"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="300,700" tier="1,6" tags="perkElectrocutioner"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkElectrocutioner"/>
+			<passive_effect name="MaxRange" operation="base_set" value="2.4" tags="perkElectrocutioner"/>
+			<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkElectrocutioner"/>
+			<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="20" tags="perkElectrocutioner"/><!-- meleeWpnBatonT2StunBaton -->
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.04,.04" tags="perkElectrocutioner"/><!-- random EntityDmg -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkElectrocutioner"/><!-- tier bonus -->
+			<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkElectrocutioner"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkElectrocutioner"/><!-- tier bonus -->
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+			<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+			<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+			<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+			<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+
+		</effect_group>
+		<effect_group name="Power Attack">
+			<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="26.4" tags="secondary"/>
+		</effect_group>
+		<effect_group name="apply damage buff, meleeWpnBatonT2StunBaton">
+			<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0">
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Sparks"/>
+
+			<!-- perkIntellectMastery level 4 allows only 2 hits to charge -->
+			<!-- <triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge"> -->
+				<!-- <requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/> -->
+				<!-- <requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="4"/> -->
+				<!-- <requirement name="IsAlive" target="other"/> -->
+				<!-- <requirement name="!EntityTagCompare" target="other" tags="trader"/> -->
+			<!-- </triggered_effect> -->
+			<!-- <triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge"> -->
+				<!-- <requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/> -->
+				<!-- <requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="GTE" value="4"/> -->
+				<!-- <requirement name="IsAlive" target="other"/> -->
+				<!-- <requirement name="!EntityTagCompare" target="other" tags="trader"/> -->
+			<!-- </triggered_effect> -->
+
+			<!-- perkIntellectMastery level 5 keeps baton charged and ready at all times -->
+			<!-- <triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="4" relative="false" key="charge"> -->
+				<!-- <requirement name="CompareItemMetaFloat" operation="LTE" value="4" key="charge"/> -->
+				<!-- <requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/> -->
+				<!-- <requirement name="IsAlive" target="other"/> -->
+				<!-- <requirement name="!EntityTagCompare" target="other" tags="trader"/> -->
+			<!-- </triggered_effect> -->
+			<!-- <triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="4" relative="false" key="charge"> -->
+				<!-- <requirement name="CompareItemMetaFloat" operation="LTE" value="4" key="charge"/> -->
+				<!-- <requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/> -->
+				<!-- <requirement name="IsAlive" target="other"/> -->
+				<!-- <requirement name="!EntityTagCompare" target="other" tags="trader"/> -->
+			<!-- </triggered_effect> -->
+
+			<!-- Set shock duration Primary -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="10"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4.8">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="10"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="20"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="5.6">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="20"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="30"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="6.4">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="30"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="40"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="7.2">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="40"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="50"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="8">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="Equals" value="50"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+
+			<!-- Set shock duration Secondary -->
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="10"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4.8">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="10"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="20"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="5.6">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="20"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="30"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="6.4">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="30"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="40"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="7.2">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="GTE" value="40"/>
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="LT" value="50"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="8">
+				<requirement name="ProgressionLevel" progression_name="lbu_Electrocutioner" operation="Equals" value="50"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+
+		</effect_group>
+		<effect_group name="increase charges">
+			<!-- initialize metadata for "charge" on stun batons, don't change value if already exists -->
+			<triggered_effect trigger="onSelfEquipStart" action="SetItemMetaFloat" change="0" relative="true" key="charge"/>
+		
+			<!-- play stun baton sounds -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit1">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="0" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit1">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="0" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit2">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="1" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit2">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="1" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit3">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="2" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit3">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="2" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit4">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="3" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit4">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="3" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit5">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit5">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+
+			<!-- potentially apply bonus charges from TechJunkie perk, by setting it to 3 the other actions below increase it to max charge -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge">
+				<requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/>
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie6BatonCharge" operation="Equals" value="1"/>
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge">
+				<requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/>
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie6BatonCharge" operation="Equals" value="1"/>
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+			</triggered_effect>
+		
+			<!-- increase charges -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="1" relative="true" key="charge">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="1" relative="true" key="charge">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="3" key="charge"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="2" relative="true" key="charge">
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+				<requirement name="CompareItemMetaFloat" operation="LTE" value="2" key="charge"/>
+			</triggered_effect>
+
+			<!-- add electric effect to baton -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+
+			<!-- add electric effect to baton with perkIntellectMastery level 5 -->
+			<!-- <triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0"> -->
+				<!-- <requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/> -->
+			<!-- </triggered_effect> -->
+			<!-- <triggered_effect trigger="onSelfEquipUpdate" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0"> -->
+				<!-- <requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/> -->
+			<!-- </triggered_effect> -->
+			<!-- <triggered_effect trigger="onPerkLevelChanged" action="AddPart" part="Sparks" prefab="@:ParticleEffects/p_electric_shock_small.prefab" parentTransform="Handle" localPos="0,0,0" localRot="0,0,0"> -->
+				<!-- <requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="Equals" value="5"/> -->
+			<!-- </triggered_effect> -->
+
+			<!-- trigger ragdoll events for fully charged baton -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="other" duration="@stunBatonDuration" force="350">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="other" duration="@stunBatonDuration" force="350">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+			</triggered_effect>
+		
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" duration="2.5" force="350" target_tags="zombie,animal">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.3" duration="2.5" force="350" target_tags="zombie,animal">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+			</triggered_effect>
+		
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" duration="@stunBatonDuration" force="350" target_tags="zombie,animal">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="HasBuff" buff="buffDrugNerdTats"/><!-- if you have buffDrugNerdTats, use stun duration so zombies get up after stun is finished -->
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.3" duration="@stunBatonDuration" force="350" target_tags="zombie,animal">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+				<requirement name="HasBuff" buff="buffDrugNerdTats"/><!-- if you have buffDrugNerdTats, use stun duration so zombies get up after stun is finished -->
+			</triggered_effect>
+
+			<!-- Trigger shock events for fully charged baton -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffShocked" duration="@stunBatonDuration">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffShocked" duration="@stunBatonDuration">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+
+			<!-- Trigger shock for AOE when using Nerd Tats -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="otherAOE" range="1.1" target_tags="zombie,animal" buff="buffShocked" duration="@stunBatonDuration">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="HasBuff" buff="buffDrugNerdTats"/></triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="otherAOE" range="1.3" target_tags="zombie,animal" buff="buffShocked" duration="@stunBatonDuration">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="HasBuff" buff="buffDrugNerdTats"/></triggered_effect>
+
+			<!-- Remove sparks from baton, keep them on if perkIntellectMastery level 5 -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RemovePart" part="Sparks">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="LT" value="5"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="RemovePart" part="Sparks">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+				<requirement name="ProgressionLevel" progression_name="perkIntellectMastery" operation="LT" value="5"/>
+			</triggered_effect>
+
+			<!-- reset charges -->
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="0" relative="false" key="charge">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="0" relative="false" key="charge">
+				<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+		</effect_group>
+	</set>	
 	
 	<!-- *** pairs custom repair kits to respective item -->
 	<set xpath="/items/item[@name='armorPrimitiveMaster']/property[@name='RepairTools']/@value">PrimitiveRepairKit</set>

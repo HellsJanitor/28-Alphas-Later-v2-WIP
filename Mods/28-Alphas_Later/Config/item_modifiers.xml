@@ -49,6 +49,9 @@
 		</item_modifier>
 	</append>
 	
+	<!-- *** weighted head -->
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@blocked_tags">noMods,knife</set>
+	
 	<!-- *** cigar -->
 	<set xpath="/item_modifiers/item_modifier[@name='modArmorCigar']">
 		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>

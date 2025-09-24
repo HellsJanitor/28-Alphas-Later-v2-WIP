@@ -68,7 +68,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".01,0.5" level="1,50" tags="perkDeadEye"/>
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".01,0.6" level="1,50" tags="perkDeadEye"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.01,0.3" level="1,50" tags="perkDeadEye"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkDeadEye">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkDeadEye">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 			</effect_group>
@@ -277,7 +277,7 @@
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.25" level="1,50" tags="primary"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.5" level="1,50" tags="secondary"/>
 					
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkJavelinMaster">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkJavelinMaster">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 			</effect_group>
@@ -460,12 +460,12 @@
 			
 			<effect_group>
 				<!-- Increase the chance to find Lucky Looter books until each book is read -->
-				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="luckyProb">
+				<passive_effect name="LootProb" operation="perc_add" level="1,50" value="2,10" tags="luckyProb">
 					<requirement name="ProgressionLevel" progression_name="perkLuckyLooterComplete" operation="LT" value="1"/>
 				</passive_effect>
 
 				<!-- When all Lucky Looter books have been read, set the probability bonus of finding them to 0 -->
-				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="1,1" tags="luckyProb">
+				<passive_effect name="LootProb" operation="perc_add" level="1,50" value="1,1" tags="luckyProb">
 					<requirement name="ProgressionLevel" progression_name="perkLuckyLooterComplete" operation="Equals" value="1"/>
 				</passive_effect>
 			</effect_group>
@@ -544,7 +544,7 @@
 				<passive_effect name="HarvestCount" operation="perc_add" value=".01,1" level="1,50" tags="salvageHarvest"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.25" level="1,50" tags="primary"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.50" level="1,50" tags="secondary"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkSalvageOperations">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkSalvageOperations">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 			</effect_group>
@@ -694,7 +694,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".01,0.5" level="1,50" tags="perkBoomstick"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".01,.3" level="1,50" tags="perkBoomstick"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".01,0.5" level="1,50" tags="perkBoomstick"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkBoomstick">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkBoomstick">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 			</effect_group>
@@ -879,7 +879,7 @@
 					
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.25" level="1,50" tags="primary"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.5" level="1,50" tags="secondary"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkPummelPete">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkPummelPete">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 				<!--For each level, Kills return +0.3% to Stamina up to a total of 15 at level 50 (half of Skull Pummel Pete lvl 5)-->
@@ -1051,7 +1051,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".01,0.5" level="1,50" tags="perkSkullCrusher"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.25" level="1,50" tags="primary"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.5" level="1,50" tags="secondary"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkSkullCrusher">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkSkullCrusher">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 				<!--Kills return Stamina: +0.3% stamina for each level up to max of 15 at level 50 (half of Skull Crusher Perk lvl 5)-->
@@ -1256,7 +1256,7 @@
 				<passive_effect name="HarvestCount" operation="perc_add" value="0.01,1" level="1,50" tags="oreWoodHarvest"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.25" level="1,50" tags="primary"/>/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.5" level="1,50" tags="secondary"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkMiner69r">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkMiner69r">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 			</effect_group>
@@ -1420,7 +1420,7 @@
 
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.25" level="1,50" tags="primary"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.5" level="1,50" tags="secondary"/><!--double on power attack-->
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkBrawler">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkBrawler">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 				<!--Kills return Stamina: +0.3% stamina for each level up to max of 15 at level 50 (half of Brawler Perk lvl 5)-->
@@ -1613,7 +1613,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".01,0.5" level="1,50" tags="perkMachineGunner"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.01,0.25" level="1,50" tags="perkMachineGunner"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.01,0.3" level="1,50" tags="perkMachineGunner"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkMachineGunner">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkMachineGunner">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 			</effect_group>
@@ -1766,7 +1766,7 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".01,.5" level="1,50" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".01,.3" level="1,50" tags="perkArchery"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".01,.5" level="1,50" tags="bowDrawPenalty"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkArchery">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkArchery">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 			</effect_group>
@@ -1898,7 +1898,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value="0.01,.5" level="1,50" tags="perkGunslinger"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.01,0.25" level="1,50" tags="perkGunslinger"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.01,0.3" level="1,50" tags="perkGunslinger"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkGunslinger">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkGunslinger">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 			</effect_group>
@@ -2054,7 +2054,7 @@
 					
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.25" level="1,50" tags="primary"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.5" level="1,50" tags="secondary"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkDeepCuts">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkDeepCuts">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 				<!--Kills return Stamina: +0.3% stamina for each level up to max of 15 at level 50 (half of Deap Cuts lvl 5)-->
@@ -2063,7 +2063,7 @@
 			
 			<effect_group>
 				<!-- Increase the chance to find blades with each perk rank -->
-				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="bladeSkill"/>
+				<passive_effect name="LootProb" operation="perc_add" level="1,50" value="2,10" tags="bladeSkill"/>
 			</effect_group>
 
 			<!-- DEEP_CUTS:SEXREX_REPLACEMENT -->
@@ -2433,7 +2433,7 @@
 					
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.25" level="1,50" tags="primary"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.01,-.5" level="1,50" tags="secondary"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkElectrocutioner">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkElectrocutioner">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 				<!--Kills return Stamina: +0.3% stamina for each level up to max of 15 at level 50 (half of Electrocutioner lvl 5)-->
@@ -2598,7 +2598,7 @@
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".01,1.5" level="1,50" tags="turretRanged"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value=".01,0.4" level="1,50" tags="perkTurrets"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value=".01,0.4" level="1,50" tags="turretMelee"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-1" level="1,50" tags="perkTurrets">
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="-0.01,-.5" level="1,50" tags="perkTurrets">
 					<requirement name="CVarCompare" cvar="lbu_Degradation" operation="GTE" value="1"/>
 				</passive_effect>
 			</effect_group>

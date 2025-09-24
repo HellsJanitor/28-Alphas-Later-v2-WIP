@@ -138,4 +138,7 @@
 			<!-- Drinking moonshine no longer blurs your vision. Effect is in buffDrunkGrandpasMoonshine. -->
 		</effect_group>
 	</set>
+	
+	<!-- *** lower degradation from sledge saga vol. 2 -->
+	<set xpath="/progression/perks/book[@name='perkSledgeSagaDegradation']/effect_group/passive_effect/@value">-.1</set>
 </HellsJanitor>
