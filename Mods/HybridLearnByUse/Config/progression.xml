@@ -1089,8 +1089,8 @@
 			<!-- SKULL_CRUSHER:SEXREX_REPLACEMENT -->
 			<effect_group>
 				<requirement name="ItemHasTags" tags="perkSkullCrusher"/>
-				<passive_effect name="StaminaLoss" operation="perc_add" level="1,50" value="-.08,-.25"/>
-				<passive_effect name="StaminaLoss" operation="perc_add" level="1,50" value="-.07,-.25" tags="secondary"/>
+				<!-- <passive_effect name="StaminaLoss" operation="perc_add" level="1,50" value="-.08,-.25"/> -->
+				<!-- <passive_effect name="StaminaLoss" operation="perc_add" level="1,50" value="-.07,-.25" tags="secondary"/> -->
 
 				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="10" delay="1.0">
 					<requirement name="ProgressionLevel" progression_name="lbu_SkullCrusher" operation="GTE" value="30"/>

@@ -3908,6 +3908,35 @@
 		</quest_list>
 	</insertafter>
 	
+	<!-- *** changes to challenge rewards -->
+	<set xpath="/quests/quest[@id='quest_reward_mutated_zombie_slayer']">
+		<variable name="name" value="zombie_slayer_name_mutated"/>
+		<variable name="subtitle" value="zombie_slayer_subtitle_mutated"/>
+		<variable name="description" value="zombie_slayer_desc"/>
+		<variable name="completion" value="zombie_slayer_completion"/>
+		<!-- Challenge Rewards are localized. Update challengeKillRewardMods if this list is changed. -->
+		<reward type="Exp" value="10000"/>
+		<reward type="Item" id="modArmorCustomizedFittings" ischosen="true" isfixed="true" value="1"/>
+		<reward type="Item" id="modArmorPlatingReinforced" ischosen="true" isfixed="true" value="1"/>
+		<reward type="Item" id="modArmorAdvancedMuffledConnectors" ischosen="true" isfixed="true" value="1"/>
+		<reward type="Item" id="modArmorInsulatedLiner" ischosen="true" isfixed="true" value="1"/>
+		<reward type="Item" id="modArmorCoolingMesh" ischosen="true" isfixed="true" value="1"/>
+	</set>
+	
+	<set xpath="/quests/quest[@id='quest_reward_cop_zombie_slayer']">
+		<variable name="name" value="zombie_slayer_name_cop"/>
+		<variable name="subtitle" value="zombie_slayer_subtitle_cop"/>
+		<variable name="description" value="zombie_slayer_desc"/>
+		<variable name="completion" value="zombie_slayer_completion"/>
+		<!-- Challenge Rewards are localized. Update challengeKillRewardRareItems if this list is changed. -->
+		<reward type="Exp" value="10000"/>
+		<reward type="Item" id="modGunBrassCatcher" ischosen="true" isfixed="true" value="1"/>
+		<reward type="Item" id="plantedGraceCorn1Schematic" ischosen="true" isfixed="true" value="1"/>
+		<reward type="Item" id="solarCell" ischosen="true" isfixed="true" value="3"/>
+		<reward type="Item" id="toolForgeCrucible" ischosen="true" isfixed="true" value="1"/>
+		<reward type="Item" id="resourceLegendaryParts" ischosen="true" isfixed="true" value="4"/>
+	</set>
+	
 	<!-- *** trader quests per tier increased to 10 *** -->
 	<setattribute xpath="/quests" name="quests_per_tier">10</setattribute>
 	

@@ -476,18 +476,12 @@
 		
 		<!-- *** roast chicken -->
 		<recipe name="foodRoastChicken" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
-			<ingredient name="tameChicken" count="1"/>
-			<!-- <effect_group> -->
-				<!-- <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/> -->
-			<!-- </effect_group> -->
+			<ingredient name="tameChicken" count="1"/>			
 		</recipe>
 		
 		<!-- *** roast rabbit -->
 		<recipe name="foodRoastedRabbit" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
-			<ingredient name="tameRabbit" count="1"/>
-			<!-- <effect_group> -->
-				<!-- <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/> -->
-			<!-- </effect_group> -->
+			<ingredient name="tameRabbit" count="1"/>			
 		</recipe>
 		
 		<!-- *** weapon/tool/armour specific repair kits -->

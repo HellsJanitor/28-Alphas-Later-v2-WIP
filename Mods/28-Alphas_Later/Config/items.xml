@@ -4,6 +4,55 @@
 		<passive_effect name="DegradationMax" operation="perc_add" value="0.1"/>
 	</insertAfter>
 	
+	<!-- *** nerd oufit -->
+	<set xpath="/items/item[@name='armorNerdOutfit']">
+		<property name="Extends" value="armorHeavyMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="armorNerdOutfitDesc"/>
+		<property name="DisplayType" value="armorNerdOutfit"/>
+		<property name="ArmorGroup" value="groupNerd"/>
+		<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,heavyArmorPenalty,heavyArmorDeg,armorHeavySkill,biomeChallenge"/>
+		<property name="EquipSlot" value="Chest"/>
+		<property name="SoundPickup" value="outfit_metal_grab"/>
+		<property name="SoundPlace" value="outfit_metal_place"/>
+		<effect_group name="NerdOutfit">
+			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="18,21" tier="1,6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="18,21" tier="1,6" tags="heat,electrical"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+			<!-- <passive_effect name="HypothermalResist" operation="base_add" value="20"/> -->
+			<!-- <passive_effect name="HyperthermalResist" operation="base_add" value="20"/> -->
+			
+			<passive_effect name="Mobility" operation="perc_add" value="-.075"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.045" tags="walking"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.09" tags="running"/>
+			<display_value name="dStaminaChangeOT" value="-.9"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/>
+			<display_value name="dNoiseMultiplier" value=".2"/>
+			
+			<display_value name="dAttributeLevel" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+		</effect_group>
+
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6" tags="csm,research"/>
+		</effect_group>			
+
+		<effect_group>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffNerdOutfit"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffNerdOutfit"/>
+		</effect_group>
+
+		<property class="SDCS">
+			<property name="Prefab" value="@:Entities/Player/{sex}/Gear/Nerd/gear{sex}NerdPrefab.prefab"/>
+			<property name="TransformName" value="body"/>
+			<property name="Excludes" value="body"/>
+		</property>
+	</set>
+	
 	<!-- *** set fuel amount for gas cans -->
 	<set xpath="/items/item[@name='ammoGasCan']/property[@name='FuelValue']/@value">10</set>
 	
@@ -425,9 +474,16 @@
 		<property name="Create_item" value="drinkJarEmpty"/>
 	</append>
 	
+	<!-- *** adjustments for farm bundles -->
+	<set xpath="/items/item[starts-with(@name,'questRewardFarm')]/property[@class='Action0']/property[@name='Create_item']/@value">resourceFertilizer,seedSkillMagazine</set>
+	<set xpath="/items/item[starts-with(@name,'questRewardFarm')]/property[@class='Action0']/property[@name='Create_item_count']/@value">45,3</set>
+	
 	<!-- *** replace skill magazines with research papers -->	
 	<append xpath="/items/item/property/property[@name='Create_item' and (contains(@value,'SkillMagazine'))]/@value">,researchPaperBlank</append>
 	<csv xpath="/items/item/property/property[@name='Create_item' and (contains(@value,'SkillMagazine'))]/@value" delim="," op="remove" >*SkillMagazine</csv>
+	
+	<!-- *** allowed upgrade items for repair tools *** -->
+	<append xpath="//item/property//property[@name='Allowed_upgrade_items']/@value">,resourceBricks,resourceWoodScraps</append>
 	
 	<append xpath="/items">
 		<!-- *** Legendaries -->
@@ -503,8 +559,8 @@
 				<passive_effect name="StaminaLoss" operation="base_set" value="10.5" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
-				<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkDeepCuts"/>
-				<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.3" tags="perkDeepCuts"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkDeepCuts"/>
 				<passive_effect name="ModSlots" operation="base_set" value="3,3,3,4,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
@@ -1899,6 +1955,7 @@
 			</effect_group>
 		</item>
 		
+		<!-- *** rabbit -->
 		<item name="tameRabbit">
 			<property name="CustomIcon" value="animalRabbit"/>
 			<property name="DescriptionKey" value="tameRabbitDesc"/>
@@ -1929,7 +1986,7 @@
 		<item name="researchPaperBlank">
 			<property name="DescriptionKey" value="researchPaperBlankDesc"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Tags" value="csm"/>
+			<property name="Tags" value="csm,research"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="Stacknumber" value="10000"/>
 			<property name="SellableToTrader" value="false"/>
@@ -3042,10 +3099,7 @@
 	
 	<insertafter xpath="//item[@name='foodCanStock']//property[1]">
 		<property name="CustomIcon" value="foodCanStockrusty"/>
-	</insertafter>
-	
-	<!-- *** Sham schematic unlocks cooked Sham -->
-	<!-- <set xpath="/items/item[@name='foodCanShamSchematic']/property[@name='Unlocks']/@value">foodCanShamcooked</set> -->
+	</insertafter>	
 	
 	<!-- *** murky water deosn't hurt the player with a charged water filter -->
 	<append xpath="//item[@name='drinkJarRiverWater']//effect_group[@name='Drink Tier 0']">
@@ -3172,11 +3226,7 @@
 	</append>
 	
 	<!-- *** increase stack number for first aid bandage -->
-	<set xpath="//item[@name='medicalFirstAidBandage']//property[@name='Stacknumber']/@value">10</set>
-	
-	<!-- *** adjustments for farm bundles -->
-	<set xpath="/items/item[starts-with(@name,'questRewardFarm')]/property[@class='Action0']/property[@name='Create_item']/@value">resourceFertilizer,seedSkillMagazine</set>
-	<set xpath="/items/item[starts-with(@name,'questRewardFarm')]/property[@class='Action0']/property[@name='Create_item_count']/@value">45,3</set>
+	<set xpath="//item[@name='medicalFirstAidBandage']//property[@name='Stacknumber']/@value">10</set>	
 	
 	<!-- *** increase mod slots for Q6 armor -->
 	<set xpath="//item[starts-with (@name,'armorLumberjack') and not (contains(@name,'Master'))]/effect_group//passive_effect[@name='ModSlots']/@value">1,1,2,3,4,5</set>

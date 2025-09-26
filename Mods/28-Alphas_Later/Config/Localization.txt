@@ -27,11 +27,47 @@ animalMutantBug,Mutant Bug
 animalWildChicken,Chicken
 antivenom,"Anti-venom"
 antivenomDesc,"Use this to instantly remove the effects of venom.\n\nCan be crafted at the campfire, in a cooking pot, or use a beaker to save on ingredients."
-armorNerdOutfitDesc,Heavy Armor\nYour lack of fashion sense gives you the ability to focus on your inventions. Adds a chance to gain two crafting skill points when reading INDIVIDUAL research papers.\n\nFull Set Bonus: Tools and Weapons degrade slower.
+armorNerdOutfitDesc,Heavy Armor\nYour lack of fashion sense gives you the ability to focus on your inventions. Increases quantity of research found in loot.\n\nFull Set Bonus: Tools and Weapons degrade slower.
 barbedWireSpindleVariantHelper
 barbedWireSpindleVariantHelperBlock
 beehive,Beehive
 beehiveDesc,"Produces honey, requires a bee."
+BowRepairKit,Bow Repair Kit
+BowRepairKitDesc,This Repair Kit is used to repair bows and crossbows.
+ClubRepairKit,Club Repair Kit
+ClubRepairKitDesc,This Repair Kit is used to repair steel clubs.
+HandgunRepairKit,Handgun Repair Kit
+HandgunRepairKitDesc,"This Repair Kit is used to repair 9mm pistols, .44 handguns, and SMGs."
+KnucklesRepairKit,Knuckles Repair Kit
+KnucklesRepairKitDesc,This Repair Kit is used to repair steel knuckles.
+MacheteRepairKit,Machete Repair Kit
+MacheteRepairKitDesc,This Repair Kit is used to repair machetes.
+MachinegunRepairKit,Machine Gun Repair Kit
+MachinegunRepairKitDesc,"This Repair Kit is used to repair AK47s, tactical assault rifles, and M60s."
+PrimitiveRepairKit,Basic Repair Kit
+PrimitiveRepairKitDesc,"This Repair Kit is used to repair Primitive Armour"
+ArmourRepairKit,Armour Repair Kit
+MilitaryArmourRepairKitDesc,This Repair Kit is used to repair armour.
+MotorToolRepairKit,Motor Tool Repair Kit
+MotorToolRepairKitDesc,"This Repair Kit is used to repair chainsaws, augers, & impact drivers."
+RifleRepairKit,Rifle Repair Kit
+RifleRepairKitDesc,"This Repair Kit is used to repair hunting, lever-action, and sniper rifles."
+RobotRepairKit,Robot Repair Kit
+RobotRepairKitDesc,This Repair Kit is used to repair robotic weapons and drones.
+RocketLauncherRepairKit,Rocket Launcher Repair Kit
+RocketLauncherRepairKitDesc,This Repair Kit is used to repair rocket launchers.
+ShotgunRepairKit,Shotgun Repair Kit
+ShotgunRepairKitDesc,"This Repair Kit is used to repair double barrel, pump action, and auto shotguns."
+SledgehammerRepairKit,Sledgehammer Repair Kit
+SledgehammerRepairKitDesc,This Repair Kit is used to repair steel sledgehammers.
+SpearRepairKit,Spear Repair Kit
+SpearRepairKitDesc,This Repair Kit is used to repair steel spears.
+SteelArmourRepairKit,Steel Armour Repair Kit
+SteelArmourRepairKitDesc,This Repair Kit is used to repair steel armour.
+SteelToolRepairKit,Steel Tool Repair Kit
+SteelToolRepairKitDesc,"This Repair Kit is used to repair steel axes, picks, and shovels."
+StunBatonRepairKit,Stun Baton Repair Kit
+StunBatonRepairKitDesc,This Repair Kit is used to repair stun batons.
 buffBurningShaftActive,Fuel Status
 buffBurningShaftActiveDesc,"Your burning shaft mod is currently fuelled.\n\nThe fuel is being depleted, and when used up, the flame will extinguish.\n\nRefuel the mod by having 10 gasoline in your inventory."
 buffCampfireAOEEffectDesc,"You are warmed by the fire.\n\nCold Resist +15\n\nThis warming effect, combined with shelter and light, can slowly reduce your despair."
@@ -262,7 +298,7 @@ meleeToolTorchDesc,This torch can be used as a portable light source or weapon w
 meleeWpnLegendaryGardenRake,"Fury's Harvest"
 meleeWpnLegendaryGardenRakeDesc,"Forged in the fires of a long-lost kingdom, this legendary battle rake known as Fury's Harvest is a fearsome weapon that combines beauty and brutality. Its handle, made from the heartwood of an ancient tree, is imbued with the strength of a thousand warriors. The tines, sharp as daggers and are said to have cleaved through armor and stone alike. In the annals of history, it was wielded by a legendary hero during a great war, turning the tide of battle with each swing"
 meleeWpnBladeLegendaryPaintBrush,"Red's Legendary Paintbrush"
-meleeWpnBladeLegendaryPaintBrush,"This ancient & mysterious brush has built up thousands of layers of paint & varnish, which have hardened to be more durable than steel. In RambunctiousRed's hands, it has been honed into a deadly weapon.\n\nGo out, and paint the apocalypse red!!\n\nStops all radiated regen. 30% damage bonus to radiated zombies."
+meleeWpnBladeLegendaryPaintBrushDesc,"This ancient & mysterious brush has built up thousands of layers of paint & varnish, which have hardened to be more durable than steel. In RambunctiousRed's hands, it has been honed into a deadly weapon.\n\nGo out, and paint the apocalypse red!!\n\nStops all radiated regen. 30% damage bonus to radiated zombies."
 meleeWpnLegendaryPitchfork,"Hells' Wrath"
 meleeWpnLegendaryPitchforkDesc,"Legends tell of its origin: crafted by a vengeful farmer who sought to protect his land from marauding invaders. With every thrust and sweep, Hells' Wrath channels the fury of the earth itself, stunning foes in it's tracks. This pitchfork is not merely a tool; it embodies the relentless spirit of those who defend their home, turning the very essence of agriculture into a weapon of epic proportions."
 meleeWpnLegendaryScythe,"Death's Whisper"
@@ -2288,6 +2324,7 @@ resourceWoodScrapsDesc,"Small fragments of wood.\n\nCan be used for fuel and bas
 spentWallTorch,Spent Torch
 spentWallTorchDesc,"A spent torch. Can be reused to craft another wall torch"
 statCureDespair,Treat Despair
+statNerdSkillPointChance,Research Loot Quantity
 statSmell,Smell count
 statWellness,"Wellness Added"
 tableSawDesc,"A workstation for turning logs into wood planks more quickly and effeciently."
