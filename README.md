@@ -11,7 +11,7 @@ The idea behind this mod is to slow progression, make traders less powerful, and
 **Research papers are mostly found in zombie corpse loot, and everywhere magazines and books would usually be found, plus a few other places too.**
 **You must have research papers in your inventory to unlock crafting skills, and the cost of skills scales as your crafting skill increases.**
 
-Legendary melee weapons added. There's a paintbrush, pitchfork, scythe, and rake. All of these weapons can be found in POI endloot chests, in the **wasteland *ONLY* **.
+Legendary melee weapons added. There's a paintbrush, pitchfork, scythe, and rake. All of these weapons can be found in POI endloot chests, in the **wasteland** ***ONLY***.
 The higher the tier of POI, the more likely you are to find one of these weapons.
 
 Research from zombie corpses has been increased in the **wasteland** biome. Every corpse in the wasteland will have research, and if the zombie would normally have research, that research is doubled in quantity.
