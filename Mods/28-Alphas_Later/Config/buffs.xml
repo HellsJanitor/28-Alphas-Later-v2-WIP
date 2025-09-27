@@ -2661,10 +2661,14 @@
 			</effect_group>
 		</buff>
 		
-		<buff name="buffDespairMedBlocker" name_key="buffDespairMedBlockerName" description_key="buffDespairMedBlockerDesc" tooltip_key="buffDespairMedBlockerTooltip" icon="ui_game_symbol_pills" remove_on_death="true" icon_color="255,0,0" icon_blink="true">
+		<buff name="buffDespairMedBlocker" name_key="buffDespairMedBlockerName" description_key="buffDespairMedBlockerDesc" tooltip_key="buffDespairMedBlockerTooltip" icon="ui_game_symbol_pills" remove_on_death="true" icon_color="255,0,0" icon_blink="true" showonhud="false">
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 			<update_rate value=".1"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message_key="buffDespairMedBlockerTooltip"/>
+			</effect_group>
 			
 			<effect_group compare_type="or">
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDespairMedBlocker"/>
@@ -4119,7 +4123,7 @@
 				<requirement name="PlayerItemCount" item_name="foodTunaFishGravyToast" operation="GTE" value="2"/>
 				<!-- <requirement name="PlayerItemCount" item_name="foodEggBoiled" operation="GTE" value="5"/> -->
 				<requirement name="PlayerItemCount" item_name="foodBaconAndEggs" operation="GTE" value="4"/>
-				<requirement name="PlayerItemCount" item_name="foodVegetableStew" operation="GTE" value="3"/>
+				<requirement name="PlayerItemCount" item_name="foodVegetableStew" operation="GTE" value="4"/>
 				<requirement name="PlayerItemCount" item_name="foodRawMeat" operation="GTE" value="10"/>
 				<requirement name="PlayerItemCount" item_name="foodChickenStew" operation="GTE" value="3"/>
 				<requirement name="PlayerItemCount" item_name="foodChickenMiso" operation="GTE" value="3"/>

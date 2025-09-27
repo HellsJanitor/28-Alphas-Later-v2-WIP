@@ -2325,7 +2325,7 @@ spentWallTorch,Spent Torch
 spentWallTorchDesc,"A spent torch. Can be reused to craft another wall torch"
 statCureDespair,Treat Despair
 statNerdSkillPointChance,Research Loot Quantity
-statSmell,Smell count
+statSmell,Carry safely count (smell)
 statWellness,"Wellness Added"
 tableSawDesc,"A workstation for turning logs into wood planks more quickly and effeciently."
 tablesawTip,"The Tablesaw unlocks the ability to turn wood logs into wood more quickly & effeciently. Inside your land claim area all workstations can be picked up by holding ''E'' and selecting ''TAKE'' from the radial menu."

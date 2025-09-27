@@ -440,6 +440,9 @@
 		</effect_group>
 	</set>
 
+	<!-- *** megacrush duration -->
+	<set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/display_value[@name='dDuration']/@value">60</set>
+	<set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@value='363']/@value">63</set>
 	
 	<!-- *** insect swarm no longer slows the player -->
 	<remove xpath="/items/item[@name='meleeHandAnimalInsectSwarm']/effect_group/triggered_effect[@buff='buffInjurySlow']"/>
@@ -2077,7 +2080,7 @@
 			<property name="DescriptionKey" value="foodRoastedRabbitDesc"/>
 			<property name="Tags" value="food,foodSkill,fitness,farmerFoodBonus"/>
 			<property name="HoldType" value="31"/>
-			<property name="DisplayType" value="food"/>
+			<property name="DisplayType" value="foodT0"/>
 			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
@@ -2119,7 +2122,7 @@
 			<property name="DescriptionKey" value="foodRoastChickenDesc"/>
 			<property name="Tags" value="food,foodSkill,fitness,farmerFoodBonus"/>
 			<property name="HoldType" value="31"/>
-			<property name="DisplayType" value="food"/>
+			<property name="DisplayType" value="foodT0"/>
 			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
@@ -3101,7 +3104,7 @@
 		<property name="CustomIcon" value="foodCanStockrusty"/>
 	</insertafter>	
 	
-	<!-- *** murky water deosn't hurt the player with a charged water filter -->
+	<!-- *** murky water doesn't hurt the player with a charged water filter -->
 	<append xpath="//item[@name='drinkJarRiverWater']//effect_group[@name='Drink Tier 0']">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="helmetPurifierDurability" operation="subtract" value="1">
 			<requirement name="CVarCompare" cvar="helmetPurifierDurability" operation="GT" value="0"/>
@@ -3705,39 +3708,44 @@
 	<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect/requirement[@value='2703']/@value">5406</set>
 	
 	<!-- *** food smell display values -->
-	<append xpath="//item[not (@name='foodRawMeat')]/effect_group[@name='Food Tier 0']">
-		<display_value name="dSmell" value="0"/>
-	</append>
+	<set xpath="/items/item[@name='foodRawMeat']/property[@name='DisplayType']/@value">foodRawMeat</set>
+	<set xpath="/items/item[@name='foodShamChowder']/property[@name='DisplayType']/@value">food</set>
+	<set xpath="/items/item[@name='foodCornBread' or @name='foodEggBoiled']/property[@name='DisplayType']/@value">foodT0</set>
+	<set xpath="/items/item[@name='foodCornOnTheCob' or @name='foodBakedPotato']/property[@name='DisplayType']/@value">foodWaterNegativeT0</set>
+	
+	<!-- <append xpath="//item[not (@name='foodRawMeat')]/effect_group[@name='Food Tier 0']"> -->
+		<!-- <display_value name="dSmell" value="0"/> -->
+	<!-- </append> -->
 	
 	<append xpath="//item[@name='foodRawMeat']/effect_group[@name='Food Tier 0']">
-		<display_value name="dSmell" value="10"/>
+		<display_value name="dSmell" value="9"/>
 	</append>
 	
 	<append xpath="//item[not (@name='foodEggBoiled')]/effect_group[@name='Food Tier 0/1']">
-		<display_value name="dSmell" value="5"/>
+		<display_value name="dSmell" value="4"/>
 	</append>
 	
 	<append xpath="//item[@name='foodGrilledMeat']/effect_group[@name='Food Tier 1']">
-		<display_value name="dSmell" value="5"/>
+		<display_value name="dSmell" value="4"/>
 	</append>
 	
 	<append xpath="//item[@name='foodBoiledMeat']/effect_group[@name='Food Tier 1']">
-		<display_value name="dSmell" value="5"/>
+		<display_value name="dSmell" value="4"/>
 	</append>
 	
 	<append xpath="//item[@name='foodBaconAndEggs']/effect_group[@name='Food Tier 1']">
-		<display_value name="dSmell" value="4"/>
-	</append>
-	
-	<append xpath="//item/effect_group[@name='Food Tier 2']">
-		<display_value name="dSmell" value="4"/>
-	</append>
-	
-	<append xpath="//item/effect_group[@name='Food Tier 3']">
 		<display_value name="dSmell" value="3"/>
 	</append>
 	
-	<append xpath="//item/effect_group[@name='Food Tier 4']">
+	<append xpath="//item/effect_group[@name='Food Tier 2']">
+		<display_value name="dSmell" value="3"/>
+	</append>
+	
+	<append xpath="//item/effect_group[@name='Food Tier 3']">
 		<display_value name="dSmell" value="2"/>
+	</append>
+	
+	<append xpath="//item/effect_group[@name='Food Tier 4']">
+		<display_value name="dSmell" value="1"/>
 	</append>
 </HellsJanitor>
